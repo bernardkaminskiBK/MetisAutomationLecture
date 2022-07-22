@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Mocnina {
     public static void main(String[] args) {
+        zobraz();
+    }
+
+    public static void zobraz() {
         Scanner vstup = new Scanner(System.in);
         System.out.print("Zadaj zaklad cisla a exponent: ");
         int cislo = vstup.nextInt();
