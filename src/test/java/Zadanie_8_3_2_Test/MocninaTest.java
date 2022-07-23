@@ -2,7 +2,6 @@ package Zadanie_8_3_2_Test;
 
 import Zadanie_8_3_2.Mocnina;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -27,7 +26,7 @@ public class MocninaTest {
         InputStream savedStandardInputStream = System.in;
         System.setIn(new ByteArrayInputStream(simulatedUserInput.getBytes()));
 
-        Mocnina.zobraz();
+        Mocnina.main(new String[0]);
         System.setIn(savedStandardInputStream);
     }
 }

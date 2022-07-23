@@ -24,7 +24,7 @@ public class ParkovneTest {
         expectedResult += "3\t\t\t" + tretieHodiny + "\t\t\t" + tretiePoplatky + "\n";
         expectedResult += "Spolu:\t\t" + celkoveHodiny + "\t\t" + celkovePoplatky;
 
-        Assertions.assertEquals(expectedResult, Parkovne.vypisDoKonzoly(prveHodiny, druheHodiny, tretieHodiny));
+        Assertions.assertEquals(expectedResult, Parkovne.vytvorTabulku(prveHodiny, druheHodiny, tretieHodiny));
     }
 
     @ParameterizedTest()

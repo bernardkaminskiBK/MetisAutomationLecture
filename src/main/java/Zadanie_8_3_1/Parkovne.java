@@ -15,10 +15,10 @@ public class Parkovne {
         double druheHodiny = vstup.nextDouble();
         double tretieHodiny = vstup.nextDouble();
 
-        System.out.println(vypisDoKonzoly(prveHodiny, druheHodiny, tretieHodiny));
+        System.out.println(vytvorTabulku(prveHodiny, druheHodiny, tretieHodiny));
     }
 
-    public static String vypisDoKonzoly(double prveHodiny, double druheHodiny, double tretieHodiny) {
+    public static String vytvorTabulku(double prveHodiny, double druheHodiny, double tretieHodiny) {
         String vysledok = "";
 
         double prvePoplatky = spocitajPoplatky(prveHodiny);
@@ -99,5 +99,21 @@ public class Parkovne {
 //        // TODO: doplnit...
 //
 //        return poplatky;
+//    }
+//}
+//public class Parkovne {
+//    public static void main(String[] args) {
+//        // TODO: doplnit...
+//    }
+//
+//    public static String vytvorTabulku(double prveHodiny, double druheHodiny, double tretieHodiny) {
+//        String vysledok = "";
+//        // TODO: doplnit...
+//        return vysledok;
+//    }
+//
+//    public static double spocitajPoplatky(double hodiny) {
+//        // TODO: doplnit...
+//        return 0;
 //    }
 //}
