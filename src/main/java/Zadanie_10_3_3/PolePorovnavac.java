@@ -14,7 +14,6 @@ public class PolePorovnavac {
         } else {
             System.out.println("Polia nie su rovnake");
         }
-
     }
 
     public static boolean suPoliaZhodne(int[] prvePole, int dlzkaPrvehoPola, int[] druhePole, int dlzkaDruhehoPola) {
@@ -38,7 +37,7 @@ public class PolePorovnavac {
 //        //TODO: doplnit...
 //    }
 //
-//    public static boolean suPoliaZhodne(int prvePole[], int dlzkaPrvehoPola, int druhePole[], int dlzkaDruhehoPola) {
+//    public static boolean suPoliaZhodne(int[] prvePole, int dlzkaPrvehoPola, int[] druhePole, int dlzkaDruhehoPola) {
 //        //TODO: doplnit...
 //        return true;
 //    }

@@ -2,12 +2,12 @@ package Zadanie_10_3_2;
 
 public class PoleStatistiky {
     public static void main(String[] args) {
-        System.out.println(vygenerujStatistikyPola());
+        int[] pole = {10, 15, 5, 25, 30};
+        System.out.println(vygenerujStatistikyPola(pole));
     }
 
-    public static String vygenerujStatistikyPola() {
+    public static String vygenerujStatistikyPola(int[] pole) {
         String vysledok = "";
-        int[] pole = {10, 15, 5, 25, 30}; // Tuto je problem ten ze ako vymisliet to ze na rovanko daval kazdy pole
 
         int minimum = Integer.MAX_VALUE;
         int maximum = Integer.MIN_VALUE;
@@ -36,3 +36,15 @@ public class PoleStatistiky {
         return vysledok;
     }
 }
+
+//public class PoleStatistiky {
+//    public static void main(String[] args) {
+//        //TODO: doplnit...
+//    }
+//
+//    public static String vygenerujStatistikyPola(int[] pole) {
+//        String vysledok = "";
+//        //TODO: doplnit...
+//        return vysledok;
+//    }
+//}

@@ -10,6 +10,7 @@ public class Delitelnost {
 
         System.out.print("Zadaj prve cislo: ");
         int cislo1 = vstup.nextInt();
+
         System.out.print("Zadaj druhe cislo: ");
         int cislo2 = vstup.nextInt();
 
@@ -21,7 +22,6 @@ public class Delitelnost {
             System.out.println("Cislo " + cislo2 + " nie je delitelne cislom " + cislo1);
         }
 
-        // TODO: https://docs.google.com/document/d/12u8fPZN8nohiSsNmY_xCp9QYZmHYenSbHr-a_mrwurc/edit#heading=h.wx1fa3aipf1p tu pokracujem
     }
 
     public static boolean jeDelitelne(int X, int Y) {
