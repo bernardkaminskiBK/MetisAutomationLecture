@@ -1,32 +1,52 @@
 package Zadanie_8_3_2_Test;
 
+import Utils.WriteIntoCsv;
+import Utils.models.StudentResultModel;
 import Zadanie_8_3_2.Mocnina;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
-
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
+import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 public class MocninaTest {
 
-    @ParameterizedTest
-    @CsvSource({"5,3,125", "3,4,81", "5,5,3125"})
-    public void vypocitaj(int cislo, int exponent, int ocakavanyVysledok) {
-        int aktualnaHodnota = Mocnina.umocni(cislo, exponent);
+    private WriteIntoCsv wic = null;
 
-        Assertions.assertEquals(ocakavanyVysledok, aktualnaHodnota);
+    @BeforeTest
+    public void setUp() {
+        this.wic = new WriteIntoCsv();
     }
 
-    @ParameterizedTest
-    @CsvSource({"5,3", "3,4", "5,5"})
-    public void vstupTest(String cislo, String exponent) {
-        String simulatedUserInput = cislo + "\n" + exponent + "\n";
-
-        InputStream savedStandardInputStream = System.in;
-        System.setIn(new ByteArrayInputStream(simulatedUserInput.getBytes()));
-
-        Mocnina.main(new String[0]);
-        System.setIn(savedStandardInputStream);
+    @Test(dataProvider = "testData")
+    public void vypocitaj(Integer first, Integer second, Integer expected) {
+        Integer aktualnaHodnota = Mocnina.umocni(first, second);
+        Assert.assertEquals(aktualnaHodnota, expected);
     }
+
+    @DataProvider(name = "testData")
+    public static Object[][] numbers() {
+        return new Object[][]{{5, 3, 125}, {3, 4, 81}, {5, 5, 3125}};
+    }
+
+    @AfterMethod
+    public void afterMethod(ITestResult result) {
+        try {
+            if (result.getStatus() == ITestResult.SUCCESS) {
+                saveResultSet(result);
+            } else if (result.getStatus() == ITestResult.FAILURE) {
+                saveResultSet(result);
+            } else if (result.getStatus() == ITestResult.SKIP) {
+                saveResultSet(result);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void saveResultSet(ITestResult result) {
+        wic.saveData(new StudentResultModel(result.getName(), result.isSuccess(), result.getInstanceName()));
+    }
+
 }
