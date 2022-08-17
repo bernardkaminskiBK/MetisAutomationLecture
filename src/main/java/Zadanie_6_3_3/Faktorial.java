@@ -3,24 +3,43 @@ package Zadanie_6_3_3;
 public class Faktorial {
 
     public static void main(String[] args) {
-        System.out.println(vypocitajFaktorial());
+        System.out.println("Cislo\tFaktorial");
+
+        for(int i = 1; i <= 5; ++i) {
+            System.out.println("" + i + "   \t" + vypocitajFaktorial(i));
+        }
+
     }
 
-    // Prvy sposob ako zadat ulohu...
-    public static String vypocitajFaktorial() {
-        int faktorial = 5;
-        int pom = 1;
-        String vysledok = "Cislo" + "\tFaktorial\n";
-
-        for (int i = 1; i <= faktorial; i++) {
-            pom = pom * i;
-            vysledok += i + "\t\t" + pom + "\n";
+    public static int vypocitajFaktorial(int n) {
+        int vysledok = 1;
+        for(int i = 2; i <= n; ++i) {
+            vysledok *= i;
         }
 
         return vysledok;
     }
+
 }
 
+
+//    public static void main(String[] args) {
+//        System.out.println(vypocitajFaktorial());
+//    }
+//
+//    // Prvy sposob ako zadat ulohu...
+//    public static String vypocitajFaktorial() {
+//        int faktorial = 5;
+//        int pom = 1;
+//        String vysledok = "Cislo" + "\tFaktorial\n";
+//
+//        for (int i = 1; i <= faktorial; i++) {
+//            pom = pom * i;
+//            vysledok += i + "\t\t" + pom + "\n";
+//        }
+//
+//        return vysledok;
+//    }
 
 // Druhy sposob ako zadat ulohu...
 //    public static void main(String[] args) {

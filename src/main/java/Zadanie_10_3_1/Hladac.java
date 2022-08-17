@@ -13,7 +13,7 @@ public class Hladac {
         System.out.println("Zadaj cislo o ktorom si mysliš že sa nachadza v poli ");
         int cislo = vstup.nextInt();
 
-        int nachadzaSa = vyhladajCislo(cisla, cisla.length, cislo);
+        int nachadzaSa = vyhladajCislo(cisla, cislo);
 
         if (nachadzaSa != -1) {
             System.out.println("cislo sa nachadza na " + nachadzaSa + " pozici index [" + nachadzaSa + "]");
@@ -22,9 +22,9 @@ public class Hladac {
         }
     }
 
-    public static int vyhladajCislo(int[] cisla, int velkostPola, int hladanecislo) {
+    public static int vyhladajCislo(int[] cisla, int hladanecislo) {
         int pozicia = -1;
-        for (int i = 0; i <= velkostPola - 1; i++) {
+        for (int i = 0; i <= cisla.length - 1; i++) {
             pozicia = pozicia + 1;
             if (cisla[i] == hladanecislo) {
                 return pozicia;

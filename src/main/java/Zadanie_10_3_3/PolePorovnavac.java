@@ -30,7 +30,7 @@ public class PolePorovnavac {
     }
 
 }
-
+//
 //public class PolePorovnavac {
 //
 //    public static void main(String[] args) {
@@ -39,7 +39,7 @@ public class PolePorovnavac {
 //
 //    public static boolean suPoliaZhodne(int[] prvePole, int dlzkaPrvehoPola, int[] druhePole, int dlzkaDruhehoPola) {
 //        //TODO: doplnit...
-//        return true;
+//        return //TODO: doplnit...;
 //    }
 //
 //}

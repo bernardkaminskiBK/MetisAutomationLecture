@@ -1,6 +1,13 @@
 package Zadanie_10_3_2;
 
 public class PoleStatistiky {
+
+    public static int minimum = Integer.MAX_VALUE;
+    public static int maximum = Integer.MIN_VALUE;
+    public static int minIndex = 0;
+    public static int maxIndex = 0;
+    public static double sucet = 0;
+
     public static void main(String[] args) {
         int[] pole = {10, 15, 5, 25, 30};
         System.out.println(vygenerujStatistikyPola(pole));
@@ -8,12 +15,6 @@ public class PoleStatistiky {
 
     public static String vygenerujStatistikyPola(int[] pole) {
         String vysledok = "";
-
-        int minimum = Integer.MAX_VALUE;
-        int maximum = Integer.MIN_VALUE;
-        int minIndex = 0;
-        int maxIndex = 0;
-        double sucet = 0;
 
         for (int i = 0; i < pole.length; i++) {
             if (pole[i] < minimum) {
@@ -38,13 +39,21 @@ public class PoleStatistiky {
 }
 
 //public class PoleStatistiky {
+//
+//    public static int minimum = // TODO: doplnit...
+//    public static int maximum = // TODO: doplnit...
+//    public static int minIndex = // TODO: doplnit...
+//    public static int maxIndex = // TODO: doplnit...
+//    public static double sucet = // TODO: doplnit...
+//
 //    public static void main(String[] args) {
-//        //TODO: doplnit...
+//        // TODO: doplnit...
 //    }
 //
 //    public static String vygenerujStatistikyPola(int[] pole) {
 //        String vysledok = "";
-//        //TODO: doplnit...
+//        // TODO: doplnit...
 //        return vysledok;
 //    }
+//
 //}

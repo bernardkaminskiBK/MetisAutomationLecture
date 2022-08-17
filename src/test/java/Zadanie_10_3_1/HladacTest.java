@@ -11,14 +11,18 @@ public class HladacTest {
     @ParameterizedTest
     @CsvSource(value = {"1,0", "80,8", "55,9", "25,5"})
     public void vyhladajCislaTest(int hladaneCislo, int ockavanaHodnota) {
-        int aktualnyVysledok = Hladac.vyhladajCislo(cisla, cisla.length, hladaneCislo);
+        int aktualnyVysledok = sk.itvkurze.antoska.zadanie_10_3_1.Hladac.vyhladajCislo(cisla, hladaneCislo);
+//        int aktualnyVysledok = sk.itvkurze.hubay.zadanie_10_3_1.Hladac.vyhladajCislo(cisla, cisla.length, hladaneCislo);
+//        int aktualnyVysledok = sk.itvkurze.mesko.zadanie_10_3_1.Hladac.vyhladajCislo(cisla, cisla.length, hladaneCislo);
         Assertions.assertEquals(ockavanaHodnota, aktualnyVysledok);
     }
 
     @ParameterizedTest
     @CsvSource(value = {"11", "809", "5510", "256"})
     public void neuspesneVyhladavanieCisielTest(int hladaneCislo) {
-        int aktualnyVysledok = Hladac.vyhladajCislo(cisla, cisla.length, hladaneCislo);
+        int aktualnyVysledok = sk.itvkurze.antoska.zadanie_10_3_1.Hladac.vyhladajCislo(cisla, hladaneCislo);
+//        int aktualnyVysledok = sk.itvkurze.hubay.zadanie_10_3_1.Hladac.vyhladajCislo(cisla, cisla.length, hladaneCislo);
+//        int aktualnyVysledok = sk.itvkurze.mesko.zadanie_10_3_1.Hladac.vyhladajCislo(cisla, cisla.length, hladaneCislo);
         Assertions.assertEquals(-1, aktualnyVysledok);
     }
 

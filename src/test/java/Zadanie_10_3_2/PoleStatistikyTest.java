@@ -1,5 +1,6 @@
 package Zadanie_10_3_2;
 
+import Zadanie_10_3_2_Mesko.PoleStatistiky_Mesko;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -17,14 +18,17 @@ public class PoleStatistikyTest {
 
         vygenerujStatistikyPolaHelper(pole);
 
-        String expectedResult =
-                "Minimum: " + minimum + "\n" +
-                        "Index min prvku: " + minIndex + "\n" +
-                        "Maximum: " + maximum + "\n" +
-                        "Index max prvku: " + maxIndex + "\n" +
-                        "Priemer: " + sucet / pole.length;
+//        Assertions.assertEquals(expectedResult, sk.itvkurze.antoska.zadanie_10_3_2.PoleStatistky.vygenerujStatistikyPola(pole));
+//        Assertions.assertEquals(expectedResult, sk.itvkurze.hubay.zadanie_10_3_2.PoleStatistiky.vygenerujStatistikyPola(pole));
+//        Assertions.assertEquals(expectedResult, PoleStatistiky_Mesko.vygenerujStatistikyPola(pole));
 
-        Assertions.assertEquals(expectedResult, PoleStatistiky.vygenerujStatistikyPola(pole));
+
+        PoleStatistiky.vygenerujStatistikyPola(pole);
+        Assertions.assertEquals(minimum, PoleStatistiky.minimum);
+        Assertions.assertEquals(minIndex, PoleStatistiky.minIndex);
+        Assertions.assertEquals(maximum, PoleStatistiky.maximum);
+        Assertions.assertEquals(maxIndex, PoleStatistiky.maxIndex);
+        Assertions.assertEquals(sucet / pole.length, PoleStatistiky.sucet / pole.length);
     }
 
     private void vygenerujStatistikyPolaHelper(int[] pole) {

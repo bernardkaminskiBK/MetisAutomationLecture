@@ -2,7 +2,18 @@ package Zadanie_8_3_3;
 
 import java.util.Scanner;
 
-public class Delitelnost {
+public class Nasobok {
+
+//    public static void main(String[] args) {
+//        //TODO: doplnit...
+//    }
+//
+//    public static boolean jeDelitelne(int cislo1, int cislo2) {
+//        //TODO: doplnit...
+//        return //TODO: doplnit...;
+//    }
+//
+//}
 
     public static void main(String[] args) {
 
@@ -30,15 +41,3 @@ public class Delitelnost {
 
 }
 
-//public class Delitelnost {
-//
-//    public static void main(String[] args) {
-//        //TODO: doplnit...
-//    }
-//
-//    public static boolean jeDelitelne(int X, int Y) {
-//        //TODO: doplnit...
-//        return ;
-//    }
-//
-//}

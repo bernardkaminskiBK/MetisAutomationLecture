@@ -25,7 +25,7 @@ public class Mocnina {
         return vysledok;
     }
 }
-//
+
 //public class Mocnina {
 //    public static void main(String[] args) {
 //        //TODO: doplnit...
@@ -33,7 +33,8 @@ public class Mocnina {
 //
 //    public static int umocni(int cislo, int exponent) {
 //        //TODO: doplnit...
-//        return 0;
+//        return //TODO: doplnit...;
 //    }
 //}
+
 

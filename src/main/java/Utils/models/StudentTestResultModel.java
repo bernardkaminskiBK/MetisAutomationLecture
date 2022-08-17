@@ -2,16 +2,16 @@ package Utils.models;
 
 import java.util.Objects;
 
-public class StudentResultModel {
+public class StudentTestResultModel {
 
     private final String methodName;
     private final boolean isSuccess;
-    private final String instanceName;
+    private final String className;
 
-    public StudentResultModel(String name, boolean isSuccess, String instanceName) {
+    public StudentTestResultModel(String name, boolean isSuccess, String className) {
         this.methodName = name;
         this.isSuccess = isSuccess;
-        this.instanceName = instanceName;
+        this.className = className;
     }
 
     public String getMethodName() {
@@ -22,20 +22,20 @@ public class StudentResultModel {
         return isSuccess;
     }
 
-    public String getInstanceName() {
-        return instanceName;
+    public String getClassName() {
+        return className;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        StudentResultModel that = (StudentResultModel) o;
-        return isSuccess == that.isSuccess && methodName.equals(that.methodName) && instanceName.equals(that.instanceName);
+        StudentTestResultModel that = (StudentTestResultModel) o;
+        return isSuccess == that.isSuccess && methodName.equals(that.methodName) && className.equals(that.className);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(methodName, isSuccess, instanceName);
+        return Objects.hash(methodName, isSuccess, className);
     }
 }
