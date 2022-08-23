@@ -1,4 +1,4 @@
-package javazaklady.Utils.OwnAnnotations;
+package javazaklady.Utils.CustomAnnotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
