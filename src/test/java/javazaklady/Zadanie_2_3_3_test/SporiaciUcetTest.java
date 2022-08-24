@@ -1,6 +1,7 @@
 package javazaklady.Zadanie_2_3_3_test;
 
-import Zadanie_2_3_3.SporiaciUcet;
+
+import javazaklady.Zadanie_2_3_3.SporiaciUcet;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

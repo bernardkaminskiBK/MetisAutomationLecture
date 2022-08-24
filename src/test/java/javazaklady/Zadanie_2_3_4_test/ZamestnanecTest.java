@@ -1,6 +1,7 @@
 package javazaklady.Zadanie_2_3_4_test;
 
-import Zadanie_2_3_4.Zamestnanec;
+
+import javazaklady.Zadanie_2_3_4.Zamestnanec;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
