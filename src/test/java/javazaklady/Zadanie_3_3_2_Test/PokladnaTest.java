@@ -4,6 +4,7 @@ import javazaklady.Utils.CustomAnnotations.ArraySource;
 import javazaklady.Utils.CustomAnnotations.ArraySources;
 import javazaklady.Zadanie_3_3_2.Pokladna;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import java.util.Arrays;
 
