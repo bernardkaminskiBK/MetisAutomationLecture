@@ -18,11 +18,6 @@ public class PoleStatistikyTest {
 
         vygenerujStatistikyPolaHelper(pole);
 
-//        Assertions.assertEquals(expectedResult, sk.itvkurze.antoska.zadanie_10_3_2.PoleStatistky.vygenerujStatistikyPola(pole));
-//        Assertions.assertEquals(expectedResult, sk.itvkurze.hubay.zadanie_10_3_2.PoleStatistiky.vygenerujStatistikyPola(pole));
-//        Assertions.assertEquals(expectedResult, PoleStatistiky_Mesko.vygenerujStatistikyPola(pole));
-
-
         PoleStatistiky.vygenerujStatistikyPola(pole);
         Assertions.assertEquals(minimum, PoleStatistiky.minimum);
         Assertions.assertEquals(minIndex, PoleStatistiky.minIndex);
