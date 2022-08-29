@@ -1,4 +1,4 @@
-package javazaklady.Utils.CustomAnnotations;
+package javazaklady.Zadanie_3_3_2_Test.CustomAnnotations;
 
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.provider.Arguments;

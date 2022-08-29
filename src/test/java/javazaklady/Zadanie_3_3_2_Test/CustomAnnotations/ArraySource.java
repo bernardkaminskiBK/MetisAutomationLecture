@@ -1,6 +1,4 @@
-package javazaklady.Utils.CustomAnnotations;
-
-import org.junit.jupiter.params.provider.ArgumentsSource;
+package javazaklady.Zadanie_3_3_2_Test.CustomAnnotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -9,8 +7,6 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.ANNOTATION_TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
-@ArgumentsSource(ArrayArgumentsProvider.class)
-public @interface ArraySources {
-    ArraySource[] arrays();
+public @interface ArraySource {
+    double[] array() default {};
 }
-
