@@ -1,10 +1,11 @@
 package javazaklady.Zadanie_6_3_3_Test;
 
-
 import javazaklady.Zadanie_6_3_3.Penazenka;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+
+import java.text.Normalizer;
 
 class PenazenkaTest {
 
@@ -20,7 +21,15 @@ class PenazenkaTest {
         penazenka.pridajMincu(minca2);
         penazenka.pridajMincu(minca3);
 
-        Assertions.assertEquals(expectedResults, penazenka.toString());
+        System.out.println(removeDiacriticalMarks(expectedResults));
+        System.out.println(removeDiacriticalMarks(penazenka.toString()));
+
+        Assertions.assertEquals(removeDiacriticalMarks(expectedResults), removeDiacriticalMarks(penazenka.toString()));
+    }
+
+    private static String removeDiacriticalMarks(String string) {
+        return Normalizer.normalize(string, Normalizer.Form.NFD)
+                .replaceAll("\\p{InCombiningDiacriticalMarks}+", "").toLowerCase();
     }
 
 }
