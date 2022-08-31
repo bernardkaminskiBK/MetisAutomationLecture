@@ -43,7 +43,7 @@ public class Pokladna
      * @param typMince hodnota danej mince
      * @return vracia pocet danej mince
      */
-    public int dajVydavok(Minca typMince)
+    public int datVydavok(Minca typMince)
     {
         if (hotovost < cenaNacitanychTovarov)
         {

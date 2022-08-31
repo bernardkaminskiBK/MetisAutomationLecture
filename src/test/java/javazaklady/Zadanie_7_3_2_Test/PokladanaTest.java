@@ -40,7 +40,7 @@ public class PokladanaTest {
             int[] ocakavanyVydavok = getOcakavanyVysledok(poradie);
 
             Minca m = getMince()[i];
-            vydavok = pokladna.dajVydavok(m);
+            vydavok = pokladna.datVydavok(m);
 
             Assertions.assertEquals(ocakavanyVydavok[i], vydavok);
 

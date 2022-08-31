@@ -15,17 +15,12 @@ public class PokladnaTester {
         Minca dvadsatcentovaMinca = new Minca("dvadsat centov", HODNOTA_20_CENTOV);
 
         Pokladna pokladna = new Pokladna();
-//        pokladna.nacitajTovar(2.59);
-//        pokladna.nacitajTovar(6.99);
-//        //9,58 rozdiel 0,12 centov
-//        pokladna.prijmiHotovost(9, eurovaMinca);
-//        pokladna.prijmiHotovost(1, patdesiatcentovaMinca);
-//        pokladna.prijmiHotovost(1, dvadsatcentovaMinca);
-
-        pokladna.nacitajTovar(8.55);
+        pokladna.nacitajTovar(2.59);
+        pokladna.nacitajTovar(6.99);
 
         pokladna.prijmiHotovost(9, eurovaMinca);
-
+        pokladna.prijmiHotovost(1, patdesiatcentovaMinca);
+        pokladna.prijmiHotovost(1, dvadsatcentovaMinca);
 
         Minca[] typyMinci = new Minca[]
                 {
@@ -43,7 +38,7 @@ public class PokladnaTester {
         for (int i = 0; i < typyMinci.length; i++) {
             Minca m = typyMinci[i];
 
-            int vydavok = pokladna.dajVydavok(m);
+            int vydavok = pokladna.datVydavok(m);
 
             System.out.println(m.getNazovMince() + ": " + vydavok);
             System.out.println("Ocakavana hodnota: " + ocakavanyVydavok[i]);
