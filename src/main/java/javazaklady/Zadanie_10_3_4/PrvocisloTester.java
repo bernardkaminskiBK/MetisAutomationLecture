@@ -1,4 +1,4 @@
-package javazaklady.Zadanie_10_3_4_Hubay;
+package javazaklady.Zadanie_10_3_4;
 
 public class PrvocisloTester {
     public static void main(String[] args) {

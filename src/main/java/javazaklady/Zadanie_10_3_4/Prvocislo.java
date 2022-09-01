@@ -1,4 +1,4 @@
-package javazaklady.Zadanie_10_3_4_Hubay;
+package javazaklady.Zadanie_10_3_4;
 
 import java.util.ArrayList;
 import java.util.Collections;
