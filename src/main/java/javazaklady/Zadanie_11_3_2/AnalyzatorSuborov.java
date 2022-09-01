@@ -18,9 +18,5 @@ public class AnalyzatorSuborov {
             statistiky.nacitajVstupneDataZoSuboru(nazovSuboru);
         }
 
-        System.out.println("Znaky: " + statistiky.getPocetZnakov());
-        System.out.println("Slova: " + statistiky.getPocetSlov());
-        System.out.println("Riadky: " + statistiky.getPocetRiadkov());
-
     }
 }

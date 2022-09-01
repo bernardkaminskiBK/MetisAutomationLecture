@@ -55,6 +55,9 @@ public class StatistikySuboru {
         } catch (FileNotFoundException exception) {
             setNacitavanieUkoncene(true);
             System.out.println("Neexistujuci subor, statistiky zadanych suborov: ");
+            System.out.println("Znaky: " + getPocetZnakov());
+            System.out.println("Slova: " + getPocetSlov());
+            System.out.println("Riadky: " + getPocetRiadkov());
         }
 
     }
