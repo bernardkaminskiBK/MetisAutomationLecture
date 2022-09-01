@@ -56,9 +56,10 @@ class KopirovacSuborovTest {
 
             vstupneData.close();
         } catch (FileNotFoundException e) {
-            e.getMessage();
+            result = e.getMessage();
         }
 
         return result;
     }
+
 }
