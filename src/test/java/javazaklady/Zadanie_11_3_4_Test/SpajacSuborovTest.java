@@ -1,7 +1,5 @@
 package javazaklady.Zadanie_11_3_4_Test;
 
-
-import javazaklady.Zadanie_11_3_3.KopirovacSuborov;
 import javazaklady.Zadanie_11_3_4.SpajacSuborov;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
