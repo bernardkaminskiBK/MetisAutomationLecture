@@ -1,6 +1,6 @@
 package javazaklady.Zadanie_10_3_2_Test.utils;
 
-public class ConstantsTriangels {
+public class ConstantsTriangle {
 
     public static final String EXPECTED_TROJUHOLNIK_1_VELKOST_10_VZOR_HVIEZDICKA =
             "* \n" +
