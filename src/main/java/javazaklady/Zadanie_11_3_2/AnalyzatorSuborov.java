@@ -3,6 +3,9 @@ package javazaklady.Zadanie_11_3_2;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * Trieda zobrazi statistiky o obsahu vsetkych nacitanych suborov.
+ */
 public class AnalyzatorSuborov {
     public static void main(String[] args) throws FileNotFoundException {
 
@@ -12,7 +15,7 @@ public class AnalyzatorSuborov {
         while (!statistiky.isNacitavanieUkoncene()) {
             System.out.println("Nazov suboru: ");
             String nazovSuboru = vstup.nextLine();
-            statistiky.nacitajSubory(nazovSuboru);
+            statistiky.nacitajVstupneDataZoSuboru(nazovSuboru);
         }
 
         System.out.println("Znaky: " + statistiky.getPocetZnakov());

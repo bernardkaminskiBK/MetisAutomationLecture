@@ -4,6 +4,11 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
 
+/**
+ * Trieda vytvara statistiky o precitanom subore (pocet znakov, slov
+ * a riadkov).
+ */
+
 public class StatistikySuboru {
     private int pocetZnakov;
     private int pocetSlov;
@@ -11,12 +16,17 @@ public class StatistikySuboru {
 
     private boolean nacitavanieUkoncene = false;
 
+    /**
+     * Spracuvava zdroj dat (subor) a naslende navysuje celkove
+     * pocty znakov, slov a riadkov.
+     */
+
     public void nacitaj(Scanner vstupneData) {
         while (vstupneData.hasNextLine()) {
             String riadok = vstupneData.nextLine();
             pocetRiadkov++;
             pocetZnakov += riadok.length();
-            pocetSlov += riadok.split("[\\s\\-]").length;
+            pocetSlov += riadok.split(" ").length;
         }
     }
 
@@ -32,7 +42,10 @@ public class StatistikySuboru {
         return pocetRiadkov;
     }
 
-    public void nacitajSubory(String nazovSuboru) {
+    /**
+     * Nacitava vstupne data zo suborov
+     */
+    public void nacitajVstupneDataZoSuboru(String nazovSuboru) {
 
         try {
             FileReader citacSuboru = new FileReader(nazovSuboru);
@@ -46,10 +59,16 @@ public class StatistikySuboru {
 
     }
 
+    /**
+     * vrati info o stave nacitavania suborov ci je ukoncene
+     */
     public boolean isNacitavanieUkoncene() {
         return nacitavanieUkoncene;
     }
 
+    /**
+     * nastavuje stav nacitavanie suborov
+     */
     public void setNacitavanieUkoncene(boolean nacitavanieUkoncene) {
         this.nacitavanieUkoncene = nacitavanieUkoncene;
     }
