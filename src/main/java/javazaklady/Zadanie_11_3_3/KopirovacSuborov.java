@@ -25,7 +25,22 @@ public class KopirovacSuborov {
     }
 
     public static void nakopiruj(String originalTextovySubor, String kopiaTextovySubor) {
-        //TODO: Doplnit...
+        try {
+            FileReader citac = new FileReader(originalTextovySubor);
+            PrintWriter zapisovac = new PrintWriter(kopiaTextovySubor);
+            Scanner citacSuboru = new Scanner(citac);
+
+            while (citacSuboru.hasNextLine()) {
+                String riadok = citacSuboru.nextLine();
+                zapisovac.println(riadok);
+            }
+            zapisovac.close();
+            citac.close();
+            citacSuboru.close();
+            System.out.println("Kopirovanie prebehlo uspesne...");
+        } catch (Exception e) {
+            System.out.println("Vyskytla sa chyba pri kopirovani...");
+        }
     }
 
 }
