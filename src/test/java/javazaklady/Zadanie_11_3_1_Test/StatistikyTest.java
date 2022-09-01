@@ -13,8 +13,6 @@ import java.util.Scanner;
 
 class StatistikyTest {
     private Statistiky statistiky;
-    private FileReader fileReader;
-    private Scanner entryData;
 
     @BeforeEach
     public void setUp() {
@@ -26,17 +24,8 @@ class StatistikyTest {
             "151,TestFiles/text2.txt",
             "605,TestFiles/text3.txt",})
     void getPocetZnakovTest(int expectedResult, String filePath) {
-        try {
-            fileReader = new FileReader(filePath);
-            entryData = new Scanner(fileReader);
-
-            statistiky.citaj(entryData);
-            entryData.close();
-
-            Assertions.assertEquals(expectedResult, statistiky.getPocetZnakov());
-        } catch (FileNotFoundException e) {
-            e.getMessage();
-        }
+        nacitaj(filePath);
+        Assertions.assertEquals(expectedResult, statistiky.getPocetZnakov());
     }
 
     @ParameterizedTest
@@ -44,17 +33,8 @@ class StatistikyTest {
             "25,TestFiles/text2.txt",
             "106,TestFiles/text3.txt"})
     void getPocetSlovTest(int expectedResult, String filePath) {
-        try {
-            fileReader = new FileReader(filePath);
-            entryData = new Scanner(fileReader);
-
-            statistiky.citaj(entryData);
-            entryData.close();
-
-            Assertions.assertEquals(expectedResult, statistiky.getPocetSlov());
-        } catch (FileNotFoundException e) {
-            e.getMessage();
-        }
+        nacitaj(filePath);
+        Assertions.assertEquals(expectedResult, statistiky.getPocetSlov());
     }
 
     @ParameterizedTest
@@ -62,14 +42,16 @@ class StatistikyTest {
             "2,TestFiles/text2.txt",
             "9,TestFiles/text3.txt"})
     void getPocetRiadkovTest(int expectedResult, String filePath) {
+        nacitaj(filePath);
+        Assertions.assertEquals(expectedResult, statistiky.getPocetRiadkov());
+    }
+
+    private void nacitaj(String filePath) {
         try {
-            fileReader = new FileReader(filePath);
-            entryData = new Scanner(fileReader);
-
+            Scanner entryData = new Scanner(new FileReader(filePath));
             statistiky.citaj(entryData);
-            entryData.close();
 
-            Assertions.assertEquals(expectedResult, statistiky.getPocetRiadkov());
+            entryData.close();
         } catch (FileNotFoundException e) {
             e.getMessage();
         }

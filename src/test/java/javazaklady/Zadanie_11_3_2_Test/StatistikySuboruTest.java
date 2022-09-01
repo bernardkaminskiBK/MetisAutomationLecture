@@ -8,9 +8,9 @@ import org.junit.jupiter.api.Test;
 class StatistikySuboruTest {
     private StatistikySuboru statistiky;
 
-    private static final String TXT_SRC_1 = "src/test/java/javazaklady/Zadanie_11_3_2_Test/text.txt";
-    private static final String TXT_SRC_2 = "src/test/java/javazaklady/Zadanie_11_3_2_Test/text2.txt";
-    private static final String TXT_SRC_3 = "src/test/java/javazaklady/Zadanie_11_3_2_Test/text3.txt";
+    private static final String TXT_SRC_1 = "TestFiles/text.txt";
+    private static final String TXT_SRC_2 = "TestFiles/text2.txt";
+    private static final String TXT_SRC_3 = "TestFiles/text3.txt";
     private static final String INVALID_TXT_SRC = "path of file does not exist...";
 
     @Test
