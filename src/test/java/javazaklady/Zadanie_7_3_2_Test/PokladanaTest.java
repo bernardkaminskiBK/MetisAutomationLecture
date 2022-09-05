@@ -1,4 +1,4 @@
-package javazaklady.Zadanie_3_3_4_Test.Zadanie_7_3_2_Test;
+package javazaklady.Zadanie_7_3_2_Test;
 
 
 import javazaklady.Zadanie_7_3_2.Minca;
