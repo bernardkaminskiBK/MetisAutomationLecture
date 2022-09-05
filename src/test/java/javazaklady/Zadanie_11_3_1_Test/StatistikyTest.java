@@ -22,7 +22,7 @@ class StatistikyTest {
     @ParameterizedTest
     @CsvSource(value = {"30,TestFiles/text.txt",
             "151,TestFiles/text2.txt",
-            "605,TestFiles/text3.txt",})
+            "605,TestFiles/text3.txt"})
     void getPocetZnakovTest(int expectedResult, String filePath) {
         nacitaj(filePath);
         Assertions.assertEquals(expectedResult, statistiky.getPocetZnakov());
