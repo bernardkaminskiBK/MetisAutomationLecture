@@ -1,10 +1,9 @@
-package javazaklady.Zadanie_3_3_2_Test;
+package javazaklady.Zadanie_3_3_1_Test.Zadanie_3_3_2_Test;
 
+import javazaklady.Zadanie_3_3_1_Test.Zadanie_3_3_2_Test.CustomAnnotations.ArraySource;
 import javazaklady.Zadanie_3_3_2.Pokladna;
-import javazaklady.Zadanie_3_3_2_Test.CustomAnnotations.ArraySource;
-import javazaklady.Zadanie_3_3_2_Test.CustomAnnotations.ArraySources;
+import javazaklady.Zadanie_3_3_1_Test.Zadanie_3_3_2_Test.CustomAnnotations.ArraySources;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
 
 import java.util.Arrays;
 
