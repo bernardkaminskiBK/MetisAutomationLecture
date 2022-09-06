@@ -13,7 +13,7 @@ class SporiaciUcetTesterTest {
 
     @BeforeEach()
     public void setUp() {
-        sporiaciUcet = new SporiaciUcet(0, 10);
+        sporiaciUcet = new SporiaciUcet(10);
     }
 
 

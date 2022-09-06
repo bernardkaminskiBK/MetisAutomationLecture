@@ -5,14 +5,13 @@ public class SporiaciUcet extends BankovyUcet {
     protected double minZostatok;
     private int pocetVyberov;
 
-    public SporiaciUcet(double pociatocnyZostatok, double urokovaSadzba) {
-        super(pociatocnyZostatok);
+    public SporiaciUcet(double urokovaSadzba) {
+        super();
         this.urokovaSadzba = urokovaSadzba;
     }
 
     public void setMinZostatok(double minZostatok){
         this.minZostatok = minZostatok;
-
     }
 
     public double getMinZostatok() {

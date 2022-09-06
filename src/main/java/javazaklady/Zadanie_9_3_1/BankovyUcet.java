@@ -3,8 +3,7 @@ package javazaklady.Zadanie_9_3_1;
 public class BankovyUcet {
     private double aktualnyZostatok;
 
-    public BankovyUcet(double aktualnyZostatok) {
-        this.aktualnyZostatok = aktualnyZostatok;
+    public BankovyUcet() {
     }
 
     public double getAktualnyZostatok() {
