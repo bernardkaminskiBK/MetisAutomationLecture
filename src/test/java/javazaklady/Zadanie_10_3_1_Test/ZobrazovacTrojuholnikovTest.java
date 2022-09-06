@@ -1,7 +1,7 @@
-package javazaklady.Zadanie_10_3_2_Test;
+package javazaklady.Zadanie_10_3_1_Test;
 
-import javazaklady.Zadanie_10_3_2.ZobrazovacTrojuholnikov;
-import javazaklady.Zadanie_10_3_2_Test.utils.CustomArgumentProvider;
+import javazaklady.Zadanie_10_3_1.ZobrazovacTrojuholnikov;
+import javazaklady.Zadanie_10_3_1_Test.utils.CustomArgumentProvider;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ArgumentsSource;

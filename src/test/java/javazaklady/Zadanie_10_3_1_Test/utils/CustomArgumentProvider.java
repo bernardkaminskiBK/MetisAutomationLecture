@@ -1,4 +1,4 @@
-package javazaklady.Zadanie_10_3_2_Test.utils;
+package javazaklady.Zadanie_10_3_1_Test.utils;
 
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.provider.Arguments;

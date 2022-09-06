@@ -1,4 +1,4 @@
-package javazaklady.Zadanie_10_3_2;
+package javazaklady.Zadanie_10_3_1;
 
 import java.util.Scanner;
 

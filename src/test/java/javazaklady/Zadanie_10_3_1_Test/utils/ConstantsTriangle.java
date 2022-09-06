@@ -1,4 +1,4 @@
-package javazaklady.Zadanie_10_3_2_Test.utils;
+package javazaklady.Zadanie_10_3_1_Test.utils;
 
 public class ConstantsTriangle {
 
