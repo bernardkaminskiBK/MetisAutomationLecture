@@ -1,4 +1,4 @@
-package javazaklady.Zadanie_6_3_3;
+package javazaklady.Zadanie_6_3_2;
 
 import java.util.ArrayList;
 
