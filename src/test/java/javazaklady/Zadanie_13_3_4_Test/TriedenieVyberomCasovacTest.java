@@ -13,12 +13,11 @@ class TriedenieVyberomCasovacTest {
     @RepeatedTest(3)
     void vygenerujCasBehuProgramuTest() {
         for (int i = 1; i <= 6; i++) {
-            String generator = FindIntInString(TriedenieVyberomCasovac.vygenerujCasBehuProgramu(10000, 60000, i));
+            String generator = findIntInString(TriedenieVyberomCasovac.vygenerujCasBehuProgramu(10000, 60000, i));
 
             System.out.println(getActualNFrom(generator) + " " + getActualRunningTimeFrom(generator));
 
-            Assertions.assertTrue(nRange.contains(getActualNFrom(generator)));
-            Assertions.assertTrue(milisecondRange.contains(getActualRunningTimeFrom(generator)));
+            Assertions.assertTrue(nRange.contains(getActualNFrom(generator)) && milisecondRange.contains(getActualRunningTimeFrom(generator)));
         }
     }
 
@@ -32,7 +31,7 @@ class TriedenieVyberomCasovacTest {
         return Integer.parseInt(builder.toString()); // Ziskame milisecondy z stringu
     }
 
-    private static String FindIntInString(String str) {
+    private static String findIntInString(String str) {
         //First we replace all the non-numeric characters with space
         str = str.replaceAll("[^\\d]", " ");
 
