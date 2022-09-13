@@ -17,7 +17,7 @@ public class TriedicVyberom {
     /**
      * Triedi pole dat s algoritmom Selection sort
      */
-    public void zotried(int[] data){
+    public void zotried(){
         for (int i = 0; i < this.data.length -1; i ++){  // pocet krokov algortmu
             int minIndex = vyhladajIndexNajmensiehoPrvkuOdIndexu(i);
             // vymen prvky na poziciach minIndex a i

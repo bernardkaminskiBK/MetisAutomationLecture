@@ -29,7 +29,7 @@ public class TriedenieVyberomCasovac {
         TriedicVyberom triedic = new TriedicVyberom(data);
 
         casovac.spust();
-        triedic.zotried(data);
+        triedic.zotried();
         casovac.zastav();
 
         result += "n: " + n + ", Cas behu programu: " + casovac.getUplynulyCas() + " milisekund";
