@@ -1,5 +1,6 @@
-package javazaklady.Zadanie_15_3_4;
+package javazaklady.Zadanie_15_3_4_Test;
 
+import javazaklady.Zadanie_15_3_4.Zasobnik;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
