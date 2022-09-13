@@ -7,7 +7,7 @@ import org.junit.jupiter.api.RepeatedTest;
 
 class TriedenieVyberomCasovacTest {
 
-    private final Range<Integer> milisecondRange = Range.between(10, 700);
+    private final Range<Integer> milisecondRange = Range.between(10, 1200);
     private final Range<Integer> nRange = Range.between(10000, 60000);
 
     @RepeatedTest(3)
