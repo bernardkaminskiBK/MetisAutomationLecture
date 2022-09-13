@@ -1,55 +1,46 @@
 package javazaklady.Zadanie_13_3_3;
 
+public class Stopky {
 
-public class Stopky
-{
     private boolean suSpustene;
     private long casSpustenia;
     private long uplynulyCas;
 
-    public Stopky()
-    {
+    public Stopky(){
         vynuluj();
     }
 
-    private void vynuluj()
-    {
+    private void vynuluj() {
         suSpustene = false;
         casSpustenia = uplynulyCas = 0;
     }
 
-    public void spust()
-    {
-        if(suSpustene)
-        {
-            return;
-        }
+    public void spust(){
+        if (suSpustene){
 
+        }
         suSpustene = true;
         casSpustenia = System.currentTimeMillis();
+
     }
 
-    public void zastav()
-    {
-        if (!suSpustene)
-        {
+    public void zastav(){
+        if (!suSpustene){
             return;
         }
 
         suSpustene = false;
-        long casZastavenia = System.currentTimeMillis();
-        uplynulyCas = uplynulyCas + (casZastavenia - casSpustenia);
+        long casZsatavenia = System.currentTimeMillis();
+        uplynulyCas = uplynulyCas + (casZsatavenia - casSpustenia);
+
     }
 
-    public long getUplynulyCas()
-    {
-        if (suSpustene)
-        {
+    public long getUplynulyCas(){
+        if (suSpustene){
             long casZastavenia = System.currentTimeMillis();
-            return uplynulyCas = (casZastavenia - casSpustenia);
+            return uplynulyCas + (casZastavenia - casSpustenia);
         }
-        else
-        {
+        else {
             return uplynulyCas;
         }
     }

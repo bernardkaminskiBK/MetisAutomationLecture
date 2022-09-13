@@ -1,49 +1,50 @@
 package javazaklady.Zadanie_13_3_3_Test;
 
+import javazaklady.Zadanie_13_3_3.TriedenieVyberomCasovac;
+import org.apache.commons.lang3.Range;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.RepeatedTest;
 
-import javazaklady.Zadanie_13_3_3.Stopky;
-import javazaklady.Zadanie_13_3_3.TriedicVyberom;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
+class TriedenieVyberomCasovacTest {
 
-public class TriedenieVyberomCasovacTest {
+    private final Range<Integer> milisecondRange = Range.between(10, 1200);
+    private final Range<Integer> nRange = Range.between(10000, 60000);
 
+    @RepeatedTest(3)
+    void vygenerujCasBehuProgramuTest() {
+        for (int i = 1; i <= 6; i++) {
+            String generator = findIntInString(TriedenieVyberomCasovac.vygenerujCasBehuProgramu(10000, 60000, i));
 
-    @ParameterizedTest
-    @CsvSource(value = {"1,1,1"})
-    public void triedicVyberomTest(double hodnotaMince1,double hodnotaMince2,double hodnotaMince3) {
-        String expectedResult = "";
-        int s = 0;
-        int[] data = {500000,400000,800000,500000};
+            System.out.println(getActualNFrom(generator) + " " + getActualRunningTimeFrom(generator));
 
-        for (int i = 0; i < data.length ; i++) {
-           s = data[i];
-
+            Assertions.assertTrue(nRange.contains(getActualNFrom(generator)) && milisecondRange.contains(getActualRunningTimeFrom(generator)));
         }
-
-
-        TriedicVyberom triedic = new TriedicVyberom(data);
-        Stopky stopky = new Stopky();
-        stopky.spust();
-        triedic.zotried();
-        stopky.zastav();
-        //long casSpustenia = System.currentTimeMillis();
-        System.out.println("n : "+ data.length + ". Cas behu programu: " + stopky.getUplynulyCas() + " ms" + s);
-
-
-        long casSpustenia = System.currentTimeMillis();
-
-        long casZastavenia = System.currentTimeMillis();
-      long  uplynulyCas = casZastavenia - casSpustenia;
-        System.out.println(uplynulyCas);
     }
 
-    public static int[] vygenerujPoleCisel100000() {
-        int[] pole = new int[100000];
-        for (int i = 0; i < pole.length; i++) {
-            pole[i] = 1;
-        }
-        return pole;
+    private static Integer getActualNFrom(String generator) {
+        return Integer.parseInt(generator.substring(0, 6).trim()); // Ziskame N cislo z stringu
+    }
+
+    private static Integer getActualRunningTimeFrom(String generator) {
+        StringBuilder builder = new StringBuilder(generator);
+        builder.replace(0, 6, "");
+        return Integer.parseInt(builder.toString()); // Ziskame milisecondy z stringu
+    }
+
+    private static String findIntInString(String str) {
+        //First we replace all the non-numeric characters with space
+        str = str.replaceAll("[^\\d]", " ");
+
+        //Remove all the trailing spaces
+        str = str.trim();
+
+        //Replace consecutive white spaces with one white space
+        str = str.replaceAll(" +", " ");
+
+        if (str.equals(""))
+            return "-1";
+
+        return str;
     }
 
 }
