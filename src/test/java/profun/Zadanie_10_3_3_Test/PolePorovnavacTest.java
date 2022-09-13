@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import profun.Zadanie_10_3_3.PolePorovnavac;
 
 public class PolePorovnavacTest {
-    //hocičo
 
     @Test
     public void poliaZhodneTest() {
