@@ -7,7 +7,9 @@ import org.junit.jupiter.api.RepeatedTest;
 
 class TriedenieVyberomCasovacTest {
 
-    private final Range<Integer> milisecondRange = Range.between(10, 1200);
+    // Rozsah zbehnutie algoritmu je medzi 10 a 2000 milisekund, nie je dolezite presna hodnota trvanie zotriedenia pola ale musime urcit
+    // vyssi rozsah z dovodu ze kazdemu zelezu to trva iny cas zotriedit urcity pocet dat
+    private final Range<Integer> milisecondRange = Range.between(10, 2000);
     private final Range<Integer> nRange = Range.between(10000, 60000);
 
     @RepeatedTest(3)

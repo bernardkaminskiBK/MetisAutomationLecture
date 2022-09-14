@@ -1,27 +1,26 @@
 package javazaklady.Zadanie_13_3_4_Test;
 
 
-
 import javazaklady.Zadanie_13_3_4.TriedicZlucenim;
+import javazaklady.Zadanie_13_3_4_Test.utils.StringArgumentProvider;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ArgumentsSource;
 
 import java.util.Arrays;
 
 public class TriedicZlucenimTest {
 
-
     @ParameterizedTest
-    @CsvSource(value = {"D,B,e,A,C,'[A, B, C, D, e]'","O,v,s,j,P,'[j, O, P, s, v]'","e,e,V,u,n,'[e, e, n, u, V]'"})
-    public void triedicVyberomTest(String char1,String char2,String char3,String char4,String char5,String expectedResult) {
-
-        String[] retazce = {char1,char2,char3,char4,char5};
-        TriedicZlucenim triedic = new TriedicZlucenim(retazce);
+    @ArgumentsSource(StringArgumentProvider.class)
+    public void triedicVyberomTest(String[] mockData, String[] expectedResults) {
+        TriedicZlucenim triedic = new TriedicZlucenim(mockData);
         triedic.zotried();
 
-        String actualResult = Arrays.toString(retazce);
+        String actualResult = Arrays.toString(mockData);
+        String expectedResult = Arrays.toString(expectedResults);
 
-        Assertions.assertEquals(expectedResult,actualResult);
+        Assertions.assertEquals(expectedResult, actualResult);
     }
+
 }
