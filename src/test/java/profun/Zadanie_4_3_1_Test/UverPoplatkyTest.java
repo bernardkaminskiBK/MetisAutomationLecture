@@ -1,8 +1,7 @@
-package profun.Zadanie_4_3_1_test;
+package profun.Zadanie_4_3_1_Test;
 
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import profun.Zadanie_4_3_1.UverPoplatky;

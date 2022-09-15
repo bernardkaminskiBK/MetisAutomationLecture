@@ -1,4 +1,4 @@
-package profun.Zadanie_2_3_3_test;
+package profun.Zadanie_2_3_3_Test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

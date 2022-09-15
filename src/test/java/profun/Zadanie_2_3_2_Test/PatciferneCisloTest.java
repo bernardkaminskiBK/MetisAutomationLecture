@@ -1,4 +1,4 @@
-package profun.Zadanie_2_3_2_test;
+package profun.Zadanie_2_3_2_Test;
 
 
 
