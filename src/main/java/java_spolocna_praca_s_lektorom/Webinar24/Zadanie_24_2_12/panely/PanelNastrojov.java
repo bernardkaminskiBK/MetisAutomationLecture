@@ -1,6 +1,6 @@
 package java_spolocna_praca_s_lektorom.Webinar24.Zadanie_24_2_12.panely;
 
-import grafika_12.RetazecListener;
+import java_spolocna_praca_s_lektorom.Webinar24.Zadanie_24_2_12.RetazecListener;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,7 +1,7 @@
 package java_spolocna_praca_s_lektorom.Webinar24.Zadanie_24_2_12.panely;
 
-import grafika_12.FormularListener;
-import grafika_12.FormularUdalost;
+import java_spolocna_praca_s_lektorom.Webinar24.Zadanie_24_2_12.FormularListener;
+import java_spolocna_praca_s_lektorom.Webinar24.Zadanie_24_2_12.FormularUdalost;
 
 import javax.swing.*;
 import javax.swing.border.Border;

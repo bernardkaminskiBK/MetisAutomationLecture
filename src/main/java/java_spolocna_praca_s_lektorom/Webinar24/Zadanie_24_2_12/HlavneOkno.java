@@ -1,8 +1,10 @@
 package java_spolocna_praca_s_lektorom.Webinar24.Zadanie_24_2_12;
 
-import grafika_12.panely.FormularPanel;
-import grafika_12.panely.PanelNastrojov;
-import grafika_12.panely.TextovyPanel;
+
+
+import java_spolocna_praca_s_lektorom.Webinar24.Zadanie_24_2_12.panely.FormularPanel;
+import java_spolocna_praca_s_lektorom.Webinar24.Zadanie_24_2_12.panely.PanelNastrojov;
+import java_spolocna_praca_s_lektorom.Webinar24.Zadanie_24_2_12.panely.TextovyPanel;
 
 import javax.swing.*;
 import java.awt.*;

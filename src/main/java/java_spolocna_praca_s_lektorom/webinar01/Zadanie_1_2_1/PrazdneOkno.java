@@ -5,9 +5,11 @@ import javax.swing.*;
 // Trieda odkaz = new Trieda();
 public class PrazdneOkno {
 
+    public static  JFrame okno;
+
     public static void main(String[] args) {
         // 1) vytvor objekt triedy JFrame
-        JFrame okno = new JFrame();
+        okno = new JFrame();
 
         // 2) nastav popis okna na - "Prazdne okno"
         okno.setTitle("Prazdne okno");
@@ -25,4 +27,5 @@ public class PrazdneOkno {
         // 5) nastav okno viditelnym (zobraz okno grafickej aplikacie)
         okno.setVisible(true);
     }
+
 }

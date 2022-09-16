@@ -9,7 +9,8 @@ class PrazdneOknoTest {
     // Tu budu testy toto je iba naznacenie a priklad
     @Test
     public void test() {
-
+        PrazdneOkno.main(new String[0]);
+        System.out.println(PrazdneOkno.okno.toString());
     }
 
 }
