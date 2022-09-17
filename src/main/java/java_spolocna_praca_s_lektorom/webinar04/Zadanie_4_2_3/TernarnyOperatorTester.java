@@ -1,7 +1,7 @@
 package java_spolocna_praca_s_lektorom.webinar04.Zadanie_4_2_3;
 
 // premenna = podmienka ? hodnota1 : hodnota2
-public class TeranyOperatorTester {
+public class TernarnyOperatorTester {
     public static void main(String[] args) {
         int vek = 15;
         String text = "";
