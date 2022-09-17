@@ -22,6 +22,8 @@ public class PosunObdlznikaTester {
         okno.setResizable(false);       // blokovanie zmeny rozmeru okno
         okno.setLocationRelativeTo(null);
 
+        //TODO: volako vymisliet ako ziskat data o komponente z JFramu...
+
         // 5) vytvor objekt triedy KomponentaObdlznik a nasledne ho pridaj do
         //    okna grafickej aplikacie
         KomponentaObdlznik komponenta = new KomponentaObdlznik();

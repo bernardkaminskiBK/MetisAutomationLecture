@@ -5,9 +5,11 @@ import java.awt.*;
 // Trieda odkaz = new Trieda();
 public class PosunObdlznikaTester {
 
+    public static Rectangle obdlznik;
+
     public static void main(String[] args) {
         // 1) vytvor obdlznik
-        Rectangle obdlznik = new Rectangle(10, 20, 30, 40);
+        obdlznik = new Rectangle(10, 20, 30, 40);
 
         // 2) vypis info o obdlzniku
         System.out.println("X: " + obdlznik.getX());

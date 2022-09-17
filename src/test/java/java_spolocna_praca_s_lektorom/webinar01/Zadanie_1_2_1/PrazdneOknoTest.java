@@ -1,16 +1,20 @@
 package java_spolocna_praca_s_lektorom.webinar01.Zadanie_1_2_1;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PrazdneOknoTest {
 
-    // Tu budu testy toto je iba naznacenie a priklad
     @Test
-    public void test() {
+    public void prazdneOknoTest() {
         PrazdneOkno.main(new String[0]);
-        System.out.println(PrazdneOkno.okno.toString());
+        String expectedResult =
+                "560,220,800x600,layout=java.awt.BorderLayout,title=Prazdne okno,normal," +
+                "defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,784x561," +
+                "layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673," +
+                "maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]";
+
+        Assertions.assertTrue(PrazdneOkno.okno.toString().contains(expectedResult));
     }
 
 }
