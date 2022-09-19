@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar07.Zadanie_7_2_1;
+package java_spolocna_praca_s_lektorom.webinar07.Zadanie_7_2_1.gettre_setre;
 
 public class StudentTester
 {
@@ -27,5 +27,6 @@ public class StudentTester
         System.out.println("Vek: " + student.getVek());
         System.out.println("Meno: " + student.getMeno());
         System.out.println("Priemer znamok: " + student.getPriemerZnamok());
+
     }
 }
