@@ -2,7 +2,7 @@ package profun_spolocna_praca_s_lektorom.Lekcia8.zadanie2;
 
 import java.util.Scanner;
 
-public class Aplikacia_1
+public class RokTester
 {
     public static void main(String[] args)
     {

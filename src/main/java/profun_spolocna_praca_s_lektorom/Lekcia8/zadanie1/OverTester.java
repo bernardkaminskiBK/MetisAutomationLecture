@@ -2,7 +2,7 @@ package profun_spolocna_praca_s_lektorom.Lekcia8.zadanie1;
 
 import java.util.Scanner;
 
-public class Aplikacia
+public class OverTester
 {
     public static void main(String[] args)
     {
