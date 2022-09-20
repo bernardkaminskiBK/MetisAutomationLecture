@@ -3,8 +3,6 @@ package java_spolocna_praca_s_lektorom.webinar01.Zadanie_1_2_3;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class PosunObdlznikaTesterTest {
 
     @Test

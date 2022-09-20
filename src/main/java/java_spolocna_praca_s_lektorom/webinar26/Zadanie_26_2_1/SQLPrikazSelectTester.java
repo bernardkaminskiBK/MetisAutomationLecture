@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar26.prikaz_select;
+package java_spolocna_praca_s_lektorom.webinar26.Zadanie_26_2_1;
 
 import java.sql.*;
 

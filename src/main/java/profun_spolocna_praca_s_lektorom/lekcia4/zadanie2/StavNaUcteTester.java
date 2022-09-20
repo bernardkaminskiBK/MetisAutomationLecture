@@ -1,4 +1,4 @@
-package profun_spolocna_praca_s_lektorom.Lekcia2;
+package profun_spolocna_praca_s_lektorom.lekcia4.zadanie2;
 
 import java.util.Locale;
 import java.util.Scanner;
