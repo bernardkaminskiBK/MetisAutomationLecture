@@ -2,7 +2,7 @@ package profun_spolocna_praca_s_lektorom.Lekcia8.zadanie3;
 
 import java.util.Scanner;
 
-public class Statistiky
+public class StatistikyTester
 {
     public static void main(String[] args)
     {

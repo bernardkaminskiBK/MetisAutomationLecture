@@ -2,7 +2,7 @@ package profun_spolocna_praca_s_lektorom.lekcia4.zadanie1;
 
 import java.util.Scanner;
 
-public class Aplikacia
+public class SpotrebaTester
 {
     public static void main(String[] args)
     {
