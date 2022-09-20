@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar05.utils;
+package utils;
 
 import java.io.PrintStream;
 import java.util.Arrays;
@@ -7,8 +7,9 @@ import java.util.List;
 
 public class StorePrintStream extends PrintStream {
 
-    public static List<String> printList = new LinkedList<String>();
+    public static List<String> printlnList = new LinkedList<String>();
     public static List<String> printfList = new LinkedList<String>();
+    public static List<String> printList = new LinkedList<String>();
 
     public StorePrintStream(PrintStream org) {
         super(org);
@@ -16,7 +17,7 @@ public class StorePrintStream extends PrintStream {
 
     @Override
     public void println(String line) {
-        printList.add(line);
+        printlnList.add(line);
         super.println(line);
     }
 
@@ -24,6 +25,12 @@ public class StorePrintStream extends PrintStream {
     public PrintStream printf(String format, Object... args) {
         printfList.add(format + "," + Arrays.toString(args));
         return super.printf(format, args);
+    }
+
+    @Override
+    public void print(String s) {
+        printList.add(s);
+        super.print(s);
     }
 
     public void println(int line) {
