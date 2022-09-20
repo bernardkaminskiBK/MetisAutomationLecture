@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar09.bankove_ucty;
+package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_1.bankove_ucty;
 
 public class SporiaciUcet extends BankovyUcet
 {
