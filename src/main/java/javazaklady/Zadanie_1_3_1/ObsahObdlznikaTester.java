@@ -19,6 +19,6 @@ public class ObsahObdlznikaTester {
     {
         double obsah = (obdlznik.getHeight() * obdlznik.getWidth());
         return obsah;
-        // Ahoj katka
+
     }
 }

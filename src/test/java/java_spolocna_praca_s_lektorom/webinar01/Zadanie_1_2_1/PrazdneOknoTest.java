@@ -9,12 +9,13 @@ class PrazdneOknoTest {
     public void prazdneOknoTest() {
         PrazdneOkno.main(new String[0]);
         String expectedResult =
-                "560,220,800x600,layout=java.awt.BorderLayout,title=Prazdne okno,normal," +
+                "800x600,layout=java.awt.BorderLayout,title=Prazdne okno,normal," +
                 "defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,784x561," +
                 "layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673," +
                 "maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]";
-
-        Assertions.assertTrue(PrazdneOkno.okno.toString().contains(expectedResult));
+        System.out.println(PrazdneOkno.okno.toString());
+        System.out.println(expectedResult);
+        Assertions.assertTrue(PrazdneOkno.okno.toString().strip().contains(expectedResult.strip()));
     }
 
 }
