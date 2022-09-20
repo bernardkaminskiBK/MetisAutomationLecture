@@ -3,7 +3,6 @@ package java_spolocna_praca_s_lektorom.webinar04.Zadanie_4_2_1_Test;
 import java_spolocna_praca_s_lektorom.webinar04.Zadanie_4_2_1.DanZPrijmu;
 import java_spolocna_praca_s_lektorom.webinar04.Zadanie_4_2_1.RodinnyStatus;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
