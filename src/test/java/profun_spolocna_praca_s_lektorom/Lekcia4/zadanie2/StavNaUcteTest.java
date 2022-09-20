@@ -1,4 +1,4 @@
-package profun_spolocna_praca_s_lektorom.Lekcia2;
+package profun_spolocna_praca_s_lektorom.Lekcia4.zadanie2;
 
 import org.junit.jupiter.api.Assertions;
 import profun_spolocna_praca_s_lektorom.lekcia4.zadanie2.StavNaUcteTester;
