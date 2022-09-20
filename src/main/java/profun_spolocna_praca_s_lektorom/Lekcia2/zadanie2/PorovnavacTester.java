@@ -2,7 +2,7 @@ package profun_spolocna_praca_s_lektorom.Lekcia2.zadanie2;
 
 import java.util.Scanner;
 
-public class Aplikacia
+public class PorovnavacTester
 {
     public static void main(String[] args)
     {

@@ -2,7 +2,7 @@ package profun_spolocna_praca_s_lektorom.Lekcia2.zadanie1;
 
 import java.util.Scanner;
 
-public class Aplikacia
+public class MatematickeOperacieTester
 {
     public static void main(String[] args)
     {
