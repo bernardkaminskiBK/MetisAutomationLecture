@@ -1,8 +1,8 @@
-package java_spolocna_praca_s_lektorom.webinar15.vlastny_zretazeny_zoznam.Zadanie_15_2_1;
+package java_spolocna_praca_s_lektorom.webinar15.Zadanie_15_2_1;
 
 public class ZretazenyZonamTester {
     public static void main(String[] args) {
-        ZretazenyZoznam studenti = new ZretazenyZoznam();
+       ZretazenyZoznam studenti = new ZretazenyZoznam();
 
         System.out.println("Pridanie prvkov do zretazeneho zoznamu pomocou metody pridajNaZaciatok()");
         studenti.pridajNaZaciatok("Peter");     // Peter

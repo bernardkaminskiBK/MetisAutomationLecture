@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar15.vlastny_zretazeny_zoznam.Zadanie_15_2_1;
+package java_spolocna_praca_s_lektorom.webinar15.Zadanie_15_2_1;
 
 public interface ZoznamIterator {
 
