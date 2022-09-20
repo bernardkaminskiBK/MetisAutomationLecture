@@ -13,6 +13,10 @@ public class StorePrintStream extends PrintStream {
 
     public StorePrintStream(PrintStream org) {
         super(org);
+
+        printlnList.clear();
+        printfList.clear();
+        printList.clear();
     }
 
     @Override

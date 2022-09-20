@@ -2,8 +2,7 @@ package profun_spolocna_praca_s_lektorom.Lekcia10.zadanie3;
 
 import java.util.Random;
 
-public class HodKocka
-{
+public class HodKocka {
     public static void main(String[] args) {
         Random generator = new Random();
 
@@ -21,18 +20,10 @@ public class HodKocka
 
         System.out.printf("%10s%10s%10s%10s\n", "sucet", "cel. sucet", "ocakavana", "skutocna");
 
-        System.out.println(zobraz(sucty, ocakavaneHodnoty));
-
-    }
-
-    public static String zobraz(int[] sucty, int[] ocakavaneHodnoty) {
-        String result = "";
         for (int i = 2; i <= 12; i++) {
-//            System.out.printf("%10d%10d%9.3f%9.3f\n", i, sucty[i], 100.0 * ocakavaneHodnoty[i] / 36, 100.0 * sucty[i] / 36000);
-
-
-            result += String.format("%10d%10d%9.3f%9.3f\n", i, sucty[i], 100.0 * ocakavaneHodnoty[i] / 36, 100.0 * sucty[i] / 36000);
+            System.out.printf("%10d%10d%9.3f%9.3f\n", i, sucty[i], 100.0 * ocakavaneHodnoty[i] / 36, 100.0 * sucty[i] / 36000);
         }
-        return result;
+
     }
+
 }

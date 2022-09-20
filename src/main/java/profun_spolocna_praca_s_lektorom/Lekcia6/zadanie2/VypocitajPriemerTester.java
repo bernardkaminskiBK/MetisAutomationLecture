@@ -32,6 +32,7 @@ public class VypocitajPriemerTester {
             priemer = sucet / pocet;
         }
         System.out.println("priemer je: " + priemer);
+
     }
 
 }
