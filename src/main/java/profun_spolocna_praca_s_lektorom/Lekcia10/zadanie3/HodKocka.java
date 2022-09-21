@@ -18,12 +18,10 @@ public class HodKocka {
             sucty[sucet]++;
         }
 
-        System.out.printf("%10s%10s%10s%10s\n", "sucet", "cel. sucet", "ocakavana", "skutocna");
+        System.out.printf("%10s%11s%11s%10s\n", "sucet", "cel.sucet", "ocakavana", "skutocna");
 
         for (int i = 2; i <= 12; i++) {
-            System.out.printf("%10d%10d%9.3f%9.3f\n", i, sucty[i], 100.0 * ocakavaneHodnoty[i] / 36, 100.0 * sucty[i] / 36000);
+            System.out.printf("%10d%11d%11.3f%10.3f\n", i, sucty[i], 100.0 * ocakavaneHodnoty[i] / 36, 100.0 * sucty[i] / 36000);
         }
-
     }
-
 }

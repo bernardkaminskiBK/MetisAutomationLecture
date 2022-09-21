@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class StavNaUcteTester {
 
-
     public static void main(String[] args) {
         Scanner vstup = new Scanner(System.in);
         vstup.useLocale(Locale.ENGLISH);

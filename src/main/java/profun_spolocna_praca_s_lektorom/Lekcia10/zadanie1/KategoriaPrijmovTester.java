@@ -69,5 +69,4 @@ public class KategoriaPrijmovTester {
     public static double vypocitajOdmenu(double obrat) {
         return ODMENA_FIX + (obrat * PERCENTUALNA_MIERA_ODMENY);
     }
-
 }
