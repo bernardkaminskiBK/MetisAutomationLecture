@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar8.zadanie_8_2_2;
+package java_spolocna_praca_s_lektorom.webinar08.zadanie_8_2_2;
 
 public class Minca
 {

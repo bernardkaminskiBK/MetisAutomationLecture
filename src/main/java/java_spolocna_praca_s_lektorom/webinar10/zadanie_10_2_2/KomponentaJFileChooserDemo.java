@@ -24,7 +24,12 @@ public class KomponentaJFileChooserDemo
 
         if (stav == JFileChooser.APPROVE_OPTION)
         {
-            //File[] oznaceneSubory = navigator.getSelectedFile();
+            File[] oznaceneSubory = navigator.getSelectedFiles();
+
+            for (File subor : oznaceneSubory)
+            {
+                System.out.println("Zvolil si subor: " + subor.getAbsolutePath());
+            }
         }
     }
 }

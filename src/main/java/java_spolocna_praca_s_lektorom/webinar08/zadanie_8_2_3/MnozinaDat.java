@@ -1,23 +1,23 @@
-package java_spolocna_praca_s_lektorom.webinar8.zadanie_8_2_2;
+package java_spolocna_praca_s_lektorom.webinar08.zadanie_8_2_3;
 
 public class MnozinaDat
 {
-    private Minca maximum;
-    private Minca minimum;
+    private Meratelny maximum;
+    private Meratelny minimum;
     private int pocetPrvkov;
     private double sucet;
 
-    public void pridajPrvok(Minca minca)
+    public void pridajPrvok(Meratelny minca)
     {
-        double zostatok = minca.getHodnota();
+        double zostatok = minca.getMiera();
         sucet += zostatok;
 
-        if (pocetPrvkov == 0 || zostatok > maximum.getHodnota())
+        if (pocetPrvkov == 0 || zostatok > maximum.getMiera())
         {
             maximum = minca;
         }
 
-        if (pocetPrvkov == 0 || zostatok < minimum.getHodnota())
+        if (pocetPrvkov == 0 || zostatok < minimum.getMiera())
         {
             minimum = minca;
         }
@@ -25,12 +25,12 @@ public class MnozinaDat
         pocetPrvkov ++;
     }
 
-    public Minca getMaximum()
+    public Meratelny getMaximum()
     {
         return maximum;
     }
 
-    public Minca getMinimum()
+    public Meratelny getMinimum()
     {
         return minimum;
     }
