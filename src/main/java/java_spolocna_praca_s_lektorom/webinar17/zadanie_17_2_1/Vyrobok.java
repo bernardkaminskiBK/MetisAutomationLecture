@@ -1,4 +1,4 @@
-package zadanie_17_2_1;
+package java_spolocna_praca_s_lektorom.webinar17.zadanie_17_2_1;
 
 import java.util.Comparator;
 import java.util.Objects;
