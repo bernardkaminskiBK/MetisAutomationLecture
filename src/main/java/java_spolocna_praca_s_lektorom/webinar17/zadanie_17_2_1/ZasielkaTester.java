@@ -4,7 +4,6 @@ import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.contains;
 
 public class ZasielkaTester
 {
@@ -56,6 +55,6 @@ public class ZasielkaTester
         zasielka.priprav();
 
         assertThat(zasielka.getLahkeVyrobky(), Matchers.contains(Sklad.dlazobnaKocka, Sklad.dvere));
-        assertThat(zasielka.getTazkeVyrobky(), contains(Sklad.okno));
+        assertThat(zasielka.getTazkeVyrobky(), Matchers.contains(Sklad.okno));
     }
 }
