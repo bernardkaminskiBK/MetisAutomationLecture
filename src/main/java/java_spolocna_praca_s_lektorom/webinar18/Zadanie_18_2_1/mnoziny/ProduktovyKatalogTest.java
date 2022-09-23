@@ -1,3 +1,4 @@
+/*
 package java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_1.mnoziny;
 
 import org.junit.jupiter.api.Test;
@@ -53,3 +54,4 @@ public class ProduktovyKatalogTest
         assertThat(katalog.getTazkeVyrobky(), containsInAnyOrder(dlazobnaKocka, dvere));
     }
 }
+*/
