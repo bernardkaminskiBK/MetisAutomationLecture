@@ -14,11 +14,21 @@ class DanZPrijmuTesterTest {
     private static final DecimalFormat df = new DecimalFormat("0.00");
 
     @ParameterizedTest
-    @CsvSource(value = {"10500,1,1575.00", "24500,1, 6860.00", "15000,2,4200.00", "40000,2,12400.00"})
-    public void danZPrijmuTest(int prijem, int rodinnyStav, double expectedResult) {
+    @CsvSource(value = {"10500,1,'1575.00','1575,00'", "24500,1, '6860.00','6860,00'", "15000,2,'4200.00','4200,00'", "40000,2,'12400.00','12400,00'"})
+    public void danZPrijmuTest(int prijem, int rodinnyStav, String expectedResult,String expectedResult1) {
         DanZPrijmu danZPrijmu = new DanZPrijmu(getStavRodinnyStatus(rodinnyStav), prijem);
-        System.out.println(df.format(danZPrijmu.vypocitajDan()));
-        Assertions.assertEquals(expectedResult, Double.parseDouble(df.format(danZPrijmu.vypocitajDan())));
+       // System.out.println(df.format(danZPrijmu.vypocitajDan()));
+       // System.out.println(expectedResult);
+
+       String ss = String.valueOf(df.format(danZPrijmu.vypocitajDan()));
+
+      //  System.out.println(df.format(danZPrijmu.vypocitajDan()).charAt(4));
+        if(ss.contains(",")){
+            Assertions.assertEquals(expectedResult1, df.format(danZPrijmu.vypocitajDan()));
+        }else{
+            Assertions.assertEquals(expectedResult, df.format(danZPrijmu.vypocitajDan()));
+        }
+
 
     }
 

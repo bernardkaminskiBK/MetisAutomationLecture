@@ -1,4 +1,4 @@
-package javazaklady.Zadanie_4_3_4_Test;
+/*package javazaklady.Zadanie_4_3_4_Test;
 
 
 import javazaklady.Zadanie_4_3_4.RozpoznavacVstupu;
@@ -28,4 +28,4 @@ public class RozpoznavacVstupuTest {
 }
 
 
-
+*/
