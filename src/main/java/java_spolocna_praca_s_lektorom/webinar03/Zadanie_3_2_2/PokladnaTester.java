@@ -11,7 +11,7 @@ public class PokladnaTester {
         pokladna.naskenujTovar(0.39);
 
         // prijmi hotovost 5.85 Eur
-        pokladna.prijmiHotovst(2, 1, 1,
+        pokladna.prijmiHotovost(2, 1, 1,
                 1, 1, 1, 0, 0);
 
         System.out.println("Vas vydavok je: " + pokladna.vratVydavok() + " Eur");

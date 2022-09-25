@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class PokladnaTester {
     public static void main(String[] args) {
-        Pokladna pokladna = new Pokladna();
+        PokladnaSimulator pokladnaSimulator = new PokladnaSimulator();
         Scanner vstup = new Scanner(System.in);
         vstup.useLocale(Locale.ENGLISH);
 
@@ -15,14 +15,14 @@ public class PokladnaTester {
         {
             System.out.println("Zadaj cenu tovaru: ");
             double cenaTovaru = vstup.nextDouble();
-            pokladna.naskenujTovar(cenaTovaru);
+            pokladnaSimulator.naskenujTovar(cenaTovaru);
         }
 
         // prijmi hotovost 5.85 Eur
-        pokladna.prijmiHotovst(2, 1, 1,
+        pokladnaSimulator.prijmiHotovost(2, 1, 1,
                 1, 1, 1, 0, 0);
 
-        System.out.println("Vas vydavok je: " + pokladna.vratVydavok() + " Eur");
-        System.out.printf("Vas vydavok je: %.2f Eur%n", pokladna.vratVydavok());
+        System.out.println("Vas vydavok je: " + pokladnaSimulator.vratVydavok() + " Eur");
+        System.out.printf("Vas vydavok je: %.2f Eur%n", pokladnaSimulator.vratVydavok());
     }
 }

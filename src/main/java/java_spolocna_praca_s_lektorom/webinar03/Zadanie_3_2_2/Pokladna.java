@@ -12,7 +12,7 @@ public class Pokladna {
     // 5 Eur, 85 centov -> 5.85
     // 2ks - 2Eur, 1ks - 1Eur, 1ks - 50 Cent, 1ks - 20cent, 1ks - 10cent, 1ks - 5 cent,
     // 0ks - 2cent, 0ks - 1cent
-    public void prijmiHotovst(int pocet2Eur, int pocetEur, int pocet50Cent, int pocet20Cent,
+    public void prijmiHotovost(int pocet2Eur, int pocetEur, int pocet50Cent, int pocet20Cent,
                               int pocet10Cent, int pocet5Cent, int pocet2Cent, int pocetCent)
     {
         final double HODNOTA_2_EUR_MINCE = 2.0;
