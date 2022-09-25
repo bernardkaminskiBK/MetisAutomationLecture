@@ -21,17 +21,20 @@ class DanZPrijmuTesterTest {
        // System.out.println(expectedResult);
 
        String ss = String.valueOf(df.format(danZPrijmu.vypocitajDan()));
+        //Assertions.assertTrue(expectedResult1, df.format(danZPrijmu.vypocitajDan()));
 
-      //  System.out.println(df.format(danZPrijmu.vypocitajDan()).charAt(4));
+
+
         if(ss.contains(",")){
-            Assertions.assertEquals(expectedResult1, df.format(danZPrijmu.vypocitajDan()));
+            porovnanie(expectedResult1,danZPrijmu.vypocitajDan());
         }else{
-            Assertions.assertEquals(expectedResult, df.format(danZPrijmu.vypocitajDan()));
+            porovnanie(expectedResult,danZPrijmu.vypocitajDan());
         }
-
-
     }
 
+    private void  porovnanie ( String expectedResult,double danZPrijmu){
+        Assertions.assertEquals(expectedResult, df.format(danZPrijmu));
+    }
     private RodinnyStatus getStavRodinnyStatus(int stav) {
         return stav == 1 ? RodinnyStatus.ZENATY_VYDATA : RodinnyStatus.SLOBODNY_SLOBODNA;
     }
