@@ -1,4 +1,4 @@
-package Problem01;
+package java_spolocna_praca_s_lektorom.webinar22.Zadanie_22_2_1.Problem01;
 
 public class Proble01Tester
 {
