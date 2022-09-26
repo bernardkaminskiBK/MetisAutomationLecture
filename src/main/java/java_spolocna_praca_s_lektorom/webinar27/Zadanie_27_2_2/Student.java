@@ -4,13 +4,14 @@ public class Student
 {
     private String meno;
     private String priezvisko;
-    private int priemerZnamok;
+    private double priemerZnamok;
 
-    public Student(String meno, String priezvisko, int priemerZnamok)
+    public Student(String meno, String priezvisko, double priemerZnamok)
     {
         this.meno = meno;
         this.priezvisko = priezvisko;
         this.priemerZnamok = priemerZnamok;
+
     }
 
     public String getMeno()
@@ -23,7 +24,7 @@ public class Student
         return priezvisko;
     }
 
-    public int getPriemerZnamok()
+    public double getPriemerZnamok()
     {
         return priemerZnamok;
     }
