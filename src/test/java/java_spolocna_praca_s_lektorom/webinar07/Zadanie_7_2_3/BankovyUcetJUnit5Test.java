@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 public class BankovyUcetJUnit5Test {
 
-    @Disabled
+
     @ParameterizedTest
     @CsvSource(value = {"2000,2000", "1500,1500", "1000,1000"})
     void getAktualnyZostatokTest(double aktualZostatok, double expectedResult)
@@ -22,7 +22,7 @@ public class BankovyUcetJUnit5Test {
         assertEquals(expectedResult,actualResult, "current bank account balance should be: " + expectedResult);
     }
 
-    @Disabled
+
     @ParameterizedTest
     @CsvSource(value = {"2000,1000,500,1500", "1000,500,500,1000", "1500,300,500,800"})
     void prevodHodnotouTest(double aktualnyZostatok, double ciastka, double zostatokNaInomUcte, double expectedResult)
