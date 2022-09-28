@@ -10,7 +10,7 @@ public class BankovyUcet
     }
 
     // predstavuje odovzdavanie parametra metody hodnotou
-    public void preved(double ciastka, double zostatokNaInomUcte)
+    public double preved(double ciastka, double zostatokNaInomUcte)
     // zostatokNaInomUcte je len lokalna premenna a po vykonani metody zanika
     // metoda tak v v testovacej triede nefunguje obojstranne, iba jednostranne,
     // t.j. ze odpocita z prveho uctu ciastku, ale nepripocita ju na druhy ucet
@@ -19,6 +19,20 @@ public class BankovyUcet
         zostatokNaInomUcte += ciastka;
         System.out.println("v metode preved zostatok na inom ucte: " + zostatokNaInomUcte);
         // v implementacnej triede metoda funguje, ale nefunguje v testovacej triede
+        return zostatokNaInomUcte;
+    }
+
+    // predstavuje odovzdavanie parametra metody hodnotou
+    void prevedVoid(double ciastka, double zostatokNaInomUcte)
+    // zostatokNaInomUcte je len lokalna premenna a po vykonani metody zanika
+    // metoda tak v v testovacej triede nefunguje obojstranne, iba jednostranne,
+    // t.j. ze odpocita z prveho uctu ciastku, ale nepripocita ju na druhy ucet
+    {
+        aktualnyZostatok -= ciastka;
+        zostatokNaInomUcte += ciastka;
+        System.out.println("v metode preved zostatok na inom ucte: " + zostatokNaInomUcte);
+        // v implementacnej triede metoda funguje, ale nefunguje v testovacej triede
+
     }
 
     // predstavuje odovzdavanie parametra metody odkazom
