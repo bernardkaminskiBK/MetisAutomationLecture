@@ -9,7 +9,7 @@ public class PrikladParsovanieCisel {
         int cislo = Integer.parseInt(data);
         int cislo2 = Integer.valueOf(data);
 
-        System.out.println("Vyparsovanie cislo: " + ++cislo);
-        System.out.println("Vyparsovanie cislo: " + ++cislo2);
+        System.out.println("Vyparsovane cislo 1.spôsobom: " + ++cislo);
+        System.out.println("Vyparsovanie cislo 2.spôsobom: " + ++cislo2);
     }
 }
