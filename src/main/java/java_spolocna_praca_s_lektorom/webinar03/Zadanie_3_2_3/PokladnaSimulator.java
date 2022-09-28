@@ -3,6 +3,15 @@ package java_spolocna_praca_s_lektorom.webinar03.Zadanie_3_2_3;
 public class PokladnaSimulator {
     private double celkovaPrijataHotovost;
     private double celkovaCenaTovarov;
+    public PokladnaSimulator()
+    {
+        vynuluj();
+    }
+
+    private void vynuluj() {
+        celkovaCenaTovarov = 0;
+        celkovaPrijataHotovost = 0;
+    }
 
     public void naskenujTovar(double cenaTovaru)
     {
@@ -13,7 +22,7 @@ public class PokladnaSimulator {
     // 2ks - 2Eur, 1ks - 1Eur, 1ks - 50 Cent, 1ks - 20cent, 1ks - 10cent, 1ks - 5 cent,
     // 0ks - 2cent, 0ks - 1cent
     public void prijmiHotovost(int pocet2Eur, int pocetEur, int pocet50Cent, int pocet20Cent,
-                              int pocet10Cent, int pocet5Cent, int pocet2Cent, int pocetCent)
+                               int pocet10Cent, int pocet5Cent, int pocet2Cent, int pocetCent)
     {
         final double HODNOTA_2_EUR_MINCE = 2.0;
         final double HODNOTA_EUR_MINCE = 1.0;
@@ -41,6 +50,9 @@ public class PokladnaSimulator {
 
     public double vratVydavok()
     {
-        return celkovaPrijataHotovost - celkovaCenaTovarov;
+        double vydavok = celkovaPrijataHotovost - celkovaCenaTovarov;
+        vynuluj();
+        return vydavok;
     }
+
 }
