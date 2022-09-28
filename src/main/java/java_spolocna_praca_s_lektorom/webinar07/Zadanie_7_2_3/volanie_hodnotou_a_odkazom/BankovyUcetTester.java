@@ -23,7 +23,7 @@ public class BankovyUcetTester
         System.out.println("Zostatok (ucet3): " + ucet3.getAktualnyZostatok());
 
         // prevedieme 500 Eur z ucet2 na ucet3
-        ucet2.preved(500, ucet3);
+        ucet2.prevod(500, ucet3);
         System.out.println("\nZostatok (ucet2): " + ucet2.getAktualnyZostatok());
         System.out.println("Zostatok (ucet3): " + ucet3.getAktualnyZostatok());
     }
