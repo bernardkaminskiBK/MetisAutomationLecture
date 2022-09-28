@@ -36,10 +36,18 @@ public class BankovyUcet
     }
 
     // predstavuje odovzdavanie parametra metody odkazom
-    public void preved(double ciastka, BankovyUcet inyUcet)
+    public void prevodVoid(double ciastka, BankovyUcet inyUcet)
     {
         aktualnyZostatok -= ciastka;
         inyUcet.aktualnyZostatok += ciastka;
+
+    }
+
+    public double prevod(double ciastka, BankovyUcet inyUcet)
+    {
+        aktualnyZostatok -= ciastka;
+        inyUcet.aktualnyZostatok += ciastka;
+        return inyUcet.aktualnyZostatok;
     }
 
     public double getAktualnyZostatok()
