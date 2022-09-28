@@ -14,7 +14,9 @@ public class PokladnaTester {
         pokladna.prijmiHotovost(2, 1, 1,
                 1, 1, 1, 0, 0);
 
-        System.out.println("Vas vydavok je: " + pokladna.vratVydavok() + " Eur");
+
         System.out.printf("Vas vydavok je: %.2f Eur%n", pokladna.vratVydavok());
+        System.out.println("Ocakavana hodnota: 2.90");
+
     }
 }

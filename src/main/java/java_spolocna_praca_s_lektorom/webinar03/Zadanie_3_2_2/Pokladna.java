@@ -3,6 +3,15 @@ package java_spolocna_praca_s_lektorom.webinar03.Zadanie_3_2_2;
 public class Pokladna {
     private double celkovaPrijataHotovost;
     private double celkovaCenaTovarov;
+      public Pokladna()
+    {
+        vynuluj();
+    }
+
+    private void vynuluj() {
+        celkovaCenaTovarov = 0;
+        celkovaPrijataHotovost = 0;
+    }
 
     public void naskenujTovar(double cenaTovaru)
     {
@@ -41,6 +50,9 @@ public class Pokladna {
 
     public double vratVydavok()
     {
-        return celkovaPrijataHotovost - celkovaCenaTovarov;
+        double vydavok = celkovaPrijataHotovost - celkovaCenaTovarov;
+        vynuluj();
+        return vydavok;
     }
+
 }
