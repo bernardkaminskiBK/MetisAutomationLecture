@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar07;
+package java_spolocna_praca_s_lektorom.webinar07.Zadanie7_2_1;
 
 import java_spolocna_praca_s_lektorom.webinar07.Zadanie_7_2_1.Student;
 import org.junit.jupiter.api.Disabled;
