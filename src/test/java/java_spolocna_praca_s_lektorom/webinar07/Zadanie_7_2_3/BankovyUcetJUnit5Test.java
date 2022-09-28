@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -15,11 +16,22 @@ public class BankovyUcetJUnit5Test {
     @CsvSource(value = {"2000,2000", "1500,1500", "1000,1000"})
     void getAktualnyZostatokTest(double aktualZostatok, double expectedResult)
     {
-
         BankovyUcet bankovyUcet = new BankovyUcet(aktualZostatok);
         double actualResult = bankovyUcet.getAktualnyZostatok();
         assertEquals(expectedResult,actualResult, "current bank account balance should be: " + expectedResult);
-
     }
+
+    @ParameterizedTest
+    @CsvSource(value = {"2000,1000,500,1500", "1000,500,500,1000", "1500,300,500,800"})
+    void prevodHodnotouTest(double aktualnyZostatok, double ciastka, double zostatokNaInomUcte, double expectedResult)
+    {
+        BankovyUcet bankovyUcet = new BankovyUcet(aktualnyZostatok);
+        double actualResult = bankovyUcet.preved(ciastka, zostatokNaInomUcte);
+        assertEquals(expectedResult,actualResult,"The balance on another account should be " + expectedResult);
+    }
+
+
+
+
 
 }
