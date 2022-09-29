@@ -31,7 +31,7 @@ public class PrikladPraceSPolom {
         System.out.println(Arrays.toString(znaky));
         System.out.println(Arrays.toString(odbory));
         System.out.println(Arrays.toString(cisla2));
-        System.out.println(Arrays.toString(cisla2));
+
     }
 }
 
