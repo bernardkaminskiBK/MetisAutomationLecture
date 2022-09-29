@@ -13,7 +13,7 @@ public class PokladnaSimulatorTester {
 
         for (int i = 1; i <= pocetTovarov; i++)
         {
-            System.out.println("Zadaj cenu tovaru č." + i + ": ");
+            System.out.println("Zadaj cenu tovaru č. " + i + ": ");
             double cenaTovaru = vstup.nextDouble();
             pokladnaSimulator.naskenujTovar(cenaTovaru);
         }
