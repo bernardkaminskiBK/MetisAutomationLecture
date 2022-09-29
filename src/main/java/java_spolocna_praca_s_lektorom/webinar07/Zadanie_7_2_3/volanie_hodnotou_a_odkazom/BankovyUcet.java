@@ -9,11 +9,14 @@ public class BankovyUcet
         this.aktualnyZostatok += ciastka;
     }
 
+
     // predstavuje odovzdavanie parametra metody hodnotou
+    /**
+     * Táto metóda bola vytvorená dodatočne pre potreby sfunkčnenia testovacej metódy.
+     * Bol zmenený návratový typ z void na double!!!
+     */
     public double preved(double ciastka, double zostatokNaInomUcte)
-    // zostatokNaInomUcte je len lokalna premenna a po vykonani metody zanika
-    // metoda tak v v testovacej triede nefunguje obojstranne, iba jednostranne,
-    // t.j. ze odpocita z prveho uctu ciastku, ale nepripocita ju na druhy ucet
+
     {
         aktualnyZostatok -= ciastka;
         zostatokNaInomUcte += ciastka;
