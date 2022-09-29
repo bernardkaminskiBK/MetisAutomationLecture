@@ -43,10 +43,6 @@ public class Pokladna {
         celkovaPrijataHotovost += (pocetCent * HODNOTA_CENT_MINCE);  // CPH = 5.85
     }
 
-    public void prijmiHotovost(double hotovost)
-    {
-        celkovaPrijataHotovost += hotovost;
-    }
 
     public double vratVydavok()
     {
