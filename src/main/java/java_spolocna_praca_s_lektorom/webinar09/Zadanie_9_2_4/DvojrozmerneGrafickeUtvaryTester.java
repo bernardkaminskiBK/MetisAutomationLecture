@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_4.dedicnost_navrh_c2_PrivateModifikatorPristupu;
+package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_4;
 
 public class DvojrozmerneGrafickeUtvaryTester
 {
