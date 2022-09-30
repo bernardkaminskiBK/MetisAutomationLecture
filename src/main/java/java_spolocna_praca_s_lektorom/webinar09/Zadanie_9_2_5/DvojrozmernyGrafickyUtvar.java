@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_5.dedicnost_navrh_c3_ProtectedModifikatorpristupu;
+package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_5;
 
 public class DvojrozmernyGrafickyUtvar
 {
