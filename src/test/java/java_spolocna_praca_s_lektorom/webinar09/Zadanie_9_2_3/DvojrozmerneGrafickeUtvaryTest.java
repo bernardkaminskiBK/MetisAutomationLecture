@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 public class DvojrozmerneGrafickeUtvaryTest {
 
     @ParameterizedTest
-    @CsvSource(value = {"20,30,'sirka = 20, vyska = 30'"})
+    @CsvSource(value = {"20,30,'sirka = 20, vyska = 30'", "40,30,'sirka = 40, vyska = 30'", "50,50,'sirka = 50, vyska = 50'"})
     void dvojrozmernyGrafickyUtvarTest(int sirka, int vyska, String expectedResult)
     {
         DvojrozmernyGrafickyUtvar utvar = new DvojrozmernyGrafickyUtvar();
@@ -27,7 +27,6 @@ public class DvojrozmerneGrafickeUtvaryTest {
         obdlznik.vyska = vyska;
         double actualResultArea = obdlznik.plocha();
         Assertions.assertEquals(expectedREsult,actualResultArea,"Area should be: " + expectedREsult);
-
     }
 
     @ParameterizedTest
@@ -49,7 +48,6 @@ public class DvojrozmerneGrafickeUtvaryTest {
         utvar3.vyska = vyska;
         double assertResultArea = utvar3.plocha();
         Assertions.assertEquals(expectedResult,assertResultArea);
-
     }
 
     @ParameterizedTest
