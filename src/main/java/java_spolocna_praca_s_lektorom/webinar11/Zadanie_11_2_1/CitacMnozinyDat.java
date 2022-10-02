@@ -1,6 +1,5 @@
-package java_spolocna_praca_s_lektorom.webinar11.Zadanie_11_2_1.analyzator_dat;
+package java_spolocna_praca_s_lektorom.webinar11.Zadanie_11_2_1;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;

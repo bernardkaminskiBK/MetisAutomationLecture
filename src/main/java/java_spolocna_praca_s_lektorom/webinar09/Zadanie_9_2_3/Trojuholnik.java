@@ -9,6 +9,10 @@ public class Trojuholnik extends DvojrozmernyGrafickyUtvar
         //System.out.println("... zavolal sa konstruktor: Trojuholnik()");
     }
 
+    public Trojuholnik(double sirka, double vyska) {
+        super();
+    }
+
     void zobrazStyl()
     {
         System.out.println("styl: " + styl);
