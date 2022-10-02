@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar11.Zadanie_11_2_3.odstranovanie_riadkov;
+package java_spolocna_praca_s_lektorom.webinar11.Zadanie_11_2_3;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
