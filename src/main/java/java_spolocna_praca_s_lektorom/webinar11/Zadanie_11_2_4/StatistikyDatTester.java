@@ -1,6 +1,5 @@
-package java_spolocna_praca_s_lektorom.webinar11.Zadanie_11_2_4.statistiky;
+package java_spolocna_praca_s_lektorom.webinar11.Zadanie_11_2_4;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
@@ -9,7 +8,8 @@ public class StatistikyDatTester
 {
     public static void main(String[] args)
     {
-        try (Scanner citacSuboru = new Scanner(new FileReader("statistiky.txt")))
+        try (Scanner citacSuboru = new Scanner(new FileReader("src/main/java/java_spolocna_praca_s_lektorom/" +
+                "webinar11/Zadanie_11_2_4/statistiky.txt")))
         {
             double sucetPrvyStlpec = 0;
             double sucetDruhyStlpec = 0;
