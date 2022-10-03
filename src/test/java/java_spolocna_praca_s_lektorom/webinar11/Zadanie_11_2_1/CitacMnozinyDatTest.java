@@ -10,10 +10,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CitacMnozinyDatTest {
 
-    @Test
-    void readFile()
+    @ParameterizedTest
+    @CsvSource(value = {"data.txt", "data2.txt", "data3.txt"})
+    void readFile(String filepath)
     {
-        File file = new File("data.txt");
+        File file = new File(filepath);
         assertTrue(file.exists());
     }
     
@@ -31,7 +32,27 @@ class CitacMnozinyDatTest {
         }
         double actualResult = sucet;
         assertEquals(expectedResult,actualResult);
+    }
 
+    @Test
+    void throwIOException()
+    {
+        Throwable actualResult = assertThrows(IOException.class, () -> {
+            throw new IOException("Nastala vstupno/vystupna chyba!");
+        });
+        assertEquals("Nastala vstupno/vystupna chyba!", actualResult.getMessage());
+
+    }
+
+    @ParameterizedTest
+    @CsvSource(value = {"Ocakavany parameter - velkost mnoziny dat", "Ocakavame koniec suboru",
+            "Ocakavame desatinne cislo"})
+    void nespravnyFormatDatException(String sprava)
+    {
+        Throwable actualResult = assertThrows(NespravnyFormatDat.class, () -> {
+            throw new NespravnyFormatDat(sprava);
+        });
+        assertEquals(sprava, actualResult.getMessage());
     }
 
 }
