@@ -1,7 +1,7 @@
 package profun_spolocna_praca_s_lektorom.Lekcia4.zadanie2;
 
 import org.junit.jupiter.api.Assertions;
-import profun_spolocna_praca_s_lektorom.lekcia4.zadanie2.StavNaUcteTester;
+import profun_spolocna_praca_s_lektorom.Lekcia04.zadanie2.StavNaUcteTester;
 import utils.StorePrintStream;
 import org.junit.jupiter.api.Test;
 

@@ -1,8 +1,8 @@
 package javazaklady.Zadanie_9_3_2_Test;
 
-import javazaklady.Zadanie_9_3_2.BeznyUcet;
-import javazaklady.Zadanie_9_3_2.SporiaciUcet;
-import javazaklady.Zadanie_9_3_2.TerminovanyUcet;
+import javazaklady.Webinar09.Zadanie_9_3_2.BeznyUcet;
+import javazaklady.Webinar09.Zadanie_9_3_2.SporiaciUcet;
+import javazaklady.Webinar09.Zadanie_9_3_2.TerminovanyUcet;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.RepeatedTest;
 

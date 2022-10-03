@@ -1,6 +1,6 @@
 package javazaklady.Zadanie_11_3_2_Test;
 
-import javazaklady.Zadanie_11_3_2.StatistikySuboru;
+import javazaklady.Webinar11.Zadanie_11_3_2.StatistikySuboru;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

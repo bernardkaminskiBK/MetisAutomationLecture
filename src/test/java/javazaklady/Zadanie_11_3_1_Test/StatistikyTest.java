@@ -1,6 +1,6 @@
 package javazaklady.Zadanie_11_3_1_Test;
 
-import javazaklady.Zadanie_11_3_1.Statistiky;
+import javazaklady.Webinar11.Zadanie_11_3_1.Statistiky;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;

@@ -1,7 +1,7 @@
 package javazaklady.Zadanie_1_3_3_Test;
 
 
-import javazaklady.Zadanie_1_3_3.ZobrazovacStyrochObdlznikov;
+import javazaklady.Webinar01.Zadanie_1_3_3.ZobrazovacStyrochObdlznikov;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

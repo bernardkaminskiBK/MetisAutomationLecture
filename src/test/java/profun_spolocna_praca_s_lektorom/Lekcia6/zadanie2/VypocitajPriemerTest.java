@@ -1,6 +1,7 @@
 package profun_spolocna_praca_s_lektorom.Lekcia6.zadanie2;
 
 import org.junit.jupiter.api.Test;
+import profun_spolocna_praca_s_lektorom.Lekcia06.zadanie2.VypocitajPriemerTester;
 import utils.StorePrintStream;
 
 import java.util.Scanner;

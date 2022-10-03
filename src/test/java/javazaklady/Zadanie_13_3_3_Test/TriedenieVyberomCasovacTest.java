@@ -1,6 +1,6 @@
 package javazaklady.Zadanie_13_3_3_Test;
 
-import javazaklady.Zadanie_13_3_3.TriedenieVyberomCasovac;
+import javazaklady.Webinar13.Zadanie_13_3_3.TriedenieVyberomCasovac;
 import org.apache.commons.lang3.Range;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;

@@ -1,6 +1,6 @@
 package javazaklady.Zadanie_9_3_3_Test;
 
-import javazaklady.Zadanie_9_3_3.Stvorec;
+import javazaklady.Webinar09.Zadanie_9_3_3.Stvorec;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

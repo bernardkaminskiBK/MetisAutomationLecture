@@ -1,7 +1,7 @@
 package javazaklady.Zadanie_8_3_2_Test;
 
-import javazaklady.Zadanie_8_3_2.Kviz;
-import javazaklady.Zadanie_8_3_2.MnozinaDat;
+import javazaklady.Webinar08.Zadanie_8_3_2.Kviz;
+import javazaklady.Webinar08.Zadanie_8_3_2.MnozinaDat;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

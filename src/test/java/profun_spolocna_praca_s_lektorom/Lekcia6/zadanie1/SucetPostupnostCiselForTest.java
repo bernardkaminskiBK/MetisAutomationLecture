@@ -1,6 +1,7 @@
 package profun_spolocna_praca_s_lektorom.Lekcia6.zadanie1;
 
 import org.junit.jupiter.api.Test;
+import profun_spolocna_praca_s_lektorom.Lekcia06.zadanie1.SucetPostupnostCiselForTester;
 
 import java.util.Scanner;
 

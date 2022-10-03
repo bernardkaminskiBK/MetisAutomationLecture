@@ -15,26 +15,26 @@ class DanZPrijmuTesterTest {
 
     @ParameterizedTest
     @CsvSource(value = {"10500,1,'1575.00','1575,00'", "24500,1, '6860.00','6860,00'", "15000,2,'4200.00','4200,00'", "40000,2,'12400.00','12400,00'"})
-    public void danZPrijmuTest(int prijem, int rodinnyStav, String expectedResult,String expectedResult1) {
+    public void danZPrijmuTest(int prijem, int rodinnyStav, String expectedResult, String expectedResult1) {
         DanZPrijmu danZPrijmu = new DanZPrijmu(getStavRodinnyStatus(rodinnyStav), prijem);
-       // System.out.println(df.format(danZPrijmu.vypocitajDan()));
-       // System.out.println(expectedResult);
+        // System.out.println(df.format(danZPrijmu.vypocitajDan()));
+        // System.out.println(expectedResult);
 
-       String ss = String.valueOf(df.format(danZPrijmu.vypocitajDan()));
+        String ss = String.valueOf(df.format(danZPrijmu.vypocitajDan()));
         //Assertions.assertTrue(expectedResult1, df.format(danZPrijmu.vypocitajDan()));
 
 
-
-        if(ss.contains(",")){
-            porovnanie(expectedResult1,danZPrijmu.vypocitajDan());
-        }else{
-            porovnanie(expectedResult,danZPrijmu.vypocitajDan());
+        if (ss.contains(",")) {
+            porovnanie(expectedResult1, danZPrijmu.vypocitajDan());
+        } else {
+            porovnanie(expectedResult, danZPrijmu.vypocitajDan());
         }
     }
 
-    private void  porovnanie ( String expectedResult,double danZPrijmu){
+    private void porovnanie(String expectedResult, double danZPrijmu) {
         Assertions.assertEquals(expectedResult, df.format(danZPrijmu));
     }
+
     private RodinnyStatus getStavRodinnyStatus(int stav) {
         return stav == 1 ? RodinnyStatus.ZENATY_VYDATA : RodinnyStatus.SLOBODNY_SLOBODNA;
     }

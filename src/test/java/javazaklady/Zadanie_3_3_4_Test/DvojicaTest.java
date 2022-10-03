@@ -1,6 +1,6 @@
 package javazaklady.Zadanie_3_3_4_Test;
 
-import javazaklady.Zadanie_3_3_4.Dvojica;
+import javazaklady.Webinar03.Zadanie_3_3_4.Dvojica;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

@@ -2,7 +2,7 @@ package javazaklady.Zadanie_5_3_1_Test;
 
 
 
-import javazaklady.Zadanie_5_3_1.KonvertorMeny;
+import javazaklady.Webinar05.Zadanie_5_3_1.KonvertorMeny;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

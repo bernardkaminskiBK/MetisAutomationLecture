@@ -1,9 +1,9 @@
 package javazaklady.Zadanie_7_3_3_Test;
 
 
-import javazaklady.Zadanie_7_3_3.Bankovka;
-import javazaklady.Zadanie_7_3_3.Minca;
-import javazaklady.Zadanie_7_3_3.Pokladna;
+import javazaklady.Webinar07.Zadanie_7_3_3.Bankovka;
+import javazaklady.Webinar07.Zadanie_7_3_3.Minca;
+import javazaklady.Webinar07.Zadanie_7_3_3.Pokladna;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

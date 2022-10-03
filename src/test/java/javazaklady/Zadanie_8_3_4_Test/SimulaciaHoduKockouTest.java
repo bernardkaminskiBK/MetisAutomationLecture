@@ -1,7 +1,7 @@
 package javazaklady.Zadanie_8_3_4_Test;
 
-import javazaklady.Zadanie_8_3_4.Kocka;
-import javazaklady.Zadanie_8_3_4.MnozinaDat;
+import javazaklady.Webinar08.Zadanie_8_3_4.Kocka;
+import javazaklady.Webinar08.Zadanie_8_3_4.MnozinaDat;
 import org.apache.commons.lang3.Range;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

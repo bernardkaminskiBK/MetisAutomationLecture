@@ -1,8 +1,8 @@
 package javazaklady.Zadanie_9_3_4_Test;
 
-import javazaklady.Zadanie_9_3_4.Instruktor;
-import javazaklady.Zadanie_9_3_4.Osoba;
-import javazaklady.Zadanie_9_3_4.Student;
+import javazaklady.Webinar09.Zadanie_9_3_4.Instruktor;
+import javazaklady.Webinar09.Zadanie_9_3_4.Osoba;
+import javazaklady.Webinar09.Zadanie_9_3_4.Student;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

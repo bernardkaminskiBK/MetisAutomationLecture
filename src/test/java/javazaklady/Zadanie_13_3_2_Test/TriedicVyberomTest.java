@@ -1,8 +1,8 @@
 package javazaklady.Zadanie_13_3_2_Test;
 
 
-import javazaklady.Zadanie_13_3_2.Minca;
-import javazaklady.Zadanie_13_3_2.TriedicVyberom;
+import javazaklady.Webinar13.Zadanie_13_3_2.Minca;
+import javazaklady.Webinar13.Zadanie_13_3_2.TriedicVyberom;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

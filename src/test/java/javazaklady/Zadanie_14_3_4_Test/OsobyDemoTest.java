@@ -1,7 +1,7 @@
 package javazaklady.Zadanie_14_3_4_Test;
 
-import javazaklady.Zadanie_14_3_4.Osoba;
-import javazaklady.Zadanie_14_3_4.OsobyDemo;
+import javazaklady.Webinar14.Zadanie_14_3_4.Osoba;
+import javazaklady.Webinar14.Zadanie_14_3_4.OsobyDemo;
 import javazaklady.Zadanie_14_3_4_Test.utils.NameArgumentProvider;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;

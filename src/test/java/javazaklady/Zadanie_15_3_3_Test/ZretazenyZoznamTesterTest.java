@@ -1,6 +1,6 @@
 package javazaklady.Zadanie_15_3_3_Test;
 
-import javazaklady.Zadanie_15_3_3.ZretazenyZoznam;
+import javazaklady.Webinar15.Zadanie_15_3_3.ZretazenyZoznam;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.RepeatedTest;
 

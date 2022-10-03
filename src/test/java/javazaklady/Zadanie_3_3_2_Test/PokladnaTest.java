@@ -1,7 +1,7 @@
 package javazaklady.Zadanie_3_3_2_Test;
 
 import javazaklady.Zadanie_3_3_2_Test.CustomAnnotations.ArraySource;
-import javazaklady.Zadanie_3_3_2.Pokladna;
+import javazaklady.Webinar03.Zadanie_3_3_2.Pokladna;
 import javazaklady.Zadanie_3_3_2_Test.CustomAnnotations.ArraySources;
 import org.junit.jupiter.params.ParameterizedTest;
 

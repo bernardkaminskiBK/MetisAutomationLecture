@@ -1,7 +1,7 @@
 package javazaklady.Zadanie_5_3_2_Test;
 
 
-import javazaklady.Zadanie_5_3_2.GeneratorMocniny;
+import javazaklady.Webinar05.Zadanie_5_3_2.GeneratorMocniny;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

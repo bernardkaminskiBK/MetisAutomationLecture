@@ -1,7 +1,7 @@
 package javazaklady.Zadanie_13_3_1_Test;
 
 
-import javazaklady.Zadanie_13_3_1.OpacnyTriedicVyberom;
+import javazaklady.Webinar13.Zadanie_13_3_1.OpacnyTriedicVyberom;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

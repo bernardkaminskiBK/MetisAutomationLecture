@@ -1,6 +1,6 @@
 package javazaklady.Zadanie_5_3_3_Test;
 
-import javazaklady.Zadanie_5_3_3.GeneratorFibonaccihoPostupnosti;
+import javazaklady.Webinar05.Zadanie_5_3_3.GeneratorFibonaccihoPostupnosti;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

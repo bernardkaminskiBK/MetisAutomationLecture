@@ -1,7 +1,7 @@
 package javazaklady.Zadanie_9_3_1_Test;
 
-import javazaklady.Zadanie_9_3_1.CustomArgumentProvider;
-import javazaklady.Zadanie_9_3_1.SporiaciUcet;
+import javazaklady.Webinar09.Zadanie_9_3_1.CustomArgumentProvider;
+import javazaklady.Webinar09.Zadanie_9_3_1.SporiaciUcet;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;

@@ -1,6 +1,6 @@
 package javazaklady.Zadanie_7_3_4_Test;
 
-import javazaklady.Zadanie_7_3_4.BankovyUcet;
+import javazaklady.Webinar07.Zadanie_7_3_4.BankovyUcet;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

@@ -1,6 +1,6 @@
 package javazaklady.Zadanie_10_3_4_Test;
 
-import javazaklady.Zadanie_10_3_4.Prvocislo;
+import javazaklady.Webinar10.Zadanie_10_3_4.Prvocislo;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

@@ -1,8 +1,8 @@
 package javazaklady.Zadanie_14_3_1_Test;
 
 
-import javazaklady.Zadanie_14_3_1.Minca;
-import javazaklady.Zadanie_14_3_1.ReverznyPorovnavacMinci;
+import javazaklady.Webinar14.Zadanie_14_3_1.Minca;
+import javazaklady.Webinar14.Zadanie_14_3_1.ReverznyPorovnavacMinci;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
