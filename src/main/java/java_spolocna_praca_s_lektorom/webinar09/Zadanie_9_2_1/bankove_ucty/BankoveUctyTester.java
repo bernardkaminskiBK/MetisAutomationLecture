@@ -12,16 +12,16 @@ public class BankoveUctyTester
         ucet.vyber(200);
 
         System.out.println("Zostatok pred zauctovanim poplatkov: " + ucet.getAktualnyZostatok());
-        System.out.println("Ocakvana hodnota: 800");
+        System.out.println("Ocakavana hodnota: 800");
         ucet.zauctujPoplatky();
         System.out.println("Zostatok po zauctovani poplatkov: " + ucet.getAktualnyZostatok());
-        System.out.println("Ocakvana hodnota: 797.8");
+        System.out.println("Ocakavana hodnota: 797.8");
 
         SporiaciUcet sporiaciUcet = new SporiaciUcet(1000,5.0);
         System.out.println("Zostatok na sporiacom ucte pred pripisanim uroku: " + sporiaciUcet.getAktualnyZostatok());
-        System.out.println("Ocakvana hodnota: 1000.0");
+        System.out.println("Ocakavana hodnota: 1000.0");
         sporiaciUcet.pripisUrok();
         System.out.println("Zostatok na sporiacom ucte po pripisani uroku: " + sporiaciUcet.getAktualnyZostatok());
-        System.out.println("Ocakvana hodnota: 1050.0");
+        System.out.println("Ocakavana hodnota: 1050.0");
     }
 }
