@@ -1,9 +1,11 @@
-package java_spolocna_praca_s_lektorom.webinar05.Zadanie_5_2_5;
+package java_spolocna_praca_s_lektorom.webinar05.Zadanie_5_2_4.c_Test;
 
-import utils.StorePrintStream;
+import java_spolocna_praca_s_lektorom.webinar05.Zadanie_5_2_4.c.Banka;
 import org.junit.jupiter.api.Test;
+import utils.StorePrintStream;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class BankaTest {
 

@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar05.Zadanie_5_2_4;
+package java_spolocna_praca_s_lektorom.webinar05.Zadanie_5_2_4.b;
 
 public class BankovyUcet {
 

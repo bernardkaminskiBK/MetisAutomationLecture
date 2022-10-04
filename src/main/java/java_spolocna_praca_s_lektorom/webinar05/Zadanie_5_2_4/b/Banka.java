@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar05.Zadanie_5_2_4;
+package java_spolocna_praca_s_lektorom.webinar05.Zadanie_5_2_4.b;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -6,19 +6,23 @@ import java.util.Random;
 public class Banka {
     public static void main(String[] args) {
         // Vytvor 100 bankovych uctov, pricom pociatocny zostatok bude generovany v
-        // intervale od 100 do 1000
+        // intervale od 100 do 1000 (pomocou cyklu do-while)
         int pocetUctov = 100;
         double nahodnyZostatok = 0;
         Random generator = new Random();
         BankovyUcet ucet;
         ArrayList<BankovyUcet> zoznam = new ArrayList<>();
 
-        for (int i = 1; i <= 100; i++)
+        int i = 1;
+
+        do
         {
             nahodnyZostatok = generator.nextDouble(100, 1001);
             ucet = new BankovyUcet(nahodnyZostatok);
             zoznam.add(ucet);
+            i++;
         }
+        while (i <= 100);
 
         System.out.println("Pocet uctov v banke: " + zoznam.size());
         vypisZostatky(zoznam);
