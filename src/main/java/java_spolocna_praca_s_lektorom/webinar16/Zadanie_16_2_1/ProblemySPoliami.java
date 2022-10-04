@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar16.Zadanie_16_2_1.polia;
+package java_spolocna_praca_s_lektorom.webinar16.Zadanie_16_2_1;
 
 import java.util.Arrays;
 

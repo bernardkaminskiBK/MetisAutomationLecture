@@ -1,8 +1,6 @@
-package java_spolocna_praca_s_lektorom.webinar16.Zadanie_16_2_2.zoznam_arraylist;
+package java_spolocna_praca_s_lektorom.webinar16.Zadanie_16_2_2;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class ProblemySPoliami
 {
