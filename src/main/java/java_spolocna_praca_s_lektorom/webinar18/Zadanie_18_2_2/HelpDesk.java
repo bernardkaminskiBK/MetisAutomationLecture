@@ -1,21 +1,21 @@
-package java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_2.fronta;
+package java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_2;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
 
 public class HelpDesk
 {
-    private final Queue<fronta.Poziadavka> poziadavky = new ArrayDeque<>();
+    private final Queue<Poziadavka> poziadavky = new ArrayDeque<>();
 
     public void zaevidujPoziadavku(final Zakaznik zakaznik, final Kategoria kategoria)
     {
-        poziadavky.add(new fronta.Poziadavka(zakaznik, kategoria));
+        poziadavky.add(new Poziadavka(zakaznik, kategoria));
     }
 
     // pouziva metodu poll()
     public void spracujVsetkyPoziadavky()
     {
-        fronta.Poziadavka poziadavka;
+        Poziadavka poziadavka;
 
         while ((poziadavka = poziadavky.poll()) != null)
         {
@@ -28,7 +28,7 @@ public class HelpDesk
     {
         while (!poziadavky.isEmpty())
         {
-            final fronta.Poziadavka poziadavka = poziadavky.remove();
+            final Poziadavka poziadavka = poziadavky.remove();
             poziadavka.getZakaznik().posliSpravu("Skusili ste dane zariadenie vypnut a zapnut?");
         }
     }

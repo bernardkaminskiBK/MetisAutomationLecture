@@ -1,6 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_1.mnoziny;
-
-import java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_1.mnoziny.Dodavatel;
+package java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_1;
 
 import java.util.HashSet;
 import java.util.Iterator;
