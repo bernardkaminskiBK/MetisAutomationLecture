@@ -1,8 +1,8 @@
-package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_3;
+package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_3.a;
 
 public class Trojuholnik extends DvojrozmernyGrafickyUtvar
 {
-    String styl;
+    public String styl;
 
     public Trojuholnik()
     {
@@ -18,7 +18,7 @@ public class Trojuholnik extends DvojrozmernyGrafickyUtvar
         System.out.println("styl: " + styl);
     }
 
-    double plocha()
+    public double plocha()
     {
         return sirka * vyska / 2;
     }

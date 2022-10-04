@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_5;
+package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_3.c;
 
 public class Obdlznik extends DvojrozmernyGrafickyUtvar
 {
@@ -7,7 +7,7 @@ public class Obdlznik extends DvojrozmernyGrafickyUtvar
         super(sirka, vyska);
     }
 
-    boolean jeStvorec()
+    public boolean jeStvorec()
     {
         // ak sme si zadali, ze instancne premenne budu mat modifikator pristupu Protected,
         // odstranime getter metody a musime oproti prikladu 2 znova zmenit getSirka() a
@@ -24,7 +24,7 @@ public class Obdlznik extends DvojrozmernyGrafickyUtvar
         }*/
     }
 
-    double plocha()
+    public double plocha()
     {
         return sirka * vyska;
     }

@@ -1,7 +1,8 @@
-package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_5;
+package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_3.c_Test;
 
+import java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_3.c.DvojrozmernyGrafickyUtvar;
+import java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_3.c.Obdlznik;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -38,8 +39,5 @@ public class DvojrozmerneGrafickeUtvary3Test {
         obdlznik.vyska = vyska;
         Assertions.assertTrue(obdlznik.jeStvorec());
     }
-
-
-
 
 }

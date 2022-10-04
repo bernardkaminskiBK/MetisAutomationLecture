@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_4;
+package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_3.b;
 
 public class Obdlznik extends DvojrozmernyGrafickyUtvar
 {
@@ -23,7 +23,7 @@ public class Obdlznik extends DvojrozmernyGrafickyUtvar
         }*/
     }
 
-    double plocha()
+    public double plocha()
     {
         return getSirka() * getVyska();
     }

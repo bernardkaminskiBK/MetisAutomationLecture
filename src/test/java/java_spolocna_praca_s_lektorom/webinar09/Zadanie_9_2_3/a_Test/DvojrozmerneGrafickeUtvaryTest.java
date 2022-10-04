@@ -1,7 +1,10 @@
-package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_3;
+package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_3.a_Test;
 
+
+import java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_3.a.DvojrozmernyGrafickyUtvar;
+import java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_3.a.Obdlznik;
+import java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_3.a.Trojuholnik;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
