@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar20.Zadanie_20_2_2.ohranicenia_typovych_premennych;
+package java_spolocna_praca_s_lektorom.webinar20.Zadanie_20_2_2;
 
 import java.util.ArrayList;
 
