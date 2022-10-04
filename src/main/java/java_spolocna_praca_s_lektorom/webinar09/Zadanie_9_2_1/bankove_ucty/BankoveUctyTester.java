@@ -21,6 +21,7 @@ public class BankoveUctyTester
         System.out.println("Zostatok na sporiacom ucte pred pripisanim uroku: " + sporiaciUcet.getAktualnyZostatok());
         System.out.println("Ocakavana hodnota: 1000.0");
         sporiaciUcet.pripisUrok();
+
         System.out.println("Zostatok na sporiacom ucte po pripisani uroku: " + sporiaciUcet.getAktualnyZostatok());
         System.out.println("Ocakavana hodnota: 1050.0");
     }
