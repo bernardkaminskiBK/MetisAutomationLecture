@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar16.Zadanie_16_2_2.zoznam_arraylist;
+package java_spolocna_praca_s_lektorom.webinar16.Zadanie_16_2_2;
 
 public class Vyrobok
 {

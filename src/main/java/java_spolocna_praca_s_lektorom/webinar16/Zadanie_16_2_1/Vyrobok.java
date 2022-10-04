@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar16.Zadanie_16_2_1.polia;
+package java_spolocna_praca_s_lektorom.webinar16.Zadanie_16_2_1;
 
 public class Vyrobok
 {
@@ -37,10 +37,6 @@ public class Vyrobok
     @Override
     public String toString()
     {
-        return "Vyrobok{" +
-                "nazov='" + nazov + '\'' +
-                ", cena=" + cena +
-                ", vaha=" + vaha +
-                '}';
+        return "Vyrobok{" + "nazov='" + nazov + '\'' + ", cena=" + cena + ", vaha=" + vaha + '}';
     }
 }
