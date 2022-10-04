@@ -9,7 +9,6 @@ public class ZretazenyZonamTester {
         studenti.pridajNaZaciatok("Igor");      // Igor Peter
         studenti.pridajNaZaciatok("Marek");     // Marek Igor Peter
         studenti.pridajNaZaciatok("Vojto");     // Vojto Marek Igor Peter
-
         vypisPrvkyZoznamu(studenti);
         System.out.println("Ocakavana hodnota: Vojto Marek Igor Peter");
 
@@ -22,8 +21,8 @@ public class ZretazenyZonamTester {
         System.out.println("\nOdstranenie celeho zoznamu pomocou metody zmazZoZaciatku()");
         System.out.println("Odstranili sme studenta: " + studenti.zmazZoZaciatku());
         System.out.println("Odstranili sme studenta: " + studenti.zmazZoZaciatku());
-        System.out.println("Odstranili sme studenta: " + studenti.zmazZoZaciatku());
-        System.out.println("Odstranili sme studenta: " + studenti.zmazZoZaciatku());
+       // System.out.println("Odstranili sme studenta: " + studenti.zmazZoZaciatku());
+       // System.out.println("Odstranili sme studenta: " + studenti.zmazZoZaciatku());
 
         vypisPrvkyZoznamu(studenti);
         System.out.println("Ocakavana hodnota: ");
@@ -31,12 +30,12 @@ public class ZretazenyZonamTester {
         // pridanie do zoznamu pomocou metody iteratora pridaj()
         ZoznamIterator iterator = studenti.iteratorZoznam();
         iterator.pridaj("Monika");
-        iterator.pridaj("Zuzka");
-        iterator.pridaj("Katka");
-        iterator.pridaj("Janka");
+       iterator.pridaj("Zuzka");
+       iterator.pridaj("Katka");
+      //  iterator.pridaj("Janka");
 
         vypisPrvkyZoznamu(studenti);
-
+        System.out.println("Ocakavana hodnota: Monika, Zuzka, Katka, Janka ");
         // odtran vsetky prvky zretazeneho zoznamu pomocou iteratora, jeho metody zmaz()
         System.out.println("\nOdstranenie celeho zoznamu pomocou iteratora");
         iterator = studenti.iteratorZoznam();
@@ -55,7 +54,7 @@ public class ZretazenyZonamTester {
 
         while (iterator.existujeDalsiPrvok()) {
             String prvok = (String) iterator.dalsi();
-            System.out.println(prvok + " ");
+            System.out.println(prvok + " xxx");
         }
         System.out.println();
     }
