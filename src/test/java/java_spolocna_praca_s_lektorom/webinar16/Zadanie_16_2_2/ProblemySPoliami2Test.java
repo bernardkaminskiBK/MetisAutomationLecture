@@ -1,6 +1,5 @@
 package java_spolocna_praca_s_lektorom.webinar16.Zadanie_16_2_2;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import java.util.ArrayList;
@@ -8,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ProblemySPoliami2Test {
 
-    @Disabled
+
     @ParameterizedTest
     @CsvSource(value = {"Game of thrones,20,2,Game of thrones", "Assassins creed,10,0.5,Assassins creed",
             "JUnit5,12.5,0.7,JUnit5"})
@@ -20,7 +19,7 @@ class ProblemySPoliami2Test {
     }
 
 
-    @Disabled
+
     @ParameterizedTest
     @CsvSource(value = {"Game of thrones,20,2,20", "Assassins creed,10,0.5,10",
             "JUnit5,12.5,0.7,12.5"})
@@ -31,7 +30,7 @@ class ProblemySPoliami2Test {
         assertEquals(expectedResult,actualResult);
     }
 
-    @Disabled
+
     @ParameterizedTest
     @CsvSource(value = {"Game of thrones,20,2,2", "Assassins creed,10,0.5,0.5",
             "JUnit5,12.5,0.7,0.7"})
