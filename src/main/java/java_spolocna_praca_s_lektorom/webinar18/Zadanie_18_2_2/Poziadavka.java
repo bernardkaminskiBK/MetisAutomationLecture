@@ -1,7 +1,4 @@
-package fronta;
-
-import java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_2.fronta.Kategoria;
-import java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_2.fronta.Zakaznik;
+package java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_2;
 
 public class Poziadavka
 {

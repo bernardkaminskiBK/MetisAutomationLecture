@@ -1,7 +1,4 @@
-package mnoziny;
-
-import java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_1.mnoziny.Dodavatel;
-import java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_1.mnoziny.Vyrobok;
+package java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_1;
 
 import java.util.*;
 

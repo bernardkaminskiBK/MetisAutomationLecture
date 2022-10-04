@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_1.mnoziny;
+package java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_1;
 
 
 
