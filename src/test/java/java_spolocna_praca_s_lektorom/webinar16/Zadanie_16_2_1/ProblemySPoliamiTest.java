@@ -2,6 +2,9 @@ package java_spolocna_praca_s_lektorom.webinar16.Zadanie_16_2_1;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ProblemySPoliamiTest {
@@ -36,6 +39,33 @@ class ProblemySPoliamiTest {
         Vyrobok vyrobok = new Vyrobok(nazov, cena, vaha);
         double actualResult = vyrobok.getVaha();
         assertEquals(expectedResult,actualResult);
+    }
+
+    private static Vyrobok[] pridajPrvok(Vyrobok novyVyrobok, Vyrobok[] vyrobky)
+    {
+        int velkost = vyrobky.length;
+        Vyrobok[] novePole = Arrays.copyOf(vyrobky, velkost + 1);
+        novePole[velkost] = novyVyrobok;
+        return novePole;
+    }
+
+    @ParameterizedTest
+    @CsvSource(value = {"Python#20#1.1#[Vyrobok{nazov='Java pre pokročilých', cena=30.0, vaha=0.3}, " +
+            "Vyrobok{nazov='Lenovo Thinkpad', cena=1200.0, vaha=2.6}, Vyrobok{nazov='Python', cena=20.0, vaha=1.1}]",
+            "SQL#17#0.9#[Vyrobok{nazov='Java pre pokročilých', cena=30.0, vaha=0.3}, " +
+                    "Vyrobok{nazov='Lenovo Thinkpad', cena=1200.0, vaha=2.6}, Vyrobok{nazov='SQL', cena=17.0, vaha=0.9}]",
+            "HTML#12#0.4#[Vyrobok{nazov='Java pre pokročilých', cena=30.0, vaha=0.3}, " +
+                    "Vyrobok{nazov='Lenovo Thinkpad', cena=1200.0, vaha=2.6}, Vyrobok{nazov='HTML', cena=12.0, vaha=0.4}]"},
+            delimiter = '#')
+    void pridajPrvokTest(String nazov, double cena, double vaha, String expectedResult)
+    {
+        Vyrobok kniha = new Vyrobok("Java pre pokročilých", 30, 0.3);
+        Vyrobok pocitac = new Vyrobok("Lenovo Thinkpad", 1200, 2.6);
+        Vyrobok[] vyrobky = { kniha, pocitac };
+        Vyrobok novyVyrobok = new Vyrobok(nazov, cena, vaha);
+        vyrobky = pridajPrvok(novyVyrobok, vyrobky);
+        String actualResult = Arrays.toString(vyrobky);
+        assertEquals(actualResult,expectedResult);
     }
 
 
