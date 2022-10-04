@@ -12,19 +12,29 @@ public class KomponentaJFileChooserDemo
         //JFileChooser navigator = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
         JFileChooser navigator = new JFileChooser();
 
+
+
         navigator.setFileSelectionMode(JFileChooser.FILES_ONLY);
         navigator.setDialogTitle("Vyber nejaky obrazok");
         navigator.setMultiSelectionEnabled(true);
-        navigator.setAcceptAllFileFilterUsed(false);        // vypne filter *.*
+        navigator.setAcceptAllFileFilterUsed(true);        // zapne filter *.* (moznoje to default hodnota)
 
-        FileNameExtensionFilter filter = new FileNameExtensionFilter("Obrazky jpg a png", "jpg, png");
+
+
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("Obrazky jpg a png", "jpg", "png");
         navigator.addChoosableFileFilter(filter);
 
+
+
         int stav = navigator.showOpenDialog(null);
+
+
 
         if (stav == JFileChooser.APPROVE_OPTION)
         {
             File[] oznaceneSubory = navigator.getSelectedFiles();
+
+
 
             for (File subor : oznaceneSubory)
             {
