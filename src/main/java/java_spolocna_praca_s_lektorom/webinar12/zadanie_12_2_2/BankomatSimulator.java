@@ -1,5 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar12.zadanie_12_2_2;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
@@ -10,11 +11,13 @@ public class BankomatSimulator
         Scanner vstup = new Scanner(System.in);
         Bankomat bankomat = null;
 
-        final String SUBOR_S_KLIENTAMI = "klienti.txt";
+        final String SUBOR_S_KLIENTAMI = ".\\klienti1.txt";
 
         try {
             Banka banka = new Banka();
-            banka.nacitajKlientov(SUBOR_S_KLIENTAMI);
+            String s = new File("").getAbsolutePath();
+            System.out.println(s);
+            banka.nacitajKlientov(s + SUBOR_S_KLIENTAMI);
             bankomat = new Bankomat(banka);
         }
         catch (FileNotFoundException vynimka)
