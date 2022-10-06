@@ -1,9 +1,9 @@
-/*
-package java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_1.mnoziny;
+
+package java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_1;
 
 import org.junit.jupiter.api.Test;
 
-import static java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_1.mnoziny.Sklad.*;
+import static java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_1.Sklad.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsInAnyOrder;
 
@@ -24,7 +24,7 @@ public class ProduktovyKatalogTest
     @Test
     public void testUnikatnychPrvkovVZotriedenomProduktovomKatalogu()
     {
-        mnoziny.ZotriedenyProduktovyKatalog katalog = new mnoziny.ZotriedenyProduktovyKatalog();
+        ZotriedenyProduktovyKatalog katalog = new ZotriedenyProduktovyKatalog();
 
         katalog.pridajVyrobkyOd(fero);
         katalog.pridajVyrobkyOd(karol);
@@ -35,7 +35,7 @@ public class ProduktovyKatalogTest
     @Test
     public void testLahkychVyrobkov()
     {
-        mnoziny.ZotriedenyProduktovyKatalog katalog = new mnoziny.ZotriedenyProduktovyKatalog();
+        ZotriedenyProduktovyKatalog katalog = new ZotriedenyProduktovyKatalog();
 
         katalog.pridajVyrobkyOd(fero);
         katalog.pridajVyrobkyOd(karol);
@@ -46,7 +46,7 @@ public class ProduktovyKatalogTest
     @Test
     public void testTazkychVyrobkov()
     {
-        mnoziny.ZotriedenyProduktovyKatalog katalog = new mnoziny.ZotriedenyProduktovyKatalog();
+        ZotriedenyProduktovyKatalog katalog = new ZotriedenyProduktovyKatalog();
 
         katalog.pridajVyrobkyOd(fero);
         katalog.pridajVyrobkyOd(karol);
@@ -54,4 +54,3 @@ public class ProduktovyKatalogTest
         assertThat(katalog.getTazkeVyrobky(), containsInAnyOrder(dlazobnaKocka, dvere));
     }
 }
-*/

@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar20.Zadanie_20_2_1.genericka_trieda;
+package java_spolocna_praca_s_lektorom.webinar20.Zadanie_20_2_1;
 
 public class Dvojica<T, S>
 {

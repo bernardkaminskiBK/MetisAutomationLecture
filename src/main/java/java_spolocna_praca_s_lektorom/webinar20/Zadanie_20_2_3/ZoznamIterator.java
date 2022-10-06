@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar20.Zadanie_20_2_3.vlastny_genericky_zretazeny_zoznam;
+package java_spolocna_praca_s_lektorom.webinar20.Zadanie_20_2_3;
 
 public interface ZoznamIterator<E>
 {
