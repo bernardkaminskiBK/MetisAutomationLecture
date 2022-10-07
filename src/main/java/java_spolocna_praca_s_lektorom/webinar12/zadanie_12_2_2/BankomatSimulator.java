@@ -11,10 +11,12 @@ public class BankomatSimulator
     {
         Scanner vstup = new Scanner(System.in);
         Bankomat bankomat = null;
+        int zlyPIN = 3;
 
         final String SUBOR_S_KLIENTAMI = "\\klienti1.txt";
 
-        try {
+        try
+        {
             Banka banka = new Banka();
             String s = new File("").getParentFile().getPath();
             System.out.println(s);
@@ -25,7 +27,9 @@ public class BankomatSimulator
         {
             System.out.println("Chyba pri nacitani suboru: '" + SUBOR_S_KLIENTAMI + "'");
             System.exit(0);     // return
-        } catch (IOException e) {
+        }
+        catch (IOException e)
+        {
             throw new RuntimeException(e);
         }
 
@@ -49,6 +53,7 @@ public class BankomatSimulator
             {
                 System.out.print("A = Bezny ucet, B = Sporiaci ucet, C = Koniec: ");
                 String volba = vstup.next();
+                zlyPIN = 3;
 
                 if (volba.equalsIgnoreCase("a"))
                 {
@@ -60,7 +65,7 @@ public class BankomatSimulator
                 }
                 else if (volba.equalsIgnoreCase("c"))
                 {
-                    bankomat.reset();
+                    break;
                 }
                 else
                 {
@@ -99,6 +104,24 @@ public class BankomatSimulator
                 {
                     System.out.println("Nespravna volba!");
                 }
+            }
+            else if (stav == Bankomat.ZLYPIN)
+            {
+                zlyPIN--;
+                System.out.println("zly PIN alebo klientske cislo. Pocet moznych pokusov: " + zlyPIN);
+                if (zlyPIN == 0)
+                {
+                    System.out.println("vycerpane pokusi, vasa karta je zablokovana!");
+                    break;
+                }
+                else
+                {
+                    bankomat.reset();
+                }
+            }
+            else if (stav == Bankomat.KONIEC)
+            {
+                break;
             }
         }
     }
