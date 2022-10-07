@@ -12,10 +12,10 @@ public class Formatovac
         Scanner vstup = new Scanner(System.in);
 
         System.out.println("Zadaj nazov vstupneho suboru: ");
-        String nazovVstupnehoSuboru = vstup.next();
+        String nazovVstupnehoSuboru = "src/main/java/java_spolocna_praca_s_lektorom/" + "webinar10/Zadanie_10_2_3/" + vstup.next();;
 
         System.out.println("Zadaj nazov vystupneho suboru: ");
-        String nazovVystupnehoSuboru = vstup.next();
+        String nazovVystupnehoSuboru = "src/main/java/java_spolocna_praca_s_lektorom/" + "webinar10/Zadanie_10_2_3/" + vstup.next();
 
         FileReader citac = new FileReader(nazovVstupnehoSuboru);
         Scanner citacSuboru = new Scanner(citac);
