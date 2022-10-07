@@ -13,14 +13,14 @@ public class BankomatSimulator
         Bankomat bankomat = null;
         int zlyPIN = 3;
 
-        final String SUBOR_S_KLIENTAMI = "\\klienti1.txt";
+        final String SUBOR_S_KLIENTAMI = "src/main/java/java_spolocna_praca_s_lektorom/" + "webinar12/Zadanie_12_2_2/klienti1.txt";
 
         try
         {
             Banka banka = new Banka();
-            String s = new File("").getParentFile().getPath();
+            String s = new File("").getAbsolutePath();
             System.out.println(s);
-            banka.nacitajKlientov(s + SUBOR_S_KLIENTAMI);
+            banka.nacitajKlientov(SUBOR_S_KLIENTAMI);
             bankomat = new Bankomat(banka);
         }
         catch (FileNotFoundException vynimka)
