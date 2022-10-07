@@ -18,22 +18,6 @@ public class BankovyUcetUkazka
         return zostatokNaInomUcte;
     }
 
-    void prevedVoid(double ciastka, double zostatokNaInomUcte)
-    {
-        aktualnyZostatok -= ciastka;
-        zostatokNaInomUcte += ciastka;
-        System.out.println("v metode preved zostatok na inom ucte: " + zostatokNaInomUcte);
-        // v implementacnej triede metoda funguje, ale nefunguje v testovacej triede
-
-    }
-
-    public void prevodVoid(double ciastka, BankovyUcetUkazka inyUcet)
-    {
-        aktualnyZostatok -= ciastka;
-        inyUcet.aktualnyZostatok += ciastka;
-
-    }
-
     public double prevod(double ciastka, BankovyUcetUkazka inyUcet)
     {
         aktualnyZostatok -= ciastka;
