@@ -1,17 +1,15 @@
 package java_spolocna_praca_s_lektorom.webinar07.Zadanie_7_2_3.volanie_hodnotou_a_odkazom;
 
-public class BankovyUcet
+public class BankovyUcetUkazka
 {
     private double aktualnyZostatok;
 
-    public BankovyUcet(double ciastka)
+    public BankovyUcetUkazka(double ciastka)
     {
         this.aktualnyZostatok += ciastka;
     }
 
-    // predstavuje odovzdavanie parametra metody hodnotou
     public double preved(double ciastka, double zostatokNaInomUcte)
-
     {
         aktualnyZostatok -= ciastka;
         zostatokNaInomUcte += ciastka;
@@ -20,11 +18,7 @@ public class BankovyUcet
         return zostatokNaInomUcte;
     }
 
-    // predstavuje odovzdavanie parametra metody hodnotou
     void prevedVoid(double ciastka, double zostatokNaInomUcte)
-    // zostatokNaInomUcte je len lokalna premenna a po vykonani metody zanika.
-    // Metoda tak v testovacej triede nefunguje obojstranne, iba jednostranne,
-    // t.j. ze odpocita z prveho uctu ciastku, ale nepripocita ju na druhy ucet
     {
         aktualnyZostatok -= ciastka;
         zostatokNaInomUcte += ciastka;
@@ -33,15 +27,14 @@ public class BankovyUcet
 
     }
 
-    // predstavuje odovzdavanie parametra metody odkazom
-    public void prevodVoid(double ciastka, BankovyUcet inyUcet)
+    public void prevodVoid(double ciastka, BankovyUcetUkazka inyUcet)
     {
         aktualnyZostatok -= ciastka;
         inyUcet.aktualnyZostatok += ciastka;
 
     }
 
-    public double prevod(double ciastka, BankovyUcet inyUcet)
+    public double prevod(double ciastka, BankovyUcetUkazka inyUcet)
     {
         aktualnyZostatok -= ciastka;
         inyUcet.aktualnyZostatok += ciastka;
