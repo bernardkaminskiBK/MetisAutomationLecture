@@ -20,7 +20,7 @@ class CitacMnozinyDatTest {
     
     @ParameterizedTest
     @CsvSource(value = {"121.65,data.txt", "120.65,data2.txt", "130,data3.txt"})
-    void citajSuborTest(double expectedResult, String filepath) throws IOException, NespravnyFormatDat {
+    void citajSuborTest(double expectedResult, String filepath) throws IOException, VlastnaVynimka {
         CitacMnozinyDat citac = new CitacMnozinyDat();
         citac.citajSubor(filepath);
         double[] data = citac.citajSubor(filepath);
@@ -49,8 +49,8 @@ class CitacMnozinyDatTest {
             "Ocakavame desatinne cislo"})
     void nespravnyFormatDatException(String sprava)
     {
-        Throwable actualResult = assertThrows(NespravnyFormatDat.class, () -> {
-            throw new NespravnyFormatDat(sprava);
+        Throwable actualResult = assertThrows(VlastnaVynimka.class, () -> {
+            throw new VlastnaVynimka(sprava);
         });
         assertEquals(sprava, actualResult.getMessage());
     }

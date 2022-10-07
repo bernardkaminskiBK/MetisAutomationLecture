@@ -2,6 +2,7 @@ package java_spolocna_praca_s_lektorom.webinar12.zadanie_12_2_2;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class BankomatSimulator
@@ -11,11 +12,11 @@ public class BankomatSimulator
         Scanner vstup = new Scanner(System.in);
         Bankomat bankomat = null;
 
-        final String SUBOR_S_KLIENTAMI = ".\\klienti1.txt";
+        final String SUBOR_S_KLIENTAMI = "\\klienti1.txt";
 
         try {
             Banka banka = new Banka();
-            String s = new File("").getAbsolutePath();
+            String s = new File("").getParentFile().getPath();
             System.out.println(s);
             banka.nacitajKlientov(s + SUBOR_S_KLIENTAMI);
             bankomat = new Bankomat(banka);
@@ -24,6 +25,8 @@ public class BankomatSimulator
         {
             System.out.println("Chyba pri nacitani suboru: '" + SUBOR_S_KLIENTAMI + "'");
             System.exit(0);     // return
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
 
         while (true)

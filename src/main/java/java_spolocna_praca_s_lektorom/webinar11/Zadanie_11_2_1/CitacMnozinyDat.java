@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class CitacMnozinyDat
 {
-    double[] citajSubor(String nazovSuboru) throws IOException, NespravnyFormatDat
+    double[] citajSubor(String nazovSuboru) throws IOException, VlastnaVynimka
     {
         FileReader citac = new FileReader(nazovSuboru);
         Scanner citacSuboru = null;
@@ -27,11 +27,11 @@ public class CitacMnozinyDat
         return data;
     }
 
-    private double[] nacitajCisla(Scanner citacSuboru) throws NespravnyFormatDat
+    private double[] nacitajCisla(Scanner citacSuboru) throws VlastnaVynimka
     {
         if (!citacSuboru.hasNextInt())
         {
-            throw new NespravnyFormatDat("Ocakavany parameter - velkost mnoziny dat");
+            throw new VlastnaVynimka("Ocakavany parameter - velkost mnoziny dat");
         }
 
         int velkostMnozinyDat = citacSuboru.nextInt();
@@ -45,17 +45,17 @@ public class CitacMnozinyDat
 
         if (citacSuboru.hasNext())
         {
-            throw new NespravnyFormatDat("Ocakavame koniec suboru");
+            throw new VlastnaVynimka("Ocakavame koniec suboru");
         }
 
         return data;
     }
 
-    private void nacitajCislo(double[] data, int index, Scanner citacSuboru) throws NespravnyFormatDat
+    private void nacitajCislo(double[] data, int index, Scanner citacSuboru) throws VlastnaVynimka
     {
         if (!citacSuboru.hasNextDouble())
         {
-            throw new NespravnyFormatDat("Ocakavame desatinne cislo");
+            throw new VlastnaVynimka("Ocakavame desatinne cislo");
         }
         data[index] = citacSuboru.nextDouble();
     }

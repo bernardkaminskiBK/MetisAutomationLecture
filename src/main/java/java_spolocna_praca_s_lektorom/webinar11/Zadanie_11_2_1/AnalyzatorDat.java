@@ -44,7 +44,7 @@ public class AnalyzatorDat
                 System.out.println("Nastala vstupno/vystupna chyba!");
                 break;
             }
-            catch (NespravnyFormatDat vynimka)
+            catch (VlastnaVynimka vynimka)
             {
                 System.out.println("Nastal problem: " + vynimka.getMessage());
                 break;
