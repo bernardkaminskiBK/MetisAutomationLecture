@@ -14,7 +14,6 @@ public class BankovyUcetUkazka
         aktualnyZostatok -= ciastka;
         zostatokNaInomUcte += ciastka;
         System.out.println("v metode preved zostatok na inom ucte: " + zostatokNaInomUcte);
-        // v implementacnej triede metoda funguje, ale nefunguje v testovacej triede
         return zostatokNaInomUcte;
     }
 
