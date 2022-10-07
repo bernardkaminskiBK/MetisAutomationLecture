@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class PrikladOhraniceniaZhora
 {
-    private static void vypisDruheMocninyCisel(ArrayList<Number> zoznamCisel)
+    private static void vypisDruhejMocninyCisel(ArrayList<Number> zoznamCisel)
     {
         for (Number cislo : zoznamCisel)
         {
@@ -39,7 +39,7 @@ public class PrikladOhraniceniaZhora
         zoznamCisel2.add(2.6);
         zoznamCisel2.add(5.5);
 
-        vypisDruheMocninyCisel2(zoznamCisel);
+        vypisDruhejMocninyCisel(zoznamCisel);
         vypisDruheMocninyCisel2(zoznamCisel2);
     }
 }
