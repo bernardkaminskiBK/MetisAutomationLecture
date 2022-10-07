@@ -4,36 +4,42 @@ import java.util.ArrayList;
 
 public class PrikladOhraniceniaZhora
 {
-    private static void vypisZoznamCisel(ArrayList<Integer> zoznamCisel)
+    private static void vypisDruheMocninyCisel(ArrayList<Number> zoznamCisel)
     {
-        for (Integer cislo : zoznamCisel)
+        for (Number cislo : zoznamCisel)
         {
-            System.out.println(cislo);
+            System.out.println(cislo.intValue() * cislo.intValue());
         }
     }
 
-    private static void vypisZoznamCisel2(ArrayList<? super Integer> zoznamCisel2) // ? super = akakolvek nadtrieda triedy Integer
+    private static void vypisDruheMocninyCisel2(ArrayList<? extends Number> zoznamCisel2) // akakolvek podtrieda triedy Number
     {
-        for (Object cislo : zoznamCisel2)
+        for (Number cislo : zoznamCisel2)
         {
-            System.out.println(cislo);
+            if (cislo instanceof Double)
+            {
+                System.out.println(cislo.doubleValue() * cislo.doubleValue());
+            }
+            if (cislo instanceof Integer)
+            {
+                System.out.println(cislo.intValue() * cislo.intValue());
+            }
         }
     }
 
     public static void main(String[] args)
     {
-        // vytvor zoznam celych cisel
-        ArrayList<Integer> zoznamCisel = new ArrayList<>(); // nemoze byt<int>, musi byt obalovacia trieda
+        ArrayList<Number> zoznamCisel = new ArrayList<>();
         zoznamCisel.add(1);
         zoznamCisel.add(2);
         zoznamCisel.add(3);
 
-        ArrayList<Number> zoznamCisel2 = new ArrayList<>();
+        ArrayList<Double> zoznamCisel2 = new ArrayList<>();
         zoznamCisel2.add(1.4);
         zoznamCisel2.add(2.6);
         zoznamCisel2.add(5.5);
 
-        vypisZoznamCisel2(zoznamCisel);
-        vypisZoznamCisel2(zoznamCisel2);
+        vypisDruheMocninyCisel2(zoznamCisel);
+        vypisDruheMocninyCisel2(zoznamCisel2);
     }
 }
