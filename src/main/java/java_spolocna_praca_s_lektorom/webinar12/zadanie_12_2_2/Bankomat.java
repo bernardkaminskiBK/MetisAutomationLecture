@@ -7,7 +7,6 @@ public class Bankomat
     public static final int UCET = 3;
     public static final int TRANSAKCIA = 4;
     public static final int ZLYPIN = 5;
-    public static final int KONIEC = 6;
     public static int BEZNY = 1;
     public static int SPORIACI = 2;
     private final Banka banka;

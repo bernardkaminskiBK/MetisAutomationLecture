@@ -18,8 +18,6 @@ public class BankomatSimulator
         try
         {
             Banka banka = new Banka();
-            String s = new File("").getAbsolutePath();
-            System.out.println(s);
             banka.nacitajKlientov(SUBOR_S_KLIENTAMI);
             bankomat = new Bankomat(banka);
         }
@@ -118,10 +116,6 @@ public class BankomatSimulator
                 {
                     bankomat.reset();
                 }
-            }
-            else if (stav == Bankomat.KONIEC)
-            {
-                break;
             }
         }
     }
