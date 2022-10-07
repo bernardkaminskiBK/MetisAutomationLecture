@@ -1,6 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar22.Zadanie_22_2_1.Problem01;
 
-public class Proble01Tester
+public class Problem01Tester
 {
     public static void main(String[] args)
     {
