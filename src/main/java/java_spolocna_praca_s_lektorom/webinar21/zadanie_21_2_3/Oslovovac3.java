@@ -1,6 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar21.zadanie_21_2_3;
 
-public class Oslovovac
+public class Oslovovac3
 {
     public void pozdrav(Oslovenie oslovenie)
     {
@@ -9,7 +9,7 @@ public class Oslovovac
 
     public static void main(String[] args)
     {
-        Oslovovac oslovovac = new Oslovovac();
+        Oslovovac3 oslovovac = new Oslovovac3();
 
         oslovovac.pozdrav(() -> System.out.println("Ahoj!"));
         oslovovac.pozdrav(() -> System.out.println("Nazdar!"));
