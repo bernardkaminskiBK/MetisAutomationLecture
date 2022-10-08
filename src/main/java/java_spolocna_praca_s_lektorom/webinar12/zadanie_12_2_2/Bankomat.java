@@ -14,7 +14,7 @@ public class Bankomat
     private int klientskeCislo;
     private BankovyUcet aktualnyUcet;
     private int pin;
-    private int typUctu;
+    public static int typUctu;
     private Klient aktualnyKlient;
 
     public Bankomat(Banka banka)
@@ -54,6 +54,8 @@ public class Bankomat
     public void nastavTypUctu(int typUctu)
     {
         assert stav == UCET || stav == TRANSAKCIA;
+
+        this.typUctu = typUctu;
 
         if (typUctu == BEZNY)
         {

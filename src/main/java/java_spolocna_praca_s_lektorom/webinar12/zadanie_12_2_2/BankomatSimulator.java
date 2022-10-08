@@ -1,6 +1,5 @@
 package java_spolocna_praca_s_lektorom.webinar12.zadanie_12_2_2;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
@@ -12,6 +11,7 @@ public class BankomatSimulator
         Scanner vstup = new Scanner(System.in);
         Bankomat bankomat = null;
         int zlyPIN = 3;
+        String typUctu = "";
 
         final String SUBOR_S_KLIENTAMI = "src/main/java/java_spolocna_praca_s_lektorom/" + "webinar12/Zadanie_12_2_2/klienti1.txt";
 
@@ -56,10 +56,12 @@ public class BankomatSimulator
                 if (volba.equalsIgnoreCase("a"))
                 {
                     bankomat.nastavTypUctu(Bankomat.BEZNY);
+                    typUctu = "beznom ucte";
                 }
                 else if (volba.equalsIgnoreCase("b"))
                 {
                     bankomat.nastavTypUctu(Bankomat.SPORIACI);
+                    typUctu = "sporiacom ucte";
                 }
                 else if (volba.equalsIgnoreCase("c"))
                 {
@@ -67,12 +69,13 @@ public class BankomatSimulator
                 }
                 else
                 {
-                    System.out.print("Nespravna volba!");
+                    System.out.println("Nespravna volba!");
                 }
             }
             else if (stav == Bankomat.TRANSAKCIA)
             {
-                System.out.println("Aktualny zostatok na ucte:  " + bankomat.getAktualnyZostatok() + " Eur");
+                String text = "Aktualny zostatok na " + typUctu + " je: ";
+                //System.out.println(text + bankomat.getAktualnyZostatok() + " Eur");
 
                 System.out.print("A = Vklad, B = Vyber, C = Krok spat: ");
 
@@ -85,14 +88,24 @@ public class BankomatSimulator
 
                     bankomat.vloz(ciastka);
                     bankomat.nastavPredchadzajuciStav();
+                    System.out.println(text + bankomat.getAktualnyZostatok() + " Eur");
                 }
                 else if (volba.equalsIgnoreCase("b"))
                 {
-                    System.out.print("Ciastka:");
+                    System.out.print("Ciastka: ");
                     double ciastka = vstup.nextDouble();
 
-                    bankomat.vyber(ciastka);
-                    bankomat.nastavPredchadzajuciStav();
+                    if (ciastka > bankomat.getAktualnyZostatok())
+                    {
+                        System.out.println("nedostatok financnych prostriedkov. Na " + typUctu + " mate " + bankomat.getAktualnyZostatok() + " Eur");
+                        bankomat.nastavPredchadzajuciStav();
+                    }
+                    else
+                    {
+                        bankomat.vyber(ciastka);
+                        bankomat.nastavPredchadzajuciStav();
+                        System.out.println(text + bankomat.getAktualnyZostatok() + " Eur");
+                    }
                 }
                 else if (volba.equalsIgnoreCase("c"))
                 {
