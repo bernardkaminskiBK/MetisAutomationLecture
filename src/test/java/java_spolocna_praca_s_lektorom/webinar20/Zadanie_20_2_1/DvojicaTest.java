@@ -25,13 +25,15 @@ class DvojicaTest {
     }
 
     @ParameterizedTest
-    @CsvSource(value = {"120#Peter#1.2#Juraj#"},delimiter = '#')
-    void haluztest(Integer prvy, String druhy, Double doubleHodnota, String nazovSuboru)
+    @CsvSource(value = {"120#Peter#1.2#Juraj#Peter"},delimiter = '#')
+    void haluztest(Integer prvy, String druhy, Double doubleHodnota, String nazovSuboru, String expectedResult)
     {
         Dvojica<Integer, String> cisloText = new Dvojica<>(prvy,druhy);
         Dvojica<Double, String> cislo2Text = new Dvojica<>(doubleHodnota, nazovSuboru);
         Dvojica<Dvojica<Integer, String>, Dvojica<Double,String>> haluz = new Dvojica<>(cisloText,cislo2Text);
-        System.out.println(haluz.getPrvy().getDruhy());
+
+        String actualResult = (haluz.getPrvy().getDruhy());
+        Assertions.assertEquals(expectedResult,actualResult);
     }
 
 
