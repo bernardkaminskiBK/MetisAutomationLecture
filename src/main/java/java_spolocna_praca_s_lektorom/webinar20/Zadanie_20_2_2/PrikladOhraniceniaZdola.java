@@ -4,16 +4,15 @@ import java.util.ArrayList;
 
 public class PrikladOhraniceniaZdola
 {
-    private static void vypisDruhejMocninyCisel(ArrayList<Integer> zoznamCisel)
+    public static void vypisDruhejMocninyCisel(ArrayList<Integer> zoznamCisel)
     {
         for (Integer cislo : zoznamCisel)
         {
             System.out.println(cislo);
         }
     }
-    private static void vypisDruhejMocninyCisel2(ArrayList<? super Integer> zoznamCisel2) // akakolvek podtrieda triedy Number
+    public static void vypisDruhejMocninyCisel2(ArrayList<? super Integer> zoznamCisel2) // akakolvek podtrieda triedy Number
     {
-
         for (Object cislo : zoznamCisel2)
         {
             System.out.println(cislo);
@@ -21,11 +20,9 @@ public class PrikladOhraniceniaZdola
 
     }
 
-
-
     public static void main(String[] args)
     {
-        // vytvor zoznam celych cisel
+//        vytvor zoznam celych cisel
         ArrayList<Integer> zoznamCisel = new ArrayList<>(); // nemoze byt<int>, musi byt obalovacia trieda
         zoznamCisel.add(1);
         zoznamCisel.add(2);
