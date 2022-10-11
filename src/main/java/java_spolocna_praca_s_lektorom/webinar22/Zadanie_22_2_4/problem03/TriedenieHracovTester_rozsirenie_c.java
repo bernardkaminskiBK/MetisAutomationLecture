@@ -1,13 +1,11 @@
 package java_spolocna_praca_s_lektorom.webinar22.Zadanie_22_2_4.problem03;
 
-import java_spolocna_praca_s_lektorom.webinar22.Zadanie_22_2_4.problem03.Hrac;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class TriedenieHracovTester_rozsirenie2
+public class TriedenieHracovTester_rozsirenie_c
 {
     public static void main(String[] args)
     {

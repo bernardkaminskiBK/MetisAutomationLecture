@@ -12,7 +12,7 @@ public class PrikladOhraniceniaZhora
         }
     }
 
-    private static void vypisDruheMocninyCisel2(ArrayList<? extends Number> zoznamCisel2) // akakolvek podtrieda triedy Number
+    private static void vypisDruhejMocninyCisel2(ArrayList<? extends Number> zoznamCisel2) // akakolvek podtrieda triedy Number
     {
         for (Number cislo : zoznamCisel2)
         {
@@ -40,6 +40,6 @@ public class PrikladOhraniceniaZhora
         zoznamCisel2.add(5.5);
 
         vypisDruhejMocninyCisel(zoznamCisel);
-        vypisDruheMocninyCisel2(zoznamCisel2);
+        vypisDruhejMocninyCisel2(zoznamCisel2);
     }
 }
