@@ -14,7 +14,7 @@ package java_spolocna_praca_s_lektorom.webinar14.Zadanie_14_2_4;
 // ...
 // n. clen = ?
 
-public class FibonacciTester {
+public class FibonacciTester_c {
 
     public static void main(String[] args) {
         System.out.printf("Fibonacci(10): %.0f%n", fibonacci(10));

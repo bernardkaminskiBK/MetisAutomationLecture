@@ -1,6 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar14.Zadanie_14_2_4;
 
-public class MetodaVolajucaSamuSeba {
+public class MetodaVolajucaSamuSeba_a {
 
     private static int pocetVolani = 0;
 

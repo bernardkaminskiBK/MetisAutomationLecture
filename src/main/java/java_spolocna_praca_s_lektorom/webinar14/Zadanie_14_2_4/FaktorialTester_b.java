@@ -1,6 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar14.Zadanie_14_2_4;
 
-public class FaktorialTester {
+public class FaktorialTester_b {
     public static void main(String[] args) {
         System.out.printf("Faktorial (10): %.0f%n", faktorial(10));
         System.out.printf("Faktorial (5): %.0f%n", faktorial(5));
