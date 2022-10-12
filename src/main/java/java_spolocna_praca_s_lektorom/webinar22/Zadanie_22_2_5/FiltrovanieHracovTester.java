@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar22.Zadanie_22_2_5.problem04;
+package java_spolocna_praca_s_lektorom.webinar22.Zadanie_22_2_5;
 
 import java.util.ArrayList;
 import java.util.List;

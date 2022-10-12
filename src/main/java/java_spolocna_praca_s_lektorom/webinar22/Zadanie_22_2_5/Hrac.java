@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar22.Zadanie_22_2_4.problem03;
+package java_spolocna_praca_s_lektorom.webinar22.Zadanie_22_2_5;
 
 public class Hrac
 {
