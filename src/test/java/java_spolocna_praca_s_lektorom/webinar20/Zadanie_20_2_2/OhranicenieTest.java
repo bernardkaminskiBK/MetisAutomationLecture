@@ -13,7 +13,6 @@ public class OhranicenieTest {
     void vypisDruhejMocninyTest(int get, String contains)
     {
         System.setOut(new StorePrintStream(System.out));
-        PrikladOhraniceniaZdola.main(new String[0]);
         ArrayList<Integer> zoznam = new ArrayList<>();
         zoznam.add(1);
         zoznam.add(2);
