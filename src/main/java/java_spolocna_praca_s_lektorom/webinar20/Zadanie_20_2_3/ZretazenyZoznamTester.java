@@ -54,7 +54,7 @@ public class ZretazenyZoznamTester
         System.out.println("Ocakavana hodnota: "); // prazdny zoznam
     }
 
-    private static void vypisPrvkyZoznamu(ZretazenyZoznam<String> zoznam)
+    public static void vypisPrvkyZoznamu(ZretazenyZoznam<String> zoznam)
     {
         ZoznamIterator<String> iterator = zoznam.iteratorZoznam();
 
