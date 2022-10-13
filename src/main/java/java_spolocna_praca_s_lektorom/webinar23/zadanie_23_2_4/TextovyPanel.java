@@ -11,7 +11,7 @@ public class TextovyPanel extends JPanel
     {
         txaText = new JTextArea();
         txaText.setBackground(Color.LIGHT_GRAY);
-        txaText.setFont(new Font("TimeRomab", Font.PLAIN, 22));
+        txaText.setFont(new Font("TimeRoman", Font.PLAIN, 22));
         txaText.setEditable(false);
 
         setLayout(new BorderLayout());
