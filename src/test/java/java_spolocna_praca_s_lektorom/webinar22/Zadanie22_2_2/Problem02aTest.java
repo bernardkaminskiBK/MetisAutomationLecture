@@ -13,6 +13,6 @@ public class Problem02aTest {
         Problem02aTester.main(new String[0]);
 
         assertTrue(StorePrintStream.printlnList.get(0).contains("Programovanie v Jave nas bavi :-)"));
-        assertTrue(StorePrintStream.printlnList.get(0).contains("einavomargorP v evaJ san ivab )-:"));
+        assertTrue(StorePrintStream.printlnList.get(1).contains("einavomargorP v evaJ san ivab )-:"));
     }
 }
