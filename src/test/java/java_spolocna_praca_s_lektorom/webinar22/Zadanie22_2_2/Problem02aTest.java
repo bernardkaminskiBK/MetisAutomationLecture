@@ -32,6 +32,7 @@ public class Problem02aTest {
             return otocenyText.substring(0, otocenyText.length()-1);
         };
         String actualResult = revers.otoc(text);
+
         assertEquals(exceptedResult,actualResult);
     }
     @FunctionalInterface
