@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class Problem02aTest {
     @Test
-    void reverTest()
+    void reverzTest()
     {
         System.setOut(new StorePrintStream(System.out));
         Problem02aTester.main(new String[0]);
