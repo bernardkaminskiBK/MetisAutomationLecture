@@ -45,8 +45,34 @@ public class HracTest {
         hraci.add(new Hrac("Maroš", "Molnár", 26));
         hraci.add(new Hrac("Juraj", "Jánošík", 29));
         hraci.add(new Hrac("Peter", "Sagan", 23));
+        hraci.add(new Hrac("Juraj", "Sagan", 23));
+        hraci.add(new Hrac("Peter", "Molnár", 23));
 
-        Comparator<Hrac> podlaPoctuGolov = Comparator.comparing(Hrac::getPocetGolov).reversed();
+        Comparator<Hrac> podlaPoctuGolov = Comparator.comparing(Hrac::getPocetGolov)
+                .thenComparing(Hrac::getPriezvisko)
+                .thenComparing(Hrac::getMeno)
+                .reversed();
+
+        hraci.stream()
+                .sorted(podlaPoctuGolov)
+                .map(hraciSk -> hraciSk.getMeno() + " " + hraciSk.getPriezvisko() + " " + hraciSk.getPocetGolov())
+                .forEach(System.out::println);
+    }
+
+    @ParameterizedTest
+    @CsvSource(value = {"Peter,Sagan,12", "Maroš,Molnár,17","Martin,Kralovič,10"})
+    void triedenieHracov2Test(String meno, String priezvisko, int pocetGolov)
+    {
+        List<Hrac> hraci = new ArrayList<>();
+        hraci.add(new Hrac(meno, priezvisko, pocetGolov));
+        hraci.add(new Hrac(meno, priezvisko, pocetGolov));
+        hraci.add(new Hrac(meno, priezvisko, pocetGolov));
+
+
+        Comparator<Hrac> podlaPoctuGolov = Comparator.comparing(Hrac::getPocetGolov)
+                .thenComparing(Hrac::getPriezvisko)
+                .thenComparing(Hrac::getMeno)
+                ;
 
         hraci.stream()
                 .sorted(podlaPoctuGolov)
