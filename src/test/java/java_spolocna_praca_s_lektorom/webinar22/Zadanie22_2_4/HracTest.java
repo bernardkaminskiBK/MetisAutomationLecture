@@ -2,8 +2,12 @@ package java_spolocna_praca_s_lektorom.webinar22.Zadanie22_2_4;
 
 import java_spolocna_praca_s_lektorom.webinar22.Zadanie_22_2_4.Hrac;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 public class HracTest {
     @ParameterizedTest
@@ -34,8 +38,19 @@ public class HracTest {
     }
 
 
+    @Test
+    void triedenieHracovTest()
+    {
+        List<Hrac> hraci = new ArrayList<>();
+        hraci.add(new Hrac("Maroš", "Molnár", 26));
+        hraci.add(new Hrac("Juraj", "Jánošík", 29));
+        hraci.add(new Hrac("Peter", "Sagan", 23));
 
+        Comparator<Hrac> podlaPoctuGolov = Comparator.comparing(Hrac::getPocetGolov).reversed();
 
-
-
+        hraci.stream()
+                .sorted(podlaPoctuGolov)
+                .map(hraciSk -> hraciSk.getMeno() + " " + hraciSk.getPriezvisko() + " " + hraciSk.getPocetGolov())
+                .forEach(System.out::println);
+    }
 }
