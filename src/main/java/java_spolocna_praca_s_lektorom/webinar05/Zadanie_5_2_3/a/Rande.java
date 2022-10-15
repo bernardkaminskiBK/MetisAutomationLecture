@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar05.Zadanie_5_2_3;
+package java_spolocna_praca_s_lektorom.webinar05.Zadanie_5_2_3.a;
 
 public class Rande {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar13.Zadanie_13_2_2;
+package java_spolocna_praca_s_lektorom.webinar13.Zadanie_13_2_2.b;
 
 import java.util.Random;
 

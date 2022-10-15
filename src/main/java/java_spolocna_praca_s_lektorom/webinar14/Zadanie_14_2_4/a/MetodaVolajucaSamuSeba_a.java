@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar14.Zadanie_14_2_4;
+package java_spolocna_praca_s_lektorom.webinar14.Zadanie_14_2_4.a;
 
 public class MetodaVolajucaSamuSeba_a {
 

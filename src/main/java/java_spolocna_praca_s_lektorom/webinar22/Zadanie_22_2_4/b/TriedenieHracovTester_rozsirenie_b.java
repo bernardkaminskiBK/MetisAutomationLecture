@@ -1,4 +1,6 @@
-package java_spolocna_praca_s_lektorom.webinar22.Zadanie_22_2_4;
+package java_spolocna_praca_s_lektorom.webinar22.Zadanie_22_2_4.b;
+
+import java_spolocna_praca_s_lektorom.webinar22.Zadanie_22_2_4.Hrac;
 
 import java.util.ArrayList;
 import java.util.Comparator;

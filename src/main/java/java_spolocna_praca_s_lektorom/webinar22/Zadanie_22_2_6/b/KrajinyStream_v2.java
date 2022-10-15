@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar22.Zadanie_22_2_6;
+package java_spolocna_praca_s_lektorom.webinar22.Zadanie_22_2_6.b;
 
 import java.io.IOException;
 import java.nio.file.Files;

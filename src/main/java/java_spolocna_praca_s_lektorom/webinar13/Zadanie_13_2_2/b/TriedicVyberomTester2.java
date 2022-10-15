@@ -1,7 +1,8 @@
-package java_spolocna_praca_s_lektorom.webinar13.Zadanie_13_2_2;
+package java_spolocna_praca_s_lektorom.webinar13.Zadanie_13_2_2.b;
 
 
 import java_spolocna_praca_s_lektorom.webinar13.Zadanie_13_2_1.Stopky;
+import java_spolocna_praca_s_lektorom.webinar13.Zadanie_13_2_2.a.TriedicVyberom;
 
 public class TriedicVyberomTester2 {
     public static void main(String[] args) {

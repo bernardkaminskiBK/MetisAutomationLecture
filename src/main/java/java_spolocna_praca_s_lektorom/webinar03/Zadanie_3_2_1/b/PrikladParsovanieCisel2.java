@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar03.Zadanie_3_2_1;
+package java_spolocna_praca_s_lektorom.webinar03.Zadanie_3_2_1.b;
 
 public class PrikladParsovanieCisel2 {
     public static void main(String[] args) {

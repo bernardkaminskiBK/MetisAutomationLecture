@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar20.Zadanie_20_2_2;
+package java_spolocna_praca_s_lektorom.webinar20.Zadanie_20_2_2.a;
 
 import java.util.ArrayList;
 
