@@ -3,12 +3,12 @@ package java_spolocna_praca_s_lektorom.webinar25.Zadanie_25_2_2;
 public class VekovaKategoria
 {
     private int id;
-    private String mazov;
+    private String nazov;
 
-    public VekovaKategoria(int id, String mazov)
+    public VekovaKategoria(int id, String nazov)
     {
         this.id = id;
-        this.mazov = mazov;
+        this.nazov = nazov;
     }
 
     public int getId()
@@ -16,9 +16,9 @@ public class VekovaKategoria
         return id;
     }
 
-    public String getMazov()
+    public String getnazov()
     {
-        return mazov;
+        return nazov;
     }
 
     // TODO: dopln chybajucu metodu toString()
@@ -26,6 +26,6 @@ public class VekovaKategoria
     @Override
     public String toString()
     {
-        return mazov;
+        return nazov;
     }
 }
