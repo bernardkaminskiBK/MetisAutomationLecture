@@ -16,7 +16,7 @@ public class VekovaKategoria
         return id;
     }
 
-    public String getnazov()
+    public String getNazov()
     {
         return nazov;
     }
