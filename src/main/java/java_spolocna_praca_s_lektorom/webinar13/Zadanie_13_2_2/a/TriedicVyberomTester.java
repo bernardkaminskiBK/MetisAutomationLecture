@@ -1,7 +1,5 @@
 package java_spolocna_praca_s_lektorom.webinar13.Zadanie_13_2_2.a;
 
-import java_spolocna_praca_s_lektorom.webinar13.Zadanie_13_2_2.b.PoleUtil;
-
 import java.util.Arrays;
 
 public class TriedicVyberomTester {

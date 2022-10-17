@@ -1,6 +1,8 @@
 package java_spolocna_praca_s_lektorom.webinar13.Zadanie_13_2_2;
 
 import java_spolocna_praca_s_lektorom.webinar13.Zadanie_13_2_1.Stopky;
+import java_spolocna_praca_s_lektorom.webinar13.Zadanie_13_2_2.a.PoleUtil;
+import java_spolocna_praca_s_lektorom.webinar13.Zadanie_13_2_2.a.TriedicVyberom;
 import org.apache.commons.lang3.Range;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
