@@ -1,7 +1,9 @@
-package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_test;
+package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1__test;
 
-import zadanie_30_2_1.Customer;
-import zadanie_30_2_1.CustomerRepository;
+import java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1.Customer;
+import java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1.CustomerRepository;
+//import zadanie_30_2_1.Customer;
+//import zadanie_30_2_1.CustomerRepository;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,4 +1,5 @@
-package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_test;
+/*
+package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1__test;
 
 import org.junit.jupiter.api.Test;
 import zadanie_30_2_1.NumberService;
@@ -21,3 +22,4 @@ class NumberServiceTest
         assertThat(sum).isEqualTo(10);
     }
 }
+*/

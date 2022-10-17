@@ -1,3 +1,4 @@
+/*
 package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_test;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -65,7 +66,7 @@ class CustomerServiceTest
 
         assertThat(customerRepository.getNumberOfSaves()).isZero();
     }
-*/
+
     @ParameterizedTest
     @MyNullAndEmptyAndBlankSource
     void whenCustomerIsNotValid_thenExpectionIsThrown(final String lastName)
@@ -108,3 +109,4 @@ class CustomerServiceTest
         }
     }
 }
+*/

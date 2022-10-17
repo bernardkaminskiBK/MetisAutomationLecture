@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_test;
+/*package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_test;
 
 import zadanie_30_2_1.NumbersGenerator;
 
@@ -22,3 +22,4 @@ public class NumbersFromSpecifieldListGenerator implements NumbersGenerator
         return number;
     }
 }
+*/

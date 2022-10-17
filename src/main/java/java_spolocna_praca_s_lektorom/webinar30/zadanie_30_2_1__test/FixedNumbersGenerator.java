@@ -1,10 +1,11 @@
-package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_test;
+/*
+package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1__test;
 
 import zadanie_30_2_1.NumbersGenerator;
 
 /**
- * Always generate number
- */
+ // Always generate number
+
 public class FixedNumbersGenerator implements NumbersGenerator
 {
     @Override
@@ -13,3 +14,4 @@ public class FixedNumbersGenerator implements NumbersGenerator
         return 5;
     }
 }
+*/
