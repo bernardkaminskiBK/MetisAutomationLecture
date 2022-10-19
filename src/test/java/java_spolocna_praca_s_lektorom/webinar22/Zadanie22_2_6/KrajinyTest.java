@@ -5,6 +5,10 @@ import org.junit.jupiter.api.Test;
 import utils.StorePrintStream;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class KrajinyTest {
@@ -24,7 +28,14 @@ public class KrajinyTest {
         assertTrue(StorePrintStream.printList.get(0).contains("Rakusko"));
     }
 
-
+    @Test
+    void krajina2Test() throws IOException {
+        List<String> krajiny = Files.readAllLines(Paths.get("krajiny.txt"));
+        for (String krajina : krajiny) {
+            System.out.print(krajina + " ");
+            assertTrue(krajiny.contains("Polsko"));
+        }
+    }
 }
 
 
