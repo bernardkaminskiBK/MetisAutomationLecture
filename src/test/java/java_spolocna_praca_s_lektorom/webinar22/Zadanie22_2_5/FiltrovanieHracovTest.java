@@ -1,8 +1,8 @@
 package java_spolocna_praca_s_lektorom.webinar22.Zadanie22_2_5;
 
 import java_spolocna_praca_s_lektorom.webinar22.Zadanie_22_2_5.Hrac;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
@@ -28,9 +28,12 @@ public class FiltrovanieHracovTest {
                 .filter(kriteriumNaHraca)
                 .forEach(hraciNad10Golov::add);
 
-        for (Hrac hrac : hraciNad10Golov) {
-            System.out.println(hrac + " ");
-        }
+//        for (Hrac hrac : hraciNad10Golov) {
+//            System.out.println(hrac + " ");
+//        }
+        int actualResult = hraciNad10Golov.size();
+
+        Assertions.assertEquals(2, actualResult);
 
     }
 }
