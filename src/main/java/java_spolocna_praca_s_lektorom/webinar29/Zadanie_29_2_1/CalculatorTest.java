@@ -1,3 +1,5 @@
+package java_spolocna_praca_s_lektorom.webinar29.Zadanie_29_2_1;
+
 import java_spolocna_praca_s_lektorom.webinar29.Zadanie_29_2_1.Calculator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
