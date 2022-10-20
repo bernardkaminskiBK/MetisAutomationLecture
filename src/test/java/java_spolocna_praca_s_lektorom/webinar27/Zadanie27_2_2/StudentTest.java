@@ -26,4 +26,14 @@ public class StudentTest {
         assertEquals(expectedResult,actualResult);
 
     }
+
+    @ParameterizedTest
+    @CsvSource(value = {"Michal,Malina,1.23,1.23", "Peter,Suchý,2.01,2.01", "Juraj,Petrovič,1.54,1.54"})
+    void getPriemerZnamokTest(String meno, String priezvisko, double priemerZnamok, double expectedResult)
+    {
+        Student student = new Student(meno, priezvisko, priemerZnamok);
+        double actualResult = student.getPriemerZnamok();
+        assertEquals(expectedResult,actualResult);
+
+    }
 }
