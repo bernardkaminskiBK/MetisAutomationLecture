@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar27.Zadanie27_2_2;
+package java_spolocna_praca_s_lektorom.webinar27.Zadanie27_2_3;
 
 import java_spolocna_praca_s_lektorom.webinar27.Zadanie_27_2_3.Student;
 import org.junit.jupiter.params.ParameterizedTest;
