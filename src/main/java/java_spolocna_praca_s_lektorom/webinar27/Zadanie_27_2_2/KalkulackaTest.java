@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar27.Zadanie_27_2_1;
+package java_spolocna_praca_s_lektorom.webinar27.Zadanie_27_2_2;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

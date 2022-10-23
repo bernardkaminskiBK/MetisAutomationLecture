@@ -1,6 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar27.Zadanie27_2_1;
 
-import java_spolocna_praca_s_lektorom.webinar27.Zadanie_27_2_1.Kalkulacka;
+import java_spolocna_praca_s_lektorom.webinar27.Zadanie_27_2_2.Kalkulacka;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
