@@ -2,7 +2,8 @@ package profun.Zadanie_6_3_2_Test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import profun.Zadanie_6_3_2.SucinNeparnychCisel;
+import profun.Lekcia06.Zadanie_6_3_2.SucinNeparnychCisel;
+
 
 public class SucinNeparnychTest {
 

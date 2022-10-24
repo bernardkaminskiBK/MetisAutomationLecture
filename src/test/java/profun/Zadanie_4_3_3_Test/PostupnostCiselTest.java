@@ -3,7 +3,8 @@ package profun.Zadanie_4_3_3_Test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import profun.Zadanie_4_3_3.PostupnostCisel;
+import profun.Lekcia04.Zadanie_4_3_3.PostupnostCisel;
+
 
 
 public class PostupnostCiselTest {

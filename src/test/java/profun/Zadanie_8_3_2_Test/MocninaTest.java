@@ -1,11 +1,12 @@
 package profun.Zadanie_8_3_2_Test;
 
+import profun.Lekcia08.Zadanie_8_3_2.Mocnina;
 import profun.Utils.Listeners.ResultSetListener;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import profun.Zadanie_8_3_2.Mocnina;
+
 
 
 @ExtendWith(ResultSetListener.class)

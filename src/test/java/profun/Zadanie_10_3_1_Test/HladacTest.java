@@ -3,7 +3,8 @@ package profun.Zadanie_10_3_1_Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import profun.Zadanie_10_3_1.Hladac;
+import profun.Lekcia10.Zadanie_10_3_1.Hladac;
+
 
 public class HladacTest {
 
