@@ -21,8 +21,10 @@ public class PolePorovnavac {
             return false;
         }
 
-        for (int i = 0; i < prvePole.length; i++) {
-            if (prvePole[i] != druhePole[i]) {
+        for (int i = 0; i < prvePole.length; i++)
+        {
+            if (prvePole[i] != druhePole[i])
+            {
                 return false;
             }
         }
