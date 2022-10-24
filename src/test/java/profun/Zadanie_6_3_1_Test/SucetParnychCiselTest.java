@@ -3,7 +3,7 @@ package profun.Zadanie_6_3_1_Test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import profun.Lekcia06.Zadanie_6_3_1.SucetParnychCisel;
+import profun.Lekcia06.a.SucetParnychCisel;
 
 
 import static org.junit.jupiter.api.Assertions.assertTrue;

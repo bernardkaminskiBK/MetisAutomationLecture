@@ -5,7 +5,7 @@ package profun.Zadanie_2_3_2_Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import profun.Lekcia02.Zadanie_2_3_2.PatciferneCislo;
+import profun.Lekcia02.b.PatciferneCislo;
 
 
 

@@ -3,7 +3,7 @@ package profun.Zadanie_6_3_3_Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import profun.Lekcia06.Zadanie_6_3_3.Faktorial;
+import profun.Lekcia06.c.Faktorial;
 
 
 public class FaktorialTest {

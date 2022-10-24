@@ -2,7 +2,7 @@ package profun.Zadanie_2_3_3_Test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import profun.Lekcia02.Zadanie_2_3_3.Mocniny;
+import profun.Lekcia02.c.Mocniny;
 
 
 

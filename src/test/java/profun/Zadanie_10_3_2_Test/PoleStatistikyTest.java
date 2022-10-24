@@ -2,7 +2,7 @@ package profun.Zadanie_10_3_2_Test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import profun.Lekcia10.Zadanie_10_3_2.PoleStatistiky;
+import profun.Lekcia10.b.PoleStatistiky;
 
 
 public class PoleStatistikyTest {

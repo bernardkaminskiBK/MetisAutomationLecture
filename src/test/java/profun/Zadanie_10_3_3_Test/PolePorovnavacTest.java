@@ -2,7 +2,7 @@ package profun.Zadanie_10_3_3_Test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import profun.Lekcia10.Zadanie_10_3_3.PolePorovnavac;
+import profun.Lekcia10.c.PolePorovnavac;
 
 
 public class PolePorovnavacTest {
