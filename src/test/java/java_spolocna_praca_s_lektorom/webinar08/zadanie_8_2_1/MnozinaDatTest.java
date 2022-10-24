@@ -44,6 +44,18 @@ public class MnozinaDatTest
         assertEquals(2000, mnozinaDat.getMaximum().getAktualnyZostatok());
     }
 
+    @ParameterizedTest
+    @CsvSource(value = {"1000,2000"})
+    @DisplayName("priemer")
+    void mnozinaGetPriemer(double aktualny1, double aktualny2) {
+        BankovyUcet bankovyUcet1 = new BankovyUcet(aktualny1);
+        BankovyUcet bankovyUcet2 = new BankovyUcet(aktualny2);
+        MnozinaDat mnozinaDat = new MnozinaDat();
+        mnozinaDat.pridajPrvok(bankovyUcet1);
+        mnozinaDat.pridajPrvok(bankovyUcet2);
+        assertEquals(1500, mnozinaDat.getPriemer());
+    }
+
 
 }
 
