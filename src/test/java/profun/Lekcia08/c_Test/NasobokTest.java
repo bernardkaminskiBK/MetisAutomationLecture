@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import profun.Zadanie_8_3_3.Nasobok;
+import profun.Lekcia08.c.Nasobok;
 
 @ExtendWith(ResultSetListener.class)
 public class NasobokTest {
