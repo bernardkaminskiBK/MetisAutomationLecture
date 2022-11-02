@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class FormatovacTest {
     @Test
-    void formatovacTest() {
+    void formatovacIOTest() {
 
         File file = new File("subor.txt");
         assertTrue(file.exists());
