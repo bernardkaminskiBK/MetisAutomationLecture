@@ -16,4 +16,14 @@ public class ArgumentyPrikazovehoRiadkaTest {
         Assertions.assertTrue(StorePrintStream.printlnList.get(0).contains("Argumenty 1: []"));
 
     }
+
+    @Test
+    void argumenty2Test()
+    {
+        System.setOut(new StorePrintStream(System.out));
+        ArgumentyPrikazovehoRiadkaDemo.main(new String[0]);
+
+        Assertions.assertTrue(StorePrintStream.printlnList.get(1).contains("Argumenty 2:"));
+
+    }
 }
