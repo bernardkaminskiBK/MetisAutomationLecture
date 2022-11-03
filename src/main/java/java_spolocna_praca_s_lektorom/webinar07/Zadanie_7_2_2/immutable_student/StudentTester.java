@@ -11,6 +11,7 @@ public class StudentTester
         vypisInfo(student2);
     }
 
+
     private static void vypisInfo(ImmutableStudent student)
     {
         System.out.println("Vek: " + student.getVek());
