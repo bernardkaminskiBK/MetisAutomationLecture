@@ -11,7 +11,7 @@ public class ObvodObdlznikaTester
         double obvod = getObvod(obdlznik);
 
         System.out.println("\n" + obdlznik + "\n");
-        System.out.println("Obvod obdlznika o velkosti 15*25p je: " + getObvod(obdlznik));
+        System.out.println("Obvod obdlznika o velkosti 15*25p je: " + obvod);
         System.out.println("Ocakavana hodnota: 80.0");
     }
 

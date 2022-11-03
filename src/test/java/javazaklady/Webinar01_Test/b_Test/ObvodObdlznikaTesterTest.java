@@ -12,7 +12,7 @@ public class ObvodObdlznikaTesterTest {
 
     @ParameterizedTest
     @CsvSource(value = {"10,10,50,100,300", "30,30,200,500,1400", "3,5,900,800,3400"})
-    public void vypisObsah(int x, int y, int width, int height, int expectedResult){
+    public void vypisObvod(int x, int y, int width, int height, int expectedResult){
 
         double actualResult = ObvodObdlznikaTester.getObvod(new Rectangle(x, y, width,height));
 
