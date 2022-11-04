@@ -1,7 +1,7 @@
-/*package javazaklady.Zadanie_4_3_4_Test;
+package javazaklady.Webinar04_Test.d_Test;
 
 
-import javazaklady.Zadanie_4_3_4.RozpoznavacVstupu;
+import javazaklady.Webinar04.d.RozpoznavacVstupu;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -28,4 +28,3 @@ public class RozpoznavacVstupuTest {
 }
 
 
-*/
