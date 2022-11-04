@@ -24,4 +24,13 @@ public class ZasielkaTest {
         double actualResult = vyrobok.getCena();
         Assertions.assertEquals(expectedResult,actualResult);
     }
+
+    @ParameterizedTest
+    @CsvSource(value = {"Kalkulačka,2.50,0.2,0.2", "Rádio,20,1.5,1.5", "Satelit,120,20,20"})
+    void getVahaVyrobku(String nazov, double cena, double vaha, double expectedResult)
+    {
+        Vyrobok vyrobok = new Vyrobok(nazov, cena, vaha);
+        double actualResult = vyrobok.getVaha();
+        Assertions.assertEquals(expectedResult,actualResult);
+    }
 }
