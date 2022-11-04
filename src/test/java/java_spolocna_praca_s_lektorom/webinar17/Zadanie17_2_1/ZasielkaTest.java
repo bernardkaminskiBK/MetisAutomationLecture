@@ -57,4 +57,15 @@ public class ZasielkaTest {
         zasielka.nahrad(Sklad.dlazobnaKocka, Sklad.dvere);
         assertThat(zasielka).containsExactly(Sklad.okno, Sklad.dvere);
     }
+
+    @Test
+    void rozdelTest()
+    {
+        zasielka.pridaj(Sklad.okno);
+        zasielka.pridaj(Sklad.dlazobnaKocka);
+        zasielka.pridaj(Sklad.dvere);
+        zasielka.priprav();
+        assertThat(zasielka.getTazkeVyrobky()).contains(Sklad.okno);
+        assertThat(zasielka.getLahkeVyrobky()).contains(Sklad.dvere);
+    }
 }
