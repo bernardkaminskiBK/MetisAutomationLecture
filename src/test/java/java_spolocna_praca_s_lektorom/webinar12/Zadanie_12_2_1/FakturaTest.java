@@ -1,7 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar12.Zadanie_12_2_1;
 
 import java_spolocna_praca_s_lektorom.webinar12.zadanie_12_2_1.Adresa;
-import java_spolocna_praca_s_lektorom.webinar12.zadanie_12_2_1.Faktura;
 import java_spolocna_praca_s_lektorom.webinar12.zadanie_12_2_1.Produkt;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -40,18 +39,13 @@ public class FakturaTest {
         Assertions.assertEquals(expectedResult,actualResult);
     }
 
-    /**
-     *
-     * Treba ešte dorobiť !!!
-     */
     @ParameterizedTest
-    @CsvSource(value = {"Hriankovac,12.2", "Radio,120.7", "Satelit,78.8"})
-    void fakturaTest(String nazov, double cena)
+    @CsvSource(value = {"Hriankovac,12.5,3,37.5", "Radio,120,6,720.0", "Satelit,78.5,9,706.5"})
+    void getCelkovaCenaTest(String nazov, double cena, int mnozstvo, double expectedResult)
     {
-        Adresa adresa = new Adresa("Firma XYZ", "Horna 5", "12345", "Horna Dolan");
-        Faktura faktura = new Faktura(adresa);
-        faktura.pridaj(new Produkt(nazov,cena), 10);
-        System.out.println(faktura.naformatuj());
+        Produkt produkt = new Produkt(nazov, cena);
+        double actualResult = produkt.getCena() * mnozstvo;
+        Assertions.assertEquals(expectedResult,actualResult);
     }
 
 }
