@@ -15,4 +15,14 @@ public class BankomatTest {
         double actualResult = bankovyUcet.getAktualnyZostatok();
         Assertions.assertEquals(expectedResult, actualResult);
     }
+
+    @ParameterizedTest
+    @CsvSource(value = {"1000,500,1500", "2000,300,2300", "3000,100,3100"})
+    void vlozTest(double aktualnyZostatok, double ciastka, double expectedResult)
+    {
+        BankovyUcet bankovyUcet = new BankovyUcet(aktualnyZostatok);
+        bankovyUcet.vloz(ciastka);
+        double actualResult = bankovyUcet.getAktualnyZostatok();
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
 }
