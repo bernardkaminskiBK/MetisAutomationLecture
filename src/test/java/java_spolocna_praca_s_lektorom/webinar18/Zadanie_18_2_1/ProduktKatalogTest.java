@@ -24,4 +24,12 @@ public class ProduktKatalogTest {
         assertThat(actualResult).matches(expectedResult);
         Assertions.assertEquals(expectedResult, actualResult);
     }
+
+    @ParameterizedTest
+    @CsvSource(value = {"Rádio,2,2", "Jacobs,1,1", "TV,5,5"})
+    void getVahaVyrobokTest(String nazov, double vaha, double expectedResult) {
+        Vyrobok vyrobok = new Vyrobok(nazov, vaha);
+        double actualResult = vyrobok.getVaha();
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
 }
