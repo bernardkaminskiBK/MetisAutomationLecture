@@ -9,9 +9,18 @@ public class ProduktKatalogTest {
 
     @ParameterizedTest
     @CsvSource(value = {"Peterson,Peterson", "Jacobs,Jacobs", "Magnus,Magnus"})
-    void getNazovTest(String nazov, String expectedResult) {
+    void getNazovDodavatelTest(String nazov, String expectedResult) {
         Dodavatel dodavatel = new Dodavatel(nazov);
         String actualResult = dodavatel.getNazov();
+        assertThat(actualResult).matches(expectedResult);
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @ParameterizedTest
+    @CsvSource(value = {"Rádio,2,Rádio", "Jacobs,1,Jacobs", "TV,5,TV"})
+    void getNazovVyrobokTest(String nazov, double vaha, String expectedResult) {
+        Vyrobok vyrobok = new Vyrobok(nazov, vaha);
+        String actualResult = vyrobok.getNazov();
         assertThat(actualResult).matches(expectedResult);
         Assertions.assertEquals(expectedResult, actualResult);
     }
