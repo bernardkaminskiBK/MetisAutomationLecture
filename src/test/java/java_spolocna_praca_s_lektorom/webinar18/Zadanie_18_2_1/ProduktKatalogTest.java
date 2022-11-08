@@ -44,4 +44,14 @@ public class ProduktKatalogTest {
         produktovyKatalog.pridajVyrobkyOd(fero);
         assertThat(produktovyKatalog).contains(dvere);
     }
+
+    @Test
+    void LahkePrvkyTest()
+    {
+        ZotriedenyProduktovyKatalog produktovyKatalog = new ZotriedenyProduktovyKatalog();
+        produktovyKatalog.pridajVyrobkyOd(fero);
+        produktovyKatalog.pridajVyrobkyOd(karol);
+        assertThat(produktovyKatalog.getLahkeVyrobky()).contains(okno);
+
+    }
 }
