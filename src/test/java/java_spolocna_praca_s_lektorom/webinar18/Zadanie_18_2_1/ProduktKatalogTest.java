@@ -1,8 +1,12 @@
 package java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_1;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import static java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_1.Sklad.*;
+
+
 import static org.assertj.core.api.Assertions.*;
 
 public class ProduktKatalogTest {
@@ -31,5 +35,13 @@ public class ProduktKatalogTest {
         Vyrobok vyrobok = new Vyrobok(nazov, vaha);
         double actualResult = vyrobok.getVaha();
         Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void prvkyTest()
+    {
+        ProduktovyKatalog produktovyKatalog = new ProduktovyKatalog();
+        produktovyKatalog.pridajVyrobkyOd(fero);
+        assertThat(produktovyKatalog).contains(dvere);
     }
 }
