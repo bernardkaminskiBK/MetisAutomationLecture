@@ -23,7 +23,7 @@ public class AplikaciaTest {
             Thread.sleep(2000);
             System.out.println(okno.getTitle());
             Thread.sleep(2000);
-            okno.setVisible(true);
+            okno.setVisible(false);
             okno.dispose();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
