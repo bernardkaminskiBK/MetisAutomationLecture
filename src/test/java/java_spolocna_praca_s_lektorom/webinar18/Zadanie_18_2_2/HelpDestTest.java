@@ -26,11 +26,20 @@ public class HelpDestTest {
 //
 //    }
 
-//    @Test
-//    void zaevidujPoziadavkuTest()
-//    {
-//        Poziadavka poziadavka = new Poziadavka(new Zakaznik("Katka"),Kategoria.TLACIAREN);
-//        Assertions.assertEquals("Katka", poziadavka.getZakaznik().);
-//    }
+    @Test
+    void zaevidujPoziadavkuTest()
+    {
+        Zakaznik katka = new Zakaznik("Katka");
+        Kategoria tlaciaren = Kategoria.TLACIAREN;
+
+        Poziadavka poziadavka = new Poziadavka(katka,tlaciaren);
+        poziadavka.getZakaznik().posliSpravu("ahoj");
+
+        System.out.println(poziadavka);
+        poziadavka.getKategoria().toString();
+        System.out.println( poziadavka.getKategoria().toString());
+
+        Assertions.assertEquals("Katka", poziadavka.getZakaznik());
+    }
 
 }
