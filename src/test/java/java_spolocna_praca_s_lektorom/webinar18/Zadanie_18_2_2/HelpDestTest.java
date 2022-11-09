@@ -2,8 +2,6 @@ package java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_2;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
 import utils.StorePrintStream;
 
 
@@ -35,11 +33,7 @@ public class HelpDestTest {
         Poziadavka poziadavka = new Poziadavka(katka,tlaciaren);
         poziadavka.getZakaznik().posliSpravu("ahoj");
 
-        System.out.println(poziadavka);
-        poziadavka.getKategoria().toString();
-        System.out.println( poziadavka.getKategoria().toString());
-
-        Assertions.assertEquals("Katka", poziadavka.getZakaznik());
+        Assertions.assertEquals(katka, poziadavka.getZakaznik());
     }
 
 }
