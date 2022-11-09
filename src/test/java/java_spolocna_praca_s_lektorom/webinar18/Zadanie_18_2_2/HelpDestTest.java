@@ -15,15 +15,6 @@ public class HelpDestTest {
         Assertions.assertTrue(StorePrintStream.printList.get(0).startsWith("Pista"));
     }
 
-//    @ParameterizedTest
-//    @CsvSource(value = {"Karol"})
-//    void getZakaznik(String expectedResult)
-//    {
-//        Poziadavka zakaznik = new Poziadavka(Zakaznik.KAROL, Kategoria.TLACIAREN);
-//        Assertions.assertEquals(expectedResult, Zakaznik.KAROL.getClass().getName());
-//
-//    }
-
     @Test
     void zaevidujPoziadavkuTest()
     {
