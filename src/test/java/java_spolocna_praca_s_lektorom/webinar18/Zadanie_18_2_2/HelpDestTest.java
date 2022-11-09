@@ -8,7 +8,7 @@ import utils.StorePrintStream;
 public class HelpDestTest {
 
     @Test
-    void poziadavkaTest()
+    void helpTest()
     {
         System.setOut(new StorePrintStream(System.out));
         HelpDesk.main(new String[0]);
