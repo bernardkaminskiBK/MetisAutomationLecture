@@ -1,16 +1,14 @@
-/*
-package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_test;
+package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_test_Peter_Vasil_Verzia;
 
-import org.junit.jupiter.api.BeforeEach;
+import java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_Peter_Vasil_Verzia.Customer;
+import java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_Peter_Vasil_Verzia.CustomerService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
-import org.mockito.ArgumentMatcher;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.lang.annotation.ElementType;
@@ -29,7 +27,7 @@ import static org.mockito.Mockito.*;
 class CustomerServiceTest
 {
     @Mock
-    private CustomerRepository customerRepository;
+    private CustomerRepositoryMock customerRepository;
 
     @InjectMocks
     private CustomerService customerService;
@@ -55,7 +53,7 @@ class CustomerServiceTest
 
         verifyNoMoreInteractions(customerRepository);
     }
-/*
+
     @Test
     void whenCustomerLastNameIsBlank_thenExpectionIsThrown()
     {
@@ -75,7 +73,7 @@ class CustomerServiceTest
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(() -> customerService.savedCustomer(customer));
 
-//        assertThat(customerRepository.getNumberOfSaves()).isZero();
+        assertThat(customerRepository.getNumberOfSaves()).isZero();
     }
 
     @Target({ElementType.ANNOTATION_TYPE, ElementType.METHOD})
@@ -109,4 +107,3 @@ class CustomerServiceTest
         }
     }
 }
-*/
