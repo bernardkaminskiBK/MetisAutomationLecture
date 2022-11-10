@@ -15,7 +15,7 @@ import  static org.assertj.core.api.Assertions.*;
 
 public class KategorizovanyHelpDeskTest {
 
-    
+
     @Test
     void Test()
     {
@@ -64,18 +64,6 @@ public class KategorizovanyHelpDeskTest {
         poziadavky.remove();
         assertThat(poziadavky).isEmpty();
 
-
-
-
-
-//
-//        poziadavky.add(new Poziadavka(Zakaznik.KAROL,Kategoria.TLACIAREN));
-//        poziadavky.add(new Poziadavka(Zakaznik.PISTA,Kategoria.POCITAC));
-//        Assertions.assertFalse(poziadavky.isEmpty());
-//        poziadavky.remove();
-//        Assertions.assertFalse(poziadavky.contains(Zakaznik.KATKA));
-
     }
-
 
 }
