@@ -19,17 +19,35 @@ public class HelpDestTest {
         Assertions.assertTrue(StorePrintStream.printList.get(0).startsWith("Pista"));
     }
 
+
     @Test
     void zaevidujPoziadavkuTest()
     {
-        Zakaznik katka = new Zakaznik("Katka");
-        Kategoria tlaciaren = Kategoria.TLACIAREN;
-
-        Poziadavka poziadavka = new Poziadavka(katka,tlaciaren);
-        poziadavka.getZakaznik().posliSpravu("ahoj");
-
-        Assertions.assertEquals(katka, poziadavka.getZakaznik());
+        final Queue<Poziadavka> poziadavky = new ArrayDeque<>();
+        poziadavky.add(new Poziadavka(Zakaznik.KATKA,Kategoria.TLACIAREN));
+        poziadavky.add(new Poziadavka(Zakaznik.KAROL,Kategoria.POCITAC));
+        assertThat(poziadavky).isNotEmpty();
     }
+
+    @Test
+    void overZakaznikaTets()
+    {
+        Zakaznik juraj = new Zakaznik("Juraj");
+        Kategoria kategoria = Kategoria.POCITAC;
+        Poziadavka poziadavka = new Poziadavka(juraj, kategoria);
+        Assertions.assertEquals(juraj, poziadavka.getZakaznik());
+    }
+//    @Test
+//    void zaevidujPoziadavkuTest()
+//    {
+//        Zakaznik katka = new Zakaznik("Katka");
+//        Kategoria tlaciaren = Kategoria.TLACIAREN;
+//
+//        Poziadavka poziadavka = new Poziadavka(katka,tlaciaren);
+//        poziadavka.getZakaznik().posliSpravu("ahoj");
+//
+//        Assertions.assertEquals(katka, poziadavka.getZakaznik());
+//    }
 
     @Test
     void spracujPoziadavkuTest()
