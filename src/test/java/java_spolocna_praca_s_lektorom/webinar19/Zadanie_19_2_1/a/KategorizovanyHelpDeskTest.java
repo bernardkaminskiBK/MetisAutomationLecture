@@ -44,5 +44,14 @@ public class KategorizovanyHelpDeskTest {
         assertThat(poziadavka.getKategoria()).isEqualTo(Kategoria.TLACIAREN);
     }
 
+    @Test
+    void spracujVseobecnuPoziadavku()
+    {
+        Zakaznik karol = Zakaznik.KAROL;
+        Kategoria tlaciaren = Kategoria.TELEFON;
+        Poziadavka poziadavka = new Poziadavka(karol,tlaciaren);
+        assertThat(poziadavka.getKategoria()).isNotEqualTo(Kategoria.TLACIAREN);
+    }
+
 
 }
