@@ -15,7 +15,7 @@ import  static org.assertj.core.api.Assertions.*;
 
 public class KategorizovanyHelpDeskTest {
 
-    KategorizovanyHelpDesk kat = new KategorizovanyHelpDesk();
+    
     @Test
     void Test()
     {
@@ -45,12 +45,36 @@ public class KategorizovanyHelpDeskTest {
     }
 
     @Test
-    void spracujVseobecnuPoziadavku()
+    void spracujVseobecnuPoziadavkuTest()
     {
         Zakaznik karol = Zakaznik.KAROL;
         Kategoria tlaciaren = Kategoria.TELEFON;
         Poziadavka poziadavka = new Poziadavka(karol,tlaciaren);
         assertThat(poziadavka.getKategoria()).isNotEqualTo(Kategoria.TLACIAREN);
+    }
+
+    @Test
+    void spracujPoziadavkuTest()
+    {
+        Queue<Poziadavka> poziadavky = new ArrayDeque<>();
+        Zakaznik karol = Zakaznik.KAROL;
+        Kategoria tlaciaren = Kategoria.TLACIAREN;
+        poziadavky.add(new Poziadavka(karol,tlaciaren));
+        assertThat(poziadavky).isNotEmpty();
+        poziadavky.remove();
+        assertThat(poziadavky).isEmpty();
+
+
+
+
+
+//
+//        poziadavky.add(new Poziadavka(Zakaznik.KAROL,Kategoria.TLACIAREN));
+//        poziadavky.add(new Poziadavka(Zakaznik.PISTA,Kategoria.POCITAC));
+//        Assertions.assertFalse(poziadavky.isEmpty());
+//        poziadavky.remove();
+//        Assertions.assertFalse(poziadavky.contains(Zakaznik.KATKA));
+
     }
 
 
