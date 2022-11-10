@@ -10,11 +10,12 @@ import utils.StorePrintStream;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
+
 import  static org.assertj.core.api.Assertions.*;
 
 public class KategorizovanyHelpDeskTest {
 
-    KategorizovanyHelpDesk kategorizovanyHelpDesk = new KategorizovanyHelpDesk();
+    KategorizovanyHelpDesk kat = new KategorizovanyHelpDesk();
     @Test
     void Test()
     {
@@ -26,13 +27,22 @@ public class KategorizovanyHelpDeskTest {
     @Test
     void zaevidujPoziadavkuTest()
     {
-
         Zakaznik martin = new Zakaznik("Martin");
         Zakaznik barbora = new Zakaznik("Barborka");
         Queue<Poziadavka> poziadavky = new ArrayDeque<>();
         poziadavky.add(new Poziadavka(martin, Kategoria.POCITAC));
         poziadavky.add(new Poziadavka(barbora, Kategoria.TELEFON));
         assertThat(poziadavky).isNotEmpty();
-
     }
+
+    @Test
+    void spracujPoziadavkuTlaciarenTest()
+    {
+        Zakaznik karol = Zakaznik.KAROL;
+        Kategoria tlaciaren = Kategoria.TLACIAREN;
+        Poziadavka poziadavka = new Poziadavka(karol,tlaciaren);
+        assertThat(poziadavka.getKategoria()).isEqualTo(Kategoria.TLACIAREN);
+    }
+
+
 }
