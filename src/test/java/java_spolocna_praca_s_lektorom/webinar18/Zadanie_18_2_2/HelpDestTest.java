@@ -37,17 +37,6 @@ public class HelpDestTest {
         Poziadavka poziadavka = new Poziadavka(juraj, kategoria);
         Assertions.assertEquals(juraj, poziadavka.getZakaznik());
     }
-//    @Test
-//    void zaevidujPoziadavkuTest()
-//    {
-//        Zakaznik katka = new Zakaznik("Katka");
-//        Kategoria tlaciaren = Kategoria.TLACIAREN;
-//
-//        Poziadavka poziadavka = new Poziadavka(katka,tlaciaren);
-//        poziadavka.getZakaznik().posliSpravu("ahoj");
-//
-//        Assertions.assertEquals(katka, poziadavka.getZakaznik());
-//    }
 
     @Test
     void spracujPoziadavkuTest()
