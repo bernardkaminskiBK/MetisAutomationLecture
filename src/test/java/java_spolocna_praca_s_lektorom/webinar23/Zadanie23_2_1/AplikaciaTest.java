@@ -8,9 +8,7 @@ import org.junit.jupiter.api.Test;
 import javax.swing.*;
 
 public class AplikaciaTest {
-//    static JFrame okno;
 
-    // Moznost testovanie JFrame okna...
     @Test
     public void getTitleOfGUIJFrameWindow() {
 
