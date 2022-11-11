@@ -1,4 +1,4 @@
-package javazaklady.Webinar09.a;
+package javazaklady.Webinar09_Test.a_Test;
 
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.provider.Arguments;
