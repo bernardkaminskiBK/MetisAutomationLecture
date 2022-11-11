@@ -1,6 +1,5 @@
 package javazaklady.Webinar09_Test.a_Test;
 
-import javazaklady.Webinar09.a.CustomArgumentProvider;
 import javazaklady.Webinar09.a.SporiaciUcet;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -19,15 +18,15 @@ class SporiaciUcetTesterTest {
 
     @ParameterizedTest
     @ArgumentsSource(CustomArgumentProvider.class)
-    void pripisUrokZminimalnehoPoslednehoZostatkuTest(Double[] mokData) {
-        sporiaciUcet.vloz(mokData[0]);
+    void pripisUrokZminimalnehoPoslednehoZostatkuTest(Double[] mockData) {
+        sporiaciUcet.vloz(mockData[0]);
         sporiaciUcet.zapisUrok();
-        sporiaciUcet.vyber(mokData[1]);
-        sporiaciUcet.vyber(mokData[2]);
-        sporiaciUcet.vloz(mokData[3]);
+        sporiaciUcet.vyber(mockData[1]);
+        sporiaciUcet.vyber(mockData[2]);
+        sporiaciUcet.vloz(mockData[3]);
         sporiaciUcet.zapisUrok();
 
-        double expectedResult = mokData[4];
+        double expectedResult = mockData[4];
         Assertions.assertEquals(expectedResult, sporiaciUcet.getAktualnyZostatok());
     }
 
