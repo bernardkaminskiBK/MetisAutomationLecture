@@ -35,7 +35,7 @@ public class AplikaciaTest {
             Aplikacia.main(new String[0]);
             Thread.sleep(1000);
             okno = Aplikacia.okno;
-            okno.setVisible(true);
+            okno.setVisible(false);
             okno.dispose();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
@@ -44,6 +44,24 @@ public class AplikaciaTest {
         Assertions.assertEquals(1200, okno.getSize().getWidth());
         assertThat(okno.getSize().height).isEqualTo(800);
     }
+
+    @Test
+    void IsvisibleOrNotTest() {
+        JFrame okno;
+
+        try {
+            Aplikacia.main(new String[0]);
+            Thread.sleep(1000);
+            okno = Aplikacia.okno;
+            okno.setVisible(true);
+            Assertions.assertTrue(okno.isVisible());
+            okno.dispose();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
 
 
 }
