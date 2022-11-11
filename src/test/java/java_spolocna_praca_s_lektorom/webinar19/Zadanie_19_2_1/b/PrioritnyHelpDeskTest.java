@@ -23,5 +23,17 @@ public class PrioritnyHelpDeskTest {
         assertThat(poziadavky).isNotEmpty();
     }
 
+    @Test
+    void spracujVsetkyPoziadavky2Test()
+    {
+        Queue<Poziadavka> poziadavky = new ArrayDeque<>();
+        Zakaznik karol = Zakaznik.KAROL;
+        Kategoria telefon = Kategoria.TELEFON;
+        poziadavky.add(new Poziadavka(karol,telefon));
+        assertThat(poziadavky).isNotEmpty();
+        poziadavky.remove();
+        assertThat(poziadavky).isEmpty();
+    }
+
 
 }
