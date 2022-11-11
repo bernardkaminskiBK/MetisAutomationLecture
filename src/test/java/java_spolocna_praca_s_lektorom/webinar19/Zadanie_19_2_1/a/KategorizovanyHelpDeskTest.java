@@ -54,7 +54,7 @@ public class KategorizovanyHelpDeskTest {
     }
 
     @Test
-    void spracujPoziadavkuTest()
+    void spracujPoziadavkuRemoveTest()
     {
         Queue<Poziadavka> poziadavky = new ArrayDeque<>();
         Zakaznik karol = Zakaznik.KAROL;
@@ -62,6 +62,19 @@ public class KategorizovanyHelpDeskTest {
         poziadavky.add(new Poziadavka(karol,tlaciaren));
         assertThat(poziadavky).isNotEmpty();
         poziadavky.remove();
+        assertThat(poziadavky).isEmpty();
+
+    }
+
+    @Test
+    void spracujPoziadavkuPollTest()
+    {
+        Queue<Poziadavka> poziadavky = new ArrayDeque<>();
+        Zakaznik karol = Zakaznik.KAROL;
+        Kategoria tlaciaren = Kategoria.TLACIAREN;
+        poziadavky.add(new Poziadavka(karol,tlaciaren));
+        assertThat(poziadavky).isNotEmpty();
+        poziadavky.poll();
         assertThat(poziadavky).isEmpty();
 
     }
