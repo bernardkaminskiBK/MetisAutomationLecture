@@ -10,24 +10,6 @@ import javax.swing.*;
 public class AplikaciaTest {
 
     @Test
-    public void getTitleOfGUIJFrameWindow() {
-
-        JFrame okno;
-
-        try {
-            Aplikacia.main(new String[0]);
-            Thread.sleep(1000);
-            okno = Aplikacia.okno;
-            okno.setVisible(false);
-            okno.dispose();
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-
-        Assertions.assertEquals("Grafika 01", okno.getTitle());
-    }
-
-    @Test
     void getSizeOfJFrameWindow() {
         JFrame okno;
 
@@ -43,6 +25,24 @@ public class AplikaciaTest {
 
         Assertions.assertEquals(1200, okno.getSize().getWidth());
         assertThat(okno.getSize().height).isEqualTo(800);
+    }
+
+    @Test
+    public void getTitleOfGUIJFrameWindow() {
+
+        JFrame okno;
+
+        try {
+            Aplikacia.main(new String[0]);
+            Thread.sleep(1000);
+            okno = Aplikacia.okno;
+            okno.setVisible(false);
+            okno.dispose();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        Assertions.assertEquals("Grafika 01", okno.getTitle());
     }
 
     @Test
