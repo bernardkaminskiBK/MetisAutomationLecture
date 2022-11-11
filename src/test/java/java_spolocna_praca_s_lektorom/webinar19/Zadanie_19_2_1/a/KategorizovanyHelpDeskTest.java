@@ -54,7 +54,7 @@ public class KategorizovanyHelpDeskTest {
     }
 
     @Test
-    void spracujPoziadavkuRemoveTest()
+    void spracujPoziadavkuTest2()
     {
         Queue<Poziadavka> poziadavky = new ArrayDeque<>();
         Zakaznik karol = Zakaznik.KAROL;
@@ -67,7 +67,7 @@ public class KategorizovanyHelpDeskTest {
     }
 
     @Test
-    void spracujPoziadavkuPollTest()
+    void spracujPoziadavkuTest()
     {
         Queue<Poziadavka> poziadavky = new ArrayDeque<>();
         Zakaznik karol = Zakaznik.KAROL;
