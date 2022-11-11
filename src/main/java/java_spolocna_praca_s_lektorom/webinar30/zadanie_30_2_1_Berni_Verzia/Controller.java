@@ -1,6 +1,9 @@
 package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_Berni_Verzia;
 
-
+/*
+    Táto trieda sluzi na reprezentativny ucel, ako pouzivat kvazi klasickym sposobom CustomerServiceImpl
+    co sa vlastne ani nerobi bezne v praxi, ale pre lepsie pochopenie depedency injection a mockovanie tychto tried malo by posluzit fajn.
+ */
 public class Controller {
 
     public static void main(String[] args) {
