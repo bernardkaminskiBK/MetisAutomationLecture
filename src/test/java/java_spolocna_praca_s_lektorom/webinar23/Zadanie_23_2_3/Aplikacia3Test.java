@@ -16,11 +16,29 @@ public class Aplikacia3Test {
         try {
             Thread.sleep(100);
             assertThat(hlavneOkno.getTitle()).isEqualTo("Grafika 03");
+            hlavneOkno.dispose();
 
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
     }
+
+    @Test
+    void getSizeIsCorrect()
+    {
+        Aplikacia.main(new String[0]);
+        try {
+            Thread.sleep(100);
+            assertThat(hlavneOkno.getSize().height).isEqualTo(800);
+            assertThat(hlavneOkno.getSize().width).isEqualTo(1200);
+            hlavneOkno.dispose();
+
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
 
 
 
