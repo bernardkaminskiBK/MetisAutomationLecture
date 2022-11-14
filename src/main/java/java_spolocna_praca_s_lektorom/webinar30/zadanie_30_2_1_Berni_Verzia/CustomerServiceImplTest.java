@@ -89,7 +89,7 @@ public class CustomerServiceImplTest {
 
     @DisplayName("JUnit method for updating customer")
     @Test
-    void whenFirstCustomerIsUpdatedSuccessFully_thenFirstNameOfCustomerWillBe_Thomas() {
+    void whenFirstCustomerIsUpdatedSuccessfully_thenFirstNameOfCustomerWillBe_Thomas() {
         Customer firstCustomerFromDb = new Customer(1, "Marcus", "Salazar");
         doReturn(firstCustomerFromDb).when(customerRepository).getCustomerById(1);
         Customer customerById = customerService.getCustomerById(1);
