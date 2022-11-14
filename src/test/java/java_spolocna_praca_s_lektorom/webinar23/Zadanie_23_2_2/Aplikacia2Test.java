@@ -61,7 +61,6 @@ public class Aplikacia2Test {
     void backgroundIsCorrectorNot()
     {
         JTextArea txaText = new JTextArea();
-        JButton btnKlikni = new JButton("Klik");
         try {
             Aplikacia.main(new String[0]);
             Thread.sleep(500);
@@ -72,6 +71,25 @@ public class Aplikacia2Test {
             throw new RuntimeException(e);
         }
     }
+
+    @Test
+    void fontIsCorrectSetOrNot()
+    {
+        JTextArea txaText = new JTextArea();
+
+        try {
+            Aplikacia.main(new String[0]);
+            Thread.sleep(500);
+            hlavneokno.setFont(txaText.getFont());
+            assertThat(hlavneokno.getFont()).isEqualTo(txaText.getFont());
+            hlavneokno.dispose();
+
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
 
 
 
