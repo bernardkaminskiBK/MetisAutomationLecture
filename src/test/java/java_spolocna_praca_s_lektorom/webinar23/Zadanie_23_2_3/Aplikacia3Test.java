@@ -4,6 +4,7 @@ import java_spolocna_praca_s_lektorom.webinar23.zadanie_23_2_3.Aplikacia;
 import java_spolocna_praca_s_lektorom.webinar23.zadanie_23_2_3.HlavneOkno;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import javax.swing.*;
 import static org.assertj.core.api.Assertions.*;
 
 
@@ -46,6 +47,20 @@ public class Aplikacia3Test {
         try {
             Thread.sleep(100);
             Assertions.assertTrue(hlavneOkno.isVisible());
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Test
+    void backgroundIsCorrectOrNot()
+    {
+        JTextArea txaText = new JTextArea();
+        Aplikacia.main(new String[0]);
+        try {
+            Thread.sleep(100);
+            hlavneOkno.setBackground(txaText.getBackground());
+            assertThat(hlavneOkno.getBackground()).isEqualTo(txaText.getBackground());
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
