@@ -2,6 +2,7 @@ package java_spolocna_praca_s_lektorom.webinar23.Zadanie_23_2_3;
 
 import java_spolocna_praca_s_lektorom.webinar23.zadanie_23_2_3.Aplikacia;
 import java_spolocna_praca_s_lektorom.webinar23.zadanie_23_2_3.HlavneOkno;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
 
@@ -38,9 +39,15 @@ public class Aplikacia3Test {
         }
     }
 
-
-
-
-
-
+    @Test
+    void isVisibleOrNot()
+    {
+        Aplikacia.main(new String[0]);
+        try {
+            Thread.sleep(100);
+            Assertions.assertTrue(hlavneOkno.isVisible());
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
