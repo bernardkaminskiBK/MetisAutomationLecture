@@ -73,7 +73,7 @@ public class Aplikacia2Test {
     }
 
     @Test
-    void fontIsCorrectSetOrNot()
+    void fontIsSetCorrectlyOrNot()
     {
         JTextArea txaText = new JTextArea();
 
