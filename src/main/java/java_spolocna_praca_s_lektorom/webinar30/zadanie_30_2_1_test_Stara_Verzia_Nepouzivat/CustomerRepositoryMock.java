@@ -1,7 +1,7 @@
-package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_test_Peter_Vasil_Verzia;
+package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_test_Stara_Verzia_Nepouzivat;
 
-import java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_Peter_Vasil_Verzia.Customer;
-import java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_Peter_Vasil_Verzia.CustomerRepository;
+import java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_Stara_Verzia_Nepouzivat.Customer;
+import java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_Stara_Verzia_Nepouzivat.CustomerRepository;
 //import zadanie_30_2_1.Customer;
 //import zadanie_30_2_1.CustomerRepository;
 

@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_Berni_Verzia;
+package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_Aktualna_Verzia;
 
 import java.util.ArrayList;
 
