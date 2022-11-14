@@ -11,8 +11,7 @@ import javax.swing.*;
 
 public class Aplikacia2Test {
     HlavneOkno hlavneokno = new HlavneOkno();
-    JTextArea txaText = new JTextArea();
-    JButton btnKlikni = new JButton("Klik");
+
 
     @Test
     void getTitleofJFrame()
@@ -57,6 +56,24 @@ public class Aplikacia2Test {
             throw new RuntimeException(e);
         }
     }
+
+    @Test
+    void backgroundIsCorrectorNot()
+    {
+        JTextArea txaText = new JTextArea();
+        JButton btnKlikni = new JButton("Klik");
+        try {
+            Aplikacia.main(new String[0]);
+            Thread.sleep(500);
+            hlavneokno.setBackground(txaText.getBackground());
+            assertThat(hlavneokno.getBackground()).isEqualTo(txaText.getBackground());
+            hlavneokno.dispose();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
 
 
 }
