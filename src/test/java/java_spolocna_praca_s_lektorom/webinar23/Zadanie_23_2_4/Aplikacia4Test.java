@@ -16,6 +16,7 @@ public class Aplikacia4Test {
         try {
             Thread.sleep(100);
             assertThat(hlavneOkno.getTitle()).isEqualTo("Grafika 04");
+            hlavneOkno.dispose();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -29,6 +30,20 @@ public class Aplikacia4Test {
             Thread.sleep(100);
             assertThat(hlavneOkno.getSize().width).isEqualTo(1200);
             assertThat(hlavneOkno.getSize().height).isEqualTo(800);
+            hlavneOkno.dispose();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Test
+    void isVisibleOrNotTest()
+    {
+        Aplikacia.main(new String[0]);
+        try {
+            Thread.sleep(100);
+            assertThat(hlavneOkno.isVisible()).isTrue();
+            hlavneOkno.dispose();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
