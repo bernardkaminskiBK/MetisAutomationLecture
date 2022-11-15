@@ -8,6 +8,8 @@ import org.junit.jupiter.api.Test;
 
 import javax.swing.*;
 
+import java.awt.*;
+
 import static org.assertj.core.api.Assertions.*;
 
 public class Aplikacia5Test {
@@ -35,6 +37,7 @@ public class Aplikacia5Test {
             Thread.sleep(100);
             assertThat(hlavneOkno.getSize().width).isEqualTo(1200);
             assertThat(hlavneOkno.getSize().height).isEqualTo(800);
+            hlavneOkno.dispose();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -47,6 +50,7 @@ public class Aplikacia5Test {
         try {
             Thread.sleep(100);
             assertThat(hlavneOkno.isVisible()).isTrue();
+            hlavneOkno.dispose();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -55,16 +59,46 @@ public class Aplikacia5Test {
     @Test
     void buttonTest()
     {
-        JButton potvrd = new JButton("Potvrď");
+        JButton potvrd = new JButton("Potvrd");
         Aplikacia.main(new String[0]);
         try {
             Thread.sleep(100);
             PanelNastrojov panelNastrojov = new PanelNastrojov();
             panelNastrojov.add(potvrd);
-            Assertions.assertEquals("Potvrď", potvrd.getText());
+            Assertions.assertEquals("Potvrd", potvrd.getText());
+            hlavneOkno.dispose();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
     }
+
+    @Test
+    void closeOperationTest()
+    {
+        Aplikacia.main(new String[0]);
+        try {
+            Thread.sleep(100);
+            assertThat(hlavneOkno.getDefaultCloseOperation()).isEqualTo(JFrame.EXIT_ON_CLOSE);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+//    @Test
+//    void IsLayoutCorrectOrNot()
+//    {
+//        Aplikacia.main(new String[0]);
+//        try {
+//            Thread.sleep(100);
+//            PanelNastrojov panelNastrojov = new PanelNastrojov();
+//            panelNastrojov.setLayout(panelNastrojov.getLayout());
+//            assertThat(hlavneOkno.getLayout()).isEqualTo(panelNastrojov.getLayout());
+//            hlavneOkno.
+//
+//
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+//    }
 
 }
