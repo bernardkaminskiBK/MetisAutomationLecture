@@ -65,4 +65,22 @@ public class Aplikacia3Test {
             throw new RuntimeException(e);
         }
     }
+
+
+//    @Test
+//    void TextAppendTest()
+//    {
+//        JTextArea txaText = new JTextArea();
+//        Aplikacia.main(new String[0]);
+//        try {
+//            Thread.sleep(100);
+////            assertThat(txaText.getDocument()).isEqualTo("Klikol si na tlacidlo Klikni!");
+////            assertThat(txaText.getText()).isEqualTo("Klikol si na tlacidlo Klikni!");
+//            hlavneOkno.getWindowListeners().
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+//    }
+
+
 }
