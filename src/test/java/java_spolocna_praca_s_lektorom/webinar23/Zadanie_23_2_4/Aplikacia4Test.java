@@ -20,4 +20,17 @@ public class Aplikacia4Test {
             throw new RuntimeException(e);
         }
     }
+
+    @Test
+    void getSizeOfJFrame()
+    {
+        Aplikacia.main(new String[0]);
+        try {
+            Thread.sleep(100);
+            assertThat(hlavneOkno.getSize().width).isEqualTo(1200);
+            assertThat(hlavneOkno.getSize().height).isEqualTo(800);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
