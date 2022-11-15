@@ -4,6 +4,9 @@ import java_spolocna_praca_s_lektorom.webinar23.zadanie_23_2_3.Aplikacia;
 import java_spolocna_praca_s_lektorom.webinar23.zadanie_23_2_3.HlavneOkno;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+
 import javax.swing.*;
 import static org.assertj.core.api.Assertions.*;
 
@@ -67,20 +70,21 @@ public class Aplikacia3Test {
     }
 
 
-//    @Test
-//    void TextAppendTest()
-//    {
-//        JTextArea txaText = new JTextArea();
-//        Aplikacia.main(new String[0]);
-//        try {
-//            Thread.sleep(100);
-////            assertThat(txaText.getDocument()).isEqualTo("Klikol si na tlacidlo Klikni!");
-////            assertThat(txaText.getText()).isEqualTo("Klikol si na tlacidlo Klikni!");
-//            hlavneOkno.getWindowListeners().
-//        } catch (InterruptedException e) {
-//            throw new RuntimeException(e);
-//        }
-//    }
+    @ParameterizedTest
+    @CsvSource(value = {"Text", "Test", "Klik"})
+    void TextAppendTest(String text)
+    {
+        JTextArea txaText = new JTextArea();
+        Aplikacia.main(new String[0]);
+        try {
+            Thread.sleep(100);
+            txaText.append(text);
+            assertThat(txaText).isNotNull();
+
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
 
 }
