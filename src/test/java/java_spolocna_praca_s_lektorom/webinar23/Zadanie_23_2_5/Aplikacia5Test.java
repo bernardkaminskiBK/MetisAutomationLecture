@@ -84,21 +84,4 @@ public class Aplikacia5Test {
         }
     }
 
-//    @Test
-//    void IsLayoutCorrectOrNot()
-//    {
-//        Aplikacia.main(new String[0]);
-//        try {
-//            Thread.sleep(100);
-//            PanelNastrojov panelNastrojov = new PanelNastrojov();
-//            panelNastrojov.setLayout(panelNastrojov.getLayout());
-//            assertThat(hlavneOkno.getLayout()).isEqualTo(panelNastrojov.getLayout());
-//            hlavneOkno.
-//
-//
-//        } catch (InterruptedException e) {
-//            throw new RuntimeException(e);
-//        }
-//    }
-
 }
