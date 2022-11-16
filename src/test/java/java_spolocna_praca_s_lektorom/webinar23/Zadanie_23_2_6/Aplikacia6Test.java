@@ -35,4 +35,16 @@ public class Aplikacia6Test {
             throw new RuntimeException(e);
         }
     }
+
+    @Test
+    void isVisibleTest()
+    {
+        Aplikacia.main(new String[0]);
+        try {
+            Thread.sleep(100);
+            assertThat(hlavneOkno.isVisible()).isTrue();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
