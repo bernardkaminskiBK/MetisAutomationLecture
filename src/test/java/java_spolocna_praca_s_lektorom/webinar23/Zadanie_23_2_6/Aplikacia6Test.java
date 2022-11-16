@@ -3,11 +3,12 @@ package java_spolocna_praca_s_lektorom.webinar23.Zadanie_23_2_6;
 import java_spolocna_praca_s_lektorom.webinar23.zadanie_23_2_6.Aplikacia;
 import java_spolocna_praca_s_lektorom.webinar23.zadanie_23_2_6.HlavneOkno;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import javax.swing.*;
-
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
+
 
 
 public class Aplikacia6Test {
@@ -34,6 +35,7 @@ public class Aplikacia6Test {
             Thread.sleep(100);
             assertThat(hlavneOkno.getSize().width).isEqualTo(1200);
             assertThat(hlavneOkno.getSize().height).isEqualTo(800);
+            hlavneOkno.dispose();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -46,6 +48,7 @@ public class Aplikacia6Test {
         try {
             Thread.sleep(100);
             assertThat(hlavneOkno.isVisible()).isTrue();
+            hlavneOkno.dispose();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -58,6 +61,7 @@ public class Aplikacia6Test {
         try {
             Thread.sleep(100);
             assertThat(hlavneOkno.getDefaultCloseOperation()).isEqualTo(JFrame.EXIT_ON_CLOSE);
+            hlavneOkno.dispose();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
