@@ -12,27 +12,13 @@ public class NasobokCisla {
         System.out.println("Zadaj druhé číslo: ");
         int cislo2 = input.nextInt();
 
-        if (overCislo(cislo1,cislo2)==true){
-            System.out.println(cislo1 + " je deliteľné číslom " + cislo2 + " výsledok je: " + cislo1/cislo2);
-        }else{
+        if (cislo1 % cislo2 == 0) {
+            System.out.println(cislo1 + " je deliteľné číslom " + cislo2 + " výsledok je: " + cislo1 / cislo2);
+        } else {
             System.out.println(cislo1 + " nie je deliteľné číslom " + cislo2);
         }
-
     }
 
-
-    public static boolean overCislo(int cislo1,int cislo2) {
-
-       boolean vysledok;
-
-        if(cislo1%cislo2 == 0){
-            vysledok = true;
-        }else{
-            vysledok = false;
-        }
-
-        return vysledok;
-    }
 }
 
 
