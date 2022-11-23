@@ -18,7 +18,7 @@ class StavNaUcteTest extends InputOutputStreamHelper {
     public void limitNaKreditkeTest() {
 //        System.setOut(new StorePrintStream(System.out));
 
-        String input = "1000\n" + "1000\n" + "500\n" + "1000\n" + "100\n" + "-1\n";
+          String input = "1000\n" + "1000\n" + "500\n" + "1000\n" + "100\n" + "-1\n";
 //        StavNaUcteTester.zistiStavNaUcte(new Scanner(input));
 
 //        System.out.println("\n\nactual result print: " + StorePrintStream.printlnList);

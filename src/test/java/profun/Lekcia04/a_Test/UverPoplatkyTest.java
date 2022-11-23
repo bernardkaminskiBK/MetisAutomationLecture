@@ -2,10 +2,8 @@ package profun.Lekcia04.a_Test;
 
 
 import base.InputOutputStreamHelper;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import profun.Lekcia02.a.NasobokCisla;
 import profun.Lekcia04.a.UverPoplatky;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;

@@ -2,9 +2,7 @@ package profun.Lekcia04.c_Test;
 
 
 import base.InputOutputStreamHelper;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import profun.Lekcia02.a.NasobokCisla;
 import profun.Lekcia04.c.PostupnostCisel;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
