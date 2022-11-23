@@ -1,16 +1,18 @@
 package profun.Lekcia02.c_Test;
 
+import base.InputOutputStreamHelper;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import profun.Lekcia02.b.PatciferneCislo;
 import profun.Lekcia02.c.Mocniny;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
-public class MocninyTest {
+public class MocninyTest extends InputOutputStreamHelper {
 
     @Test
     public void vytvorTabulkuMocnin() {
-        String actualResult = Mocniny.vytvorTabulkuMocnin();
 
         String expectedResult = "cislo" + "\t\t" + "druha mocnina" + "\t\t"+ "tretia mocnina" + "\n" +
                 "1\t\t\t1\t\t\t\t\t1\n" +
@@ -24,6 +26,7 @@ public class MocninyTest {
                 "9\t\t\t81\t\t\t\t\t729\n" +
                 "10\t\t\t100\t\t\t\t\t1000\n";
 
-        Assertions.assertEquals(expectedResult, actualResult);
+        Mocniny.main(new String[0]);
+        assertTrue( getOutput().contains(expectedResult));
     }
 }
