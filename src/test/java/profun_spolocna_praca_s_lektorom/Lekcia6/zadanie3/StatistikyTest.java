@@ -1,3 +1,4 @@
+/*
 package profun_spolocna_praca_s_lektorom.Lekcia6.zadanie3;
 
 import org.junit.jupiter.api.Test;
@@ -7,6 +8,7 @@ import utils.StorePrintStream;
 import java.util.Scanner;
 
 class StatistikyTest {
+ */
 
     /*
         zadaj velkost mnoziny dat ako kladne cele cislo: 5
@@ -21,7 +23,7 @@ class StatistikyTest {
         maximum je: 5
         maximum v absolutnej hodnote je: 5
      */
-
+/*
     @Test
     public void generujStatistikyTest() {
         System.setOut(new StorePrintStream(System.out));
@@ -32,3 +34,5 @@ class StatistikyTest {
         System.out.println("\n\n\nactual result print: " + StorePrintStream.printlnList);
     }
 }
+ */
+

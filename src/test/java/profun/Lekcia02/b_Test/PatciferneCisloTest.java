@@ -1,7 +1,5 @@
 package profun.Lekcia02.b_Test;
 
-
-
 import base.InputOutputStreamHelper;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -10,7 +8,6 @@ import profun.Lekcia02.a.NasobokCisla;
 import profun.Lekcia02.b.PatciferneCislo;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
 
 public class PatciferneCisloTest extends InputOutputStreamHelper {
 

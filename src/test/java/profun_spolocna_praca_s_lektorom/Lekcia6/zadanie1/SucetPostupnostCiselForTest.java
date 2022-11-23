@@ -1,3 +1,4 @@
+/*
 package profun_spolocna_praca_s_lektorom.Lekcia6.zadanie1;
 
 import org.junit.jupiter.api.Test;
@@ -19,3 +20,4 @@ class SucetPostupnostCiselForTest {
 
     }
 }
+ */

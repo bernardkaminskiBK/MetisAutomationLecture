@@ -9,7 +9,7 @@ import profun.Lekcia08.a.Parkovne;
 public class ParkovneTest {
 
     @ParameterizedTest()
-    @CsvSource(value = {"1.5,2.00", "4.0,2.50", "24.0,10.00", "3.0,2.00", "6.00,3.50"})
+    @CsvSource(value = {"1.5,2.00", "4.0,2.50", "21.0,10.00", "3.0,2.00", "6.00,3.50"})
     public void spocitajPoplatkyTest(double hodiny, double ocakavanaHodnota) {
        double aktualnaHodnota = Parkovne.spocitajPoplatky(hodiny);
 

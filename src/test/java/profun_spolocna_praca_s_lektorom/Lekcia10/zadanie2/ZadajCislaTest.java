@@ -1,3 +1,4 @@
+/*
 package profun_spolocna_praca_s_lektorom.Lekcia10.zadanie2;
 
 import org.junit.jupiter.api.Test;
@@ -22,3 +23,4 @@ class ZadajCislaTest {
         System.out.println("\n\n\nactual result print: " + StorePrintStream.printList);
     }
 }
+ */

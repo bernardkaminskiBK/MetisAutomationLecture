@@ -1,3 +1,4 @@
+/*
 package profun_spolocna_praca_s_lektorom.Lekcia6.zadanie2;
 
 import org.junit.jupiter.api.Test;
@@ -20,3 +21,4 @@ class VypocitajPriemerTest {
     }
 
 }
+ */

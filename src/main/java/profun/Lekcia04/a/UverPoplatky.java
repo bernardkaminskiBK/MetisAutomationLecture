@@ -20,7 +20,7 @@ public class UverPoplatky
             System.out.println("Zadaj obdobie viazanosti v dnoch:");
             obdobieViazanosti = vstup.nextDouble();
 
-            double poplatky = vyskaUveru * urokovaSadzba * (obdobieViazanosti / 365);
+            double poplatky = vyskaUveru * (urokovaSadzba / 100) * (obdobieViazanosti / 365);
 
             System.out.println("Poplatky za uver su: " + poplatky + "\n");
 

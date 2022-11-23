@@ -1,3 +1,4 @@
+/*
 package profun_spolocna_praca_s_lektorom.Lekcia10.zadanie3;
 
 import org.junit.jupiter.api.Test;
@@ -15,3 +16,4 @@ class HodKockaTest {
         System.out.println("actual result printf: " + StorePrintStream.printfList);
     }
 }
+ */

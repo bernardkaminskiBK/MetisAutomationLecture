@@ -20,5 +20,4 @@ public class NasobokCislaTest extends InputOutputStreamHelper {
 
         assertTrue(getOutput().contains(expectedResult));
     }
-
 }
