@@ -2,25 +2,24 @@ package profun_spolocna_praca_s_lektorom.Lekcia06.zadanie2;
 
 import java.util.Scanner;
 
-public class VypocitajPriemerTester {
-    public static void main(String[] args) {
+public class VypocitajPriemerTester
+{
+    public static void main(String[] args)
+    {
         Scanner vstup = new Scanner(System.in);
-
-        vypocitajPriemer(vstup);
-    }
-
-    public static void vypocitajPriemer(Scanner vstup) {
 
         final int koniec = 9999;
         double sucet = 0;
         int pocet = 0;
         double priemer = 0;
 
-        while (true) {
+        while (true)
+        {
             System.out.print("zadaj cele cislo: ");
             int cislo = vstup.nextInt();
 
-            if (cislo == koniec) {
+            if (cislo == koniec)
+            {
                 break;
             }
 
@@ -28,11 +27,38 @@ public class VypocitajPriemerTester {
             pocet++;
         }
 
-        if (pocet != 0) {
+        if (pocet != 0)
+        {
             priemer = sucet / pocet;
         }
-        System.out.println("priemer je: " + priemer);
 
+        System.out.println("priemer je: " + priemer);
     }
+
+    //public static void vypocitajPriemer(Scanner vstup) {
+//
+    //    final int koniec = 9999;
+    //    double sucet = 0;
+    //    int pocet = 0;
+    //    double priemer = 0;
+//
+    //    while (true) {
+    //        System.out.print("zadaj cele cislo: ");
+    //        int cislo = vstup.nextInt();
+//
+    //        if (cislo == koniec) {
+    //            break;
+    //        }
+//
+    //        sucet += cislo;
+    //        pocet++;
+    //    }
+//
+    //    if (pocet != 0) {
+    //        priemer = sucet / pocet;
+    //    }
+    //    System.out.println("priemer je: " + priemer);
+//
+    //}
 
 }

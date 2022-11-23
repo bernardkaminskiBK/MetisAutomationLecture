@@ -2,23 +2,30 @@ package profun.Lekcia06.c;
 
 public class Faktorial {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         System.out.println("Cislo\tFaktorial");
 
-        for(int i = 1; i <= 5; ++i) {
-            System.out.println("" + i + "   \t" + vypocitajFaktorial(i));
-        }
+        for (int i = 1; i <= 5; ++i)
+        {
+            int vysledok = 1;
 
+            for (int j = 2; j <= i; ++j)
+            {
+                vysledok *= j;
+            }
+            System.out.println(i + "   \t" + vysledok);
+        }
     }
 
-    public static int vypocitajFaktorial(int n) {
-        int vysledok = 1;
-        for(int i = 2; i <= n; ++i) {
-            vysledok *= i;
-        }
-
-        return vysledok;
-    }
+    //public static int vypocitajFaktorial(int n) {
+    //    int vysledok = 1;
+    //    for(int i = 2; i <= n; ++i) {
+    //        vysledok *= i;
+    //    }
+//
+    //    return vysledok;
+    //}
 
 }
 

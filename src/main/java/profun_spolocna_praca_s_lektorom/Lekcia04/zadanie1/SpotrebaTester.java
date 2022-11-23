@@ -10,6 +10,8 @@ public class SpotrebaTester
 
         double celkovaSpotreba = 0;
         double celkovaVzdialenost = 0;
+        double dlhodobaPriemSpottreba = 0;
+        String text = "";
 
         while (true)
         {
@@ -20,11 +22,10 @@ public class SpotrebaTester
             {
                 break;
             }
-
             System.out.print("zadaj prejdenu vzdialonost v km: ");
             double vzdialenost = vstup.nextInt();
 
-            double priemSpotreba = getPriemSpotreba(spotreba, vzdialenost);
+            double priemSpotreba = spotreba / vzdialenost * 100;
 
             celkovaSpotreba += spotreba;
             celkovaVzdialenost += vzdialenost;
@@ -32,18 +33,8 @@ public class SpotrebaTester
             System.out.printf("aktialna priemerna spotreba na 100 km je: %.2f\n", priemSpotreba);
         }
 
-        String text = dlhodobaPriemernaSpotreba(celkovaSpotreba, celkovaVzdialenost);
-        System.out.println(text);
-    }
-
-    public static String dlhodobaPriemernaSpotreba(double celkovaSpotreba, double celkovaVzdialenost)
-    {
-        double dlhodobaPriemSpottreba;
-        String text = "";
-
         if (celkovaVzdialenost == 0)
         {
-            dlhodobaPriemSpottreba = 0;
             text = "\ndlhodoba priemerna spotreba je: " + dlhodobaPriemSpottreba;
         }
         else
@@ -53,13 +44,34 @@ public class SpotrebaTester
 
             text = "\ndlhodoba priemerna spotreba v litroch na 10 km je: " + dlhPriemSpotZaokruhlene;
         }
-        return text;
+
+        System.out.println(text);
     }
 
-    public static double getPriemSpotreba(double spotreba, double vzdialenost)
-    {
-        return spotreba / vzdialenost * 100;
-    }
+    //public static String dlhodobaPriemernaSpotreba(double celkovaSpotreba, double celkovaVzdialenost)
+    //{
+    //    double dlhodobaPriemSpottreba;
+    //    String text = "";
+//
+    //    if (celkovaVzdialenost == 0)
+    //    {
+    //        dlhodobaPriemSpottreba = 0;
+    //        text = "\ndlhodoba priemerna spotreba je: " + dlhodobaPriemSpottreba;
+    //    }
+    //    else
+    //    {
+    //        dlhodobaPriemSpottreba = celkovaSpotreba / celkovaVzdialenost * 100;
+    //        double dlhPriemSpotZaokruhlene = Math.round(dlhodobaPriemSpottreba * 100.0) / 100.0;
+//
+    //        text = "\ndlhodoba priemerna spotreba v litroch na 10 km je: " + dlhPriemSpotZaokruhlene;
+    //    }
+    //    return text;
+    //}
+//
+    //public static double getPriemSpotreba(double spotreba, double vzdialenost)
+    //{
+    //    return spotreba / vzdialenost * 100;
+    //}
 }
 
 

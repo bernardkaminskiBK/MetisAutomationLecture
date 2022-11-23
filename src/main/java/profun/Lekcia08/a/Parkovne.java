@@ -3,10 +3,10 @@ package profun.Lekcia08.a;
 import java.util.Locale;
 import java.util.Scanner;
 
-
-public class Parkovne {
-
-    public static void main(String[] args) {
+public class Parkovne
+{
+    public static void main(String[] args)
+    {
 
         Scanner vstup = new Scanner(System.in);
         vstup.useLocale(Locale.ENGLISH);
@@ -29,17 +29,22 @@ public class Parkovne {
         System.out.printf("Spolu %12.1f %13.2f", celkoveHodiny, celkovePoplatky);
     }
 
-    public static double spocitajPoplatky(double hodiny) {
+    public static double spocitajPoplatky(double hodiny)
+    {
         double poplatky = 0;
 
-        if (hodiny <= 3) {
+        if (hodiny <= 3)
+        {
             poplatky = 2;
-        } else if (hodiny >= 24) {
-            poplatky = 10;
-        } else {
-            poplatky = 2 + ((hodiny - 3) * 0.5);
+        }
+        else
+        {
+            poplatky = ((hodiny - 3) * 0.5) + 2;
+            if (poplatky > 10)
+            {
+                poplatky = 10;
+            }
         }
         return poplatky;
     }
-
 }

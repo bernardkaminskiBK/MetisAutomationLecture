@@ -7,7 +7,7 @@ public class Mocniny {
         for (int i = 1; i < 11; i++) {
             vysledok +=  i + "\t\t\t"+ i * i + "\t\t\t\t\t" + i * i * i + "\n";
         }
-       System.out.println(vysledok);
+        System.out.println(vysledok);
     }
 
 //    public static String vytvorTabulkuMocnin() {

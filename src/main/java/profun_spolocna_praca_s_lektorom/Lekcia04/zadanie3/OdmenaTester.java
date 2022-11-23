@@ -20,16 +20,17 @@ public class OdmenaTester
                 break;
             }
 
-            System.out.printf("tvoja tyzdenna mzda je %.02f EUR\n", getTyzdennaMzda(tyzdennyObrat, percentualnaOdmena));
+            double tyzdennaMzda = 200 + (tyzdennyObrat * percentualnaOdmena);
+            System.out.printf("tvoja tyzdenna mzda je %.02f EUR\n", tyzdennaMzda);
         }
         vstup.close();
         System.out.println("\n...koniec programu");
     }
 
-    public static double getTyzdennaMzda(double tyzdennyObrat, double percentualnaOdmena)
-    {
-        double tyzdennaMzda = 200 + (tyzdennyObrat * percentualnaOdmena);
-        return tyzdennaMzda;
-    }
+    //public static double getTyzdennaMzda(double tyzdennyObrat, double percentualnaOdmena)
+    //{
+    //    double tyzdennaMzda = 200 + (tyzdennyObrat * percentualnaOdmena);
+    //    return tyzdennaMzda;
+    //}
 }
 
