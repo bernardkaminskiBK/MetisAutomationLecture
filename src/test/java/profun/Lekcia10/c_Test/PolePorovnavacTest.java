@@ -12,7 +12,7 @@ public class PolePorovnavacTest {
         int[] prvePole = {1, 2, 3, 4, 5};
         int[] druhePole = {1, 2, 3, 4, 5};
 
-        boolean actualResult = PolePorovnavac.suPoliaZhodne(prvePole, prvePole.length, druhePole, druhePole.length);
+        boolean actualResult = PolePorovnavac.suPoliaZhodne(prvePole, druhePole);
 
         Assertions.assertTrue(actualResult);
     }
@@ -22,7 +22,7 @@ public class PolePorovnavacTest {
         int[] prvePole = {12, 2, 3, 4, 5};
         int[] druhePole = {1, 22, 31, 400, 455, 3, 1};
 
-        boolean actualResult = PolePorovnavac.suPoliaZhodne(prvePole, prvePole.length, druhePole, druhePole.length);
+        boolean actualResult = PolePorovnavac.suPoliaZhodne(prvePole, druhePole);
 
         Assertions.assertFalse(actualResult);
     }

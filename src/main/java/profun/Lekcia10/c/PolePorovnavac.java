@@ -6,18 +6,15 @@ public class PolePorovnavac {
         int[] prvePole = {1, 2, 3, 4, 5};
         int[] druhePole = {1, 2, 3, 4, 5};
 
-        int dlzkaPrvehoPola = prvePole.length;
-        int dlzkaDruhehoPola = druhePole.length;
-
-        if (suPoliaZhodne(prvePole, dlzkaPrvehoPola, druhePole, dlzkaDruhehoPola)) {
+        if (suPoliaZhodne(prvePole, druhePole)) {
             System.out.println("Polia su rovnake");
         } else {
             System.out.println("Polia nie su rovnake");
         }
     }
 
-    public static boolean suPoliaZhodne(int[] prvePole, int dlzkaPrvehoPola, int[] druhePole, int dlzkaDruhehoPola) {
-        if (dlzkaDruhehoPola != dlzkaPrvehoPola) {
+    public static boolean suPoliaZhodne(int[] prvePole, int[] druhePole) {
+        if (prvePole.length != druhePole.length) {
             return false;
         }
 
