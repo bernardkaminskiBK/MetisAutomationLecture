@@ -38,5 +38,15 @@ public class ZretazenyZoznamTest {
         assertThat(studenti.getPrvy()).isEqualTo("Milan");
     }
 
+    @Test
+    void iteratorZmazTest()
+    {
+        ZoznamIterator iterator = studenti.iteratorZoznam();
+        iterator.pridaj("Milan");
+        iterator.pridaj("Martin");
+        assertThat(studenti.zmazZoZaciatku()).isEqualTo("Milan");
+
+    }
+
 }
 
