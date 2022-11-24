@@ -1,4 +1,3 @@
-/*
 package profun_spolocna_praca_s_lektorom.Lekcia10.zadanie1;
 
 import org.junit.jupiter.api.Test;
@@ -7,8 +6,6 @@ import utils.StorePrintStream;
 import java.util.Scanner;
 
 class KategoriaPrijmovTest {
-/*
- */
 
     /*
         zadaj obrat (-1 pre ukoncenie): 200
@@ -39,7 +36,7 @@ class KategoriaPrijmovTest {
         900 - 999 EUR 0
         1000 a viac EUR 3
      */
-/*
+
     @Test
     public void generujStatistikyTest() {
         System.setOut(new StorePrintStream(System.out));
@@ -51,4 +48,3 @@ class KategoriaPrijmovTest {
     }
 
 }
- */
