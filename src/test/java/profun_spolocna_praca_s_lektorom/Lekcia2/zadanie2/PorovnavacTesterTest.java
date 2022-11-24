@@ -1,23 +1,22 @@
 package profun_spolocna_praca_s_lektorom.Lekcia2.zadanie2;
 
+import base.InputOutputStreamHelper;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import profun.Lekcia02.a.NasobokCisla;
+import profun_spolocna_praca_s_lektorom.Lekcia02.zadanie2.PorovnavacTester;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class PorovnavacTesterTest
+public class PorovnavacTesterTest extends InputOutputStreamHelper
 {
-    /*
     @ParameterizedTest
-    @CsvSource(value = {"50,50,1", "88,50,nie je deliteľné", "33,50,nie je deliteľné"})
-    public void overCisloTest(String firstInput, String secondInput, String expectedResult) {
+    @CsvSource(value = {"10, 5, 10 je vacsie ako 5", "4, 5, 4 je mensie ako 5", "3, 3, nacitane cisla su zhodne"})
+    public void porovnavacTesterTest(String firstInput, String secondInput, String expectedResult) {
         final String input = firstInput + " " + secondInput;
         provideInput(input);
 
-        NasobokCisla.main(new String[0]);
+        PorovnavacTester.main(new String[0]);
 
         assertTrue(getOutput().contains(expectedResult));
     }
-     */
 }

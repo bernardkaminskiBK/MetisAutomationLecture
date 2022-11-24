@@ -43,9 +43,9 @@ public class StatistikyTester
             maximum = cislo3;
         }
 
-        System.out.println("sucet: " + priemer);
+        System.out.println("sucet: " + sucet);
         System.out.println("sucin: " + sucin);
-        System.out.println("priemer: " + sucet);
+        System.out.println("priemer: " + priemer);
         System.out.println("minimum: " + minimum);
         System.out.println("maximum: " + maximum);
     }
