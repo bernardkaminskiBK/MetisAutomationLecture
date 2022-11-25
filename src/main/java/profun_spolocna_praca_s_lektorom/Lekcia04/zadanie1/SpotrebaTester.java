@@ -8,9 +8,10 @@ public class SpotrebaTester
     {
         Scanner vstup = new Scanner(System.in);
 
-        double celkovaSpotreba = 0;
         double celkovaVzdialenost = 0;
         double dlhodobaPriemSpottreba = 0;
+        double priemSpotreba = 0;
+        int pocitadlo = 0;
         String text = "";
 
         while (true)
@@ -25,12 +26,14 @@ public class SpotrebaTester
             System.out.print("zadaj prejdenu vzdialonost v km: ");
             double vzdialenost = vstup.nextInt();
 
-            double priemSpotreba = spotreba / vzdialenost * 100;
+            double actualnaSpotreba = (spotreba / vzdialenost) * 100;
 
-            celkovaSpotreba += spotreba;
             celkovaVzdialenost += vzdialenost;
+            priemSpotreba = priemSpotreba + actualnaSpotreba;
+            pocitadlo ++;
 
-            System.out.printf("aktialna priemerna spotreba na 100 km je: %.2f\n", priemSpotreba);
+
+            System.out.printf("aktialna priemerna spotreba na 100 km je: %.2f\n", actualnaSpotreba);
         }
 
         if (celkovaVzdialenost == 0)
@@ -39,10 +42,10 @@ public class SpotrebaTester
         }
         else
         {
-            dlhodobaPriemSpottreba = celkovaSpotreba / celkovaVzdialenost * 100;
+            dlhodobaPriemSpottreba = priemSpotreba / pocitadlo;
             double dlhPriemSpotZaokruhlene = Math.round(dlhodobaPriemSpottreba * 100.0) / 100.0;
 
-            text = "\ndlhodoba priemerna spotreba v litroch na 10 km je: " + dlhPriemSpotZaokruhlene;
+            text = "\ndlhodoba priemerna spotreba v litroch na 100 km je: " + dlhPriemSpotZaokruhlene;
         }
 
         System.out.println(text);

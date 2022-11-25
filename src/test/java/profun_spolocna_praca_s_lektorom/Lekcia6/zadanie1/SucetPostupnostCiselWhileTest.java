@@ -1,23 +1,21 @@
-/*
 package profun_spolocna_praca_s_lektorom.Lekcia6.zadanie1;
 
-import org.junit.jupiter.api.Test;
+import base.InputOutputStreamHelper;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 import profun_spolocna_praca_s_lektorom.Lekcia06.zadanie1.SucetPostupnostCiselWhileTester;
 
-import java.util.Scanner;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import static org.junit.jupiter.api.Assertions.*;
+class SucetPostupnostCiselWhileTest extends InputOutputStreamHelper {
 
-class SucetPostupnostCiselWhileTest {
+    @ParameterizedTest
+    @CsvSource(value = {"5, 5, 6, 9, 2, 7, 29"})
+    public void sumWithDoWhileLoopTest(String firstInput, String secondInput, String thirdthInput, String fourthInput, String fivethInput, String sixthInput, String expectedResult) {
+        String input = firstInput + " " + secondInput + " " + thirdthInput + " " + fourthInput + " " + fivethInput + " " + sixthInput;
 
-    @Test
-    public void sumWithWhileLoopTest() {
-        String input = "2\n" + "2\n" + "2\n" + "2\n"      // "Wrong number, try again."
-                + "2\n";
-
-        int result = SucetPostupnostCiselWhileTester.postupnost(5,new Scanner(input));
-        assertEquals(10, result);
+        provideInput(input);
+        SucetPostupnostCiselWhileTester.main(new String[0]);
+        assertTrue(getOutput().contains(expectedResult));
     }
-
 }
- */

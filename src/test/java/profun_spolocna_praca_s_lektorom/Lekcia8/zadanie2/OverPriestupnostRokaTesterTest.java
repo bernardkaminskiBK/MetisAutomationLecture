@@ -2,22 +2,18 @@ package profun_spolocna_praca_s_lektorom.Lekcia8.zadanie2;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import profun.Lekcia02.a.NasobokCisla;
+import profun_spolocna_praca_s_lektorom.Lekcia08.zadanie2.OverPriestupnostRokaTester;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class OverPriestupnostRokaTesterTest
 {
-    /*
     @ParameterizedTest
-    @CsvSource(value = {"50,50,1", "88,50,nie je deliteľné", "33,50,nie je deliteľné"})
-    public void overCisloTest(String firstInput, String secondInput, String expectedResult) {
-        final String input = firstInput + " " + secondInput;
-        provideInput(input);
+    @CsvSource(value = {"2000, true", "2001, false"})
+    public void overPriestupnostRokaTesterTest(int year, boolean expected)
+    {
+        boolean actual = OverPriestupnostRokaTester.jePrestupny(year);
 
-        NasobokCisla.main(new String[0]);
-
-        assertTrue(getOutput().contains(expectedResult));
+        assertEquals(actual, expected);
     }
-     */
 }

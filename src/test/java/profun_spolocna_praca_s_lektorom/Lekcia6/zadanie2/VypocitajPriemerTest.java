@@ -2,13 +2,8 @@ package profun_spolocna_praca_s_lektorom.Lekcia6.zadanie2;
 
 import base.InputOutputStreamHelper;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
-import profun.Lekcia02.a.NasobokCisla;
 import profun_spolocna_praca_s_lektorom.Lekcia06.zadanie2.VypocitajPriemerTester;
 import utils.StorePrintStream;
-
-import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
