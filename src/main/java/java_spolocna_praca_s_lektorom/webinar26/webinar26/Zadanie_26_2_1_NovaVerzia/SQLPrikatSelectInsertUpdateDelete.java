@@ -9,7 +9,7 @@ public class SQLPrikatSelectInsertUpdateDelete {
         try(Connection spojenie = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/knihkupectvo",
                 "tester",
-                "tester");
+                "root");
             // 2.krok - vytvor zo spojenia "prikaz"
             Statement prikaz = spojenie.createStatement())
         {
