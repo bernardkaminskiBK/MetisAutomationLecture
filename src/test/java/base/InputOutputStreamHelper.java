@@ -1,13 +1,17 @@
 package base;
 
-import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
 import java.io.PrintStream;
 
 public class InputOutputStreamHelper {
+
+    private static final InputStream systemIn = System.in;
+    private static final PrintStream systemOut = System.out;
 
     private ByteArrayOutputStream testOut;
 
@@ -17,10 +21,10 @@ public class InputOutputStreamHelper {
         System.setOut(new PrintStream(testOut));
     }
 
-    @AfterEach
-    public void restoreSystemInputOutput() {
-        System.setIn(System.in);
-        System.setOut(System.out);
+    @AfterAll
+    public static void restoreSystemInputOutput() {
+        System.setIn(systemIn);
+        System.setOut(systemOut);
     }
 
     public void provideInput(String data) {
@@ -32,3 +36,4 @@ public class InputOutputStreamHelper {
     }
 
 }
+
