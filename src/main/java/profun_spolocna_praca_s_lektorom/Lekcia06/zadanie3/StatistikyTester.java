@@ -23,7 +23,12 @@ public class StatistikyTester {
 
             if (i == 1)
             {
-                minimum = maximum = absMaximum = sucet = cislo;
+                absMaximum = minimum = maximum = cislo;
+            }
+
+            if (velkost == 1)
+            {
+                sucet = cislo;
             }
             else
             {
