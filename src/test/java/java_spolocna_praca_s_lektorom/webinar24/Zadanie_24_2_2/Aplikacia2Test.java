@@ -6,6 +6,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.assertj.core.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+import javax.swing.*;
+
 
 public class Aplikacia2Test {
     HlavneOkno hlavneOkno = new HlavneOkno();
@@ -42,6 +44,20 @@ public class Aplikacia2Test {
         try {
             Thread.sleep(100);
             assertTrue(hlavneOkno.isVisible());
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Test
+    void isBackgroundCorrect()
+    {
+        JTextArea txaText = new JTextArea();
+        Aplikacia.main(new String[0]);
+        try {
+            Thread.sleep(100);
+            hlavneOkno.setBackground(txaText.getBackground());
+            assertThat(hlavneOkno.getBackground()).isEqualTo(txaText.getBackground());
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
