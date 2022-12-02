@@ -35,6 +35,18 @@ public class Aplikacia2Test {
         }
     }
 
+    @Test
+    void isVisibleCorrect()
+    {
+        Aplikacia.main(new String[0]);
+        try {
+            Thread.sleep(100);
+            assertTrue(hlavneOkno.isVisible());
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 
 
 
