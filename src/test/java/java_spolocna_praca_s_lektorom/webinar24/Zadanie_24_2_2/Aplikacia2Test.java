@@ -63,7 +63,17 @@ public class Aplikacia2Test {
         }
     }
 
-
-
-
+    @Test
+    void isFontCorrect()
+    {
+        JTextArea txaText = new JTextArea();
+        Aplikacia.main(new String[0]);
+        try {
+            Thread.sleep(100);
+            hlavneOkno.setFont(txaText.getFont());
+            assertThat(hlavneOkno.getFont()).isEqualTo(txaText.getFont());
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
