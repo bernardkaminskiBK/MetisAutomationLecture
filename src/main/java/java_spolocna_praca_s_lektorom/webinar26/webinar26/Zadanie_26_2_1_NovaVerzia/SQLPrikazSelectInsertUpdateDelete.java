@@ -2,7 +2,7 @@ package java_spolocna_praca_s_lektorom.webinar26.webinar26.Zadanie_26_2_1_NovaVe
 
 import java.sql.*;
 
-public class SQLPrikatSelectInsertUpdateDelete {
+public class SQLPrikazSelectInsertUpdateDelete {
 
     public static void main(String[] args) {
         // 1.krok - nadviazanie spojenia s databazovym serverom
