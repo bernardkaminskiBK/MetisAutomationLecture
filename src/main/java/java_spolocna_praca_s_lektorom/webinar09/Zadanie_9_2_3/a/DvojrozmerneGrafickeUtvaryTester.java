@@ -12,6 +12,7 @@ public class DvojrozmerneGrafickeUtvaryTester
         Obdlznik utvar2 = new Obdlznik();
         utvar2.sirka = 20;
         utvar2.vyska = 50;
+        System.out.println("Je stvorec: " + utvar2.jeStvorec());
         System.out.println("Plocha (utvar2): " + utvar2.plocha());
         utvar2.zobrazRozmer();
 
