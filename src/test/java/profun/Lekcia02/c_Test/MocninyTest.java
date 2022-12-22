@@ -14,7 +14,7 @@ public class MocninyTest extends InputOutputStreamHelper {
     @Test
     public void vytvorTabulkuMocnin() {
 
-        String expectedResult = "cislo" + "\t\t" + "druha mocnina" + "\t\t"+ "tretia mocnina" + "\n" +
+        String expectedResult = "cislo" + "\t\t" + "druha mocnina" + "\t\t" + "tretia mocnina" + "\n" +
                 "1\t\t\t1\t\t\t\t\t1\n" +
                 "2\t\t\t4\t\t\t\t\t8\n" +
                 "3\t\t\t9\t\t\t\t\t27\n" +
@@ -26,7 +26,8 @@ public class MocninyTest extends InputOutputStreamHelper {
                 "9\t\t\t81\t\t\t\t\t729\n" +
                 "10\t\t\t100\t\t\t\t\t1000\n";
 
+        // Komment
         Mocniny.main(new String[0]);
-        assertTrue( getOutput().contains(expectedResult));
+        assertTrue(getOutput().contains(expectedResult));
     }
 }
