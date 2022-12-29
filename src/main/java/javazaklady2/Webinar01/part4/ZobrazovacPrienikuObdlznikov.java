@@ -1,4 +1,4 @@
-package javazaklady2.Webinar01.d;
+package javazaklady2.Webinar01.part4;
 
 import java.awt.*;
 
