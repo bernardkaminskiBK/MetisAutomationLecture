@@ -1,6 +1,7 @@
 package java_spolocna_praca_s_lektorom.webinar01.Zadanie_1_2_2;
 
 
+import javazaklady.lecture1.activity2.Zadanie_1_2_2.PosunObdlznikaTester;
 import org.junit.jupiter.api.Test;
 
 class KomponentaObdlznikTest {

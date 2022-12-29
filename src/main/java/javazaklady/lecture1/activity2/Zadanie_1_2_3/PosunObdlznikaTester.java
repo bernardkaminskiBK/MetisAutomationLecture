@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar01.Zadanie_1_2_3;
+package javazaklady.lecture1.activity2.Zadanie_1_2_3;
 
 import java.awt.*;
 
