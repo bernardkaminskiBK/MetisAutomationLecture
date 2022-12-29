@@ -1,4 +1,4 @@
-package javazaklady2.Webinar02.c;
+package javazaklady2.Webinar02.part3;
 
 public class SporiaciUcetTester
 {

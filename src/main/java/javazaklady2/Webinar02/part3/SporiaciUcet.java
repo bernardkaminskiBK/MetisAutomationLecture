@@ -1,40 +1,40 @@
-package javazaklady2.Webinar02.b;
+package javazaklady2.Webinar02.part3;
 
 /**
- * Bankovy ucet obsahuje zostatok na ucte, ktory moze byt zmeneny vkladmi a
- * vybermi.
+ *  Sporiaci ucet ma zostatok, ktory moze byt zmeneny pomocou vkladov a vyberov.
  */
-public class BankovyUcet
+public class SporiaciUcet
 {
 
+    private double urokovaSadzba;
     private double aktualnyZostatok;
 
     /**
-     * Vytvara bankovy ucet s nulovym pociatocnym zostatkom.
+     * Vytvara sporiaci ucet s nulovym pociatocnym zostatkom.
      */
-    public BankovyUcet()
+    public SporiaciUcet()
     {
         aktualnyZostatok = 0;
+        urokovaSadzba = 0;
     }
 
     /**
-     * Vytvara bankovy ucet s danym pociatocnym zostatkom.
-     *
-     * @param pociatocnyZostatok pociatocny zostatok
+     * Vytvara sporiaci ucet s danym pociatocnym zostatkom a urokovou sadzbou
+     * @param pociatocnyZostatok
+     * @param novaUrokovaSadzba
      */
-    public BankovyUcet(double pociatocnyZostatok)
+    public SporiaciUcet(double pociatocnyZostatok, double novaUrokovaSadzba)
     {
         aktualnyZostatok = pociatocnyZostatok;
+        urokovaSadzba = novaUrokovaSadzba;
     }
 
     /**
-     * Pripisuje urok na bankovy ucet
-     *
-     * @param urokovaSadzba urokova sadzba, ktora bude pripisana na ucet
+     * Pripiocita urok k aktualnemu zostatku
      */
-    public void pripisUrok(double urokovaSadzba)
+    public void pripisUrok()
     {
-        aktualnyZostatok = aktualnyZostatok + urokovaSadzba;
+        aktualnyZostatok = aktualnyZostatok + ((aktualnyZostatok / 100) * urokovaSadzba);
     }
 
     /**

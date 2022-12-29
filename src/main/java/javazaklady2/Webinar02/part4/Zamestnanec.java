@@ -1,4 +1,4 @@
-package javazaklady2.Webinar02.d;
+package javazaklady2.Webinar02.part4;
 
 /**
  * Zamestnanec ma meno a plat.

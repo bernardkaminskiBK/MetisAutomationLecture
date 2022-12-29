@@ -1,7 +1,7 @@
 package javazaklady2.Webinar02_Test.d_Test;
 
 
-import javazaklady2.Webinar02.d.Zamestnanec;
+import javazaklady2.Webinar02.part4.Zamestnanec;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

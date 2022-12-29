@@ -1,4 +1,4 @@
-package javazaklady2.Webinar02.a;
+package javazaklady2.Webinar02.part2;
 
 /**
  * Bankovy ucet obsahuje zostatok na ucte, ktory moze byt zmeneny vkladmi a
@@ -6,6 +6,7 @@ package javazaklady2.Webinar02.a;
  */
 public class BankovyUcet
 {
+
     private double aktualnyZostatok;
 
     /**
@@ -24,6 +25,16 @@ public class BankovyUcet
     public BankovyUcet(double pociatocnyZostatok)
     {
         aktualnyZostatok = pociatocnyZostatok;
+    }
+
+    /**
+     * Pripisuje urok na bankovy ucet
+     *
+     * @param urokovaSadzba urokova sadzba, ktora bude pripisana na ucet
+     */
+    public void pripisUrok(double urokovaSadzba)
+    {
+        aktualnyZostatok = aktualnyZostatok + urokovaSadzba;
     }
 
     /**

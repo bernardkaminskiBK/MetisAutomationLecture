@@ -1,7 +1,7 @@
 package javazaklady2.Webinar02_Test.c_Test;
 
 
-import javazaklady2.Webinar02.c.SporiaciUcet;
+import javazaklady2.Webinar02.part3.SporiaciUcet;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

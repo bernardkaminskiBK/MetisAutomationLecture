@@ -1,4 +1,4 @@
-package javazaklady2.Webinar02.b;
+package javazaklady2.Webinar02.part2;
 
 public class BankovyUcetTester
 {
