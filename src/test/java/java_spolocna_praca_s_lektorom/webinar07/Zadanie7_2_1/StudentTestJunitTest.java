@@ -1,6 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar07.Zadanie7_2_1;
 
-import java_spolocna_praca_s_lektorom.webinar07.Zadanie_7_2_1.Student;
+import javazaklady.lecture7.activity2.Zadanie_7_2_1.Student;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

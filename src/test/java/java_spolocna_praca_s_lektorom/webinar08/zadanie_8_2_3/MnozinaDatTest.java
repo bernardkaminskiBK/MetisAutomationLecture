@@ -1,5 +1,8 @@
 package java_spolocna_praca_s_lektorom.webinar08.zadanie_8_2_3;
 
+import javazaklady.lecture8.activity2.zadanie_8_2_3.BankovyUcet;
+import javazaklady.lecture8.activity2.zadanie_8_2_3.Minca;
+import javazaklady.lecture8.activity2.zadanie_8_2_3.MnozinaDat;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

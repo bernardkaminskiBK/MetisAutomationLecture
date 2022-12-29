@@ -1,5 +1,7 @@
 package java_spolocna_praca_s_lektorom.webinar08.zadanie_8_2_2;
 
+import javazaklady.lecture8.activity2.zadanie_8_2_2.Minca;
+import javazaklady.lecture8.activity2.zadanie_8_2_2.MnozinaDat;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

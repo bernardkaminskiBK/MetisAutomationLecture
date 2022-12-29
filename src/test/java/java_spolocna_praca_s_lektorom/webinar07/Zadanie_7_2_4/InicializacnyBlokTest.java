@@ -1,4 +1,5 @@
 package java_spolocna_praca_s_lektorom.webinar07.Zadanie_7_2_4;
+import javazaklady.lecture7.activity2.Zadanie_7_2_4.InicializacnyBlok;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
