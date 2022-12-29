@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_1;
+package javazaklady.lecture9.activity2.Zadanie_9_2_1;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar10.Zadanie_10_2_2;
+package javazaklady.lecture10.activity2.Zadanie_10_2_2;
 
 import javazaklady.lecture10.activity2.Zadanie_10_2_2.KomponentaJFileChooserDemo;
 import org.junit.jupiter.api.Assertions;

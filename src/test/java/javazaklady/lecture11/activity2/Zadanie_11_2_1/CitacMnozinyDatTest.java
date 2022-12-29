@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar11.Zadanie_11_2_1;
+package javazaklady.lecture11.activity2.Zadanie_11_2_1;
 
 import javazaklady.lecture11.activity2.Zadanie_11_2_1.CitacMnozinyDat;
 import javazaklady.lecture11.activity2.Zadanie_11_2_1.VlastnaVynimka;

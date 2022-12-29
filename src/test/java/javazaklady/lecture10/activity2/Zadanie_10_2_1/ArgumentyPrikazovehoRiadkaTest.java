@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar10.Zadanie_10_2_1;
+package javazaklady.lecture10.activity2.Zadanie_10_2_1;
 
 import javazaklady.lecture10.activity2.Zadanie_10_2_1.ArgumentyPrikazovehoRiadkaDemo;
 import org.junit.jupiter.api.Assertions;

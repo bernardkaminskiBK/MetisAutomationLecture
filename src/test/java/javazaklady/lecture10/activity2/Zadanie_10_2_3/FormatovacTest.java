@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar10.Zadanie_10_2_3;
+package javazaklady.lecture10.activity2.Zadanie_10_2_3;
 
 import org.junit.jupiter.api.Test;
 import java.io.*;
