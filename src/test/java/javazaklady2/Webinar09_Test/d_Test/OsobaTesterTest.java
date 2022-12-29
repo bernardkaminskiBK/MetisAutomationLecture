@@ -1,8 +1,8 @@
 package javazaklady2.Webinar09_Test.d_Test;
 
-import javazaklady2.Webinar09.d.Instruktor;
-import javazaklady2.Webinar09.d.Osoba;
-import javazaklady2.Webinar09.d.Student;
+import javazaklady2.Webinar09.part4.Instruktor;
+import javazaklady2.Webinar09.part4.Osoba;
+import javazaklady2.Webinar09.part4.Student;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

@@ -2,7 +2,7 @@ package javazaklady2.Webinar05_Test.a_Test;
 
 
 
-import javazaklady2.Webinar05.a.KonvertorMeny;
+import javazaklady2.Webinar05.part1.KonvertorMeny;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

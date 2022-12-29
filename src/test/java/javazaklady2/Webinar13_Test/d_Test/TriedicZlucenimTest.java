@@ -1,7 +1,7 @@
 package javazaklady2.Webinar13_Test.d_Test;
 
 
-import javazaklady2.Webinar13.d.TriedicZlucenim;
+import javazaklady2.Webinar13.part4.TriedicZlucenim;
 import javazaklady2.Webinar13_Test.d_Test.utils.StringArgumentProvider;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;

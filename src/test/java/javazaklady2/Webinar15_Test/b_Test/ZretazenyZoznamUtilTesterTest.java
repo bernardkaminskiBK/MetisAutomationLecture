@@ -1,6 +1,6 @@
 package javazaklady2.Webinar15_Test.b_Test;
 
-import javazaklady2.Webinar15.b.ZretazenyZoznamUtil;
+import javazaklady2.Webinar15.part2.ZretazenyZoznamUtil;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.RepeatedTest;
 

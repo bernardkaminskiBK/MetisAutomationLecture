@@ -1,7 +1,7 @@
 package javazaklady2.Webinar08_Test.d_Test;
 
-import javazaklady2.Webinar08.d.Kocka;
-import javazaklady2.Webinar08.d.MnozinaDat;
+import javazaklady2.Webinar08.part4.Kocka;
+import javazaklady2.Webinar08.part4.MnozinaDat;
 import org.apache.commons.lang3.Range;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

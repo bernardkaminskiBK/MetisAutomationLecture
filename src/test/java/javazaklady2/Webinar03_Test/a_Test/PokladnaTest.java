@@ -1,6 +1,6 @@
 package javazaklady2.Webinar03_Test.a_Test;
 
-import javazaklady2.Webinar03.a.Pokladna;
+import javazaklady2.Webinar03.part1.Pokladna;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

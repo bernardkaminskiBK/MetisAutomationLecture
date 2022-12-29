@@ -1,6 +1,6 @@
 package javazaklady2.Webinar11_Test.d_Test;
 
-import javazaklady2.Webinar11.d.SpajacSuborov;
+import javazaklady2.Webinar11.part4.SpajacSuborov;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

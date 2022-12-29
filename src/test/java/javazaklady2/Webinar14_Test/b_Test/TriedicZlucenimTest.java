@@ -1,6 +1,6 @@
 package javazaklady2.Webinar14_Test.b_Test;
 
-import javazaklady2.Webinar14.b.TriedicZlucenim;
+import javazaklady2.Webinar14.part2.TriedicZlucenim;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

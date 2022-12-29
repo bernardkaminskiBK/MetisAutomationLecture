@@ -1,7 +1,7 @@
 package javazaklady2.Webinar08_Test.b_Test;
 
-import javazaklady2.Webinar08.b.Kviz;
-import javazaklady2.Webinar08.b.MnozinaDat;
+import javazaklady2.Webinar08.part2.Kviz;
+import javazaklady2.Webinar08.part2.MnozinaDat;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

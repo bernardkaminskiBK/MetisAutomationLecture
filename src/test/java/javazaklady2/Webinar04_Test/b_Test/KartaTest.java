@@ -1,7 +1,7 @@
 package javazaklady2.Webinar04_Test.b_Test;
 
 
-import javazaklady2.Webinar04.b.Karta;
+import javazaklady2.Webinar04.part2.Karta;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

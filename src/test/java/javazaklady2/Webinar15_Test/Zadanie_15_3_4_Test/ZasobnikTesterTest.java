@@ -1,6 +1,6 @@
 package javazaklady2.Webinar15_Test.Zadanie_15_3_4_Test;
 
-import javazaklady2.Webinar15.d.Zasobnik;
+import javazaklady2.Webinar15.part4.Zasobnik;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

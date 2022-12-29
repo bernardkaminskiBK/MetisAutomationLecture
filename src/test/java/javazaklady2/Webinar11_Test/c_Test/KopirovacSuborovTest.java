@@ -1,6 +1,6 @@
 package javazaklady2.Webinar11_Test.c_Test;
 
-import javazaklady2.Webinar11.c.KopirovacSuborov;
+import javazaklady2.Webinar11.part3.KopirovacSuborov;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

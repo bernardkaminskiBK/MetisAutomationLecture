@@ -1,6 +1,6 @@
 package javazaklady2.Webinar09_Test.c_Test;
 
-import javazaklady2.Webinar09.c.Stvorec;
+import javazaklady2.Webinar09.part3.Stvorec;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

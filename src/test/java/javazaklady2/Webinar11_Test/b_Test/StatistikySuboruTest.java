@@ -1,6 +1,6 @@
 package javazaklady2.Webinar11_Test.b_Test;
 
-import javazaklady2.Webinar11.b.StatistikySuboru;
+import javazaklady2.Webinar11.part2.StatistikySuboru;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
