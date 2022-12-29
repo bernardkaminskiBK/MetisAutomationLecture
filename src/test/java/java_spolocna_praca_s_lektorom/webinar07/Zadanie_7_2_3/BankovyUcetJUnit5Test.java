@@ -1,12 +1,7 @@
 package java_spolocna_praca_s_lektorom.webinar07.Zadanie_7_2_3;
-import java_spolocna_praca_s_lektorom.webinar07.Zadanie_7_2_3.volanie_hodnotou_a_odkazom.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
