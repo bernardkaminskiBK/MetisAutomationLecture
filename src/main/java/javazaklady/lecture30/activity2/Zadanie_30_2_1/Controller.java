@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_Aktualna_Verzia;
+package javazaklady.lecture30.activity2.Zadanie_30_2_1;
 
 /*
     Táto trieda sluzi na reprezentativny ucel, ako pouzivat kvazi klasickym sposobom CustomerServiceImpl

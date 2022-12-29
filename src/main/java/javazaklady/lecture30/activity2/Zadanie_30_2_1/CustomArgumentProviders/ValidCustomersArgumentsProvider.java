@@ -1,6 +1,6 @@
-package java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_Aktualna_Verzia.CustomArgumentProviders;
+package javazaklady.lecture30.activity2.Zadanie_30_2_1.CustomArgumentProviders;
 
-import java_spolocna_praca_s_lektorom.webinar30.zadanie_30_2_1_Aktualna_Verzia.Customer;
+import javazaklady.lecture30.activity2.Zadanie_30_2_1.Customer;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.ArgumentsProvider;
