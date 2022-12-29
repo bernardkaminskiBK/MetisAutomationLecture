@@ -1,4 +1,4 @@
-package javazaklady2.Webinar01_Test.b_Test;
+package javazaklady2.Webinar01_Test.part2;
 
 
 import javazaklady2.Webinar01.part2.ObvodObdlznikaTester;

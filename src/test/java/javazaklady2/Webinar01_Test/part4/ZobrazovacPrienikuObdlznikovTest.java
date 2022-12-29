@@ -1,4 +1,4 @@
-package javazaklady2.Webinar01_Test.d_Test;
+package javazaklady2.Webinar01_Test.part4;
 
 
 import javazaklady2.Webinar01.part4.ZobrazovacPrienikuObdlznikov;

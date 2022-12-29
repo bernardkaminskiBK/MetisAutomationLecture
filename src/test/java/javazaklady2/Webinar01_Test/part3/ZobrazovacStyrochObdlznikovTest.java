@@ -1,4 +1,4 @@
-package javazaklady2.Webinar01_Test.c_Test;
+package javazaklady2.Webinar01_Test.part3;
 
 
 import javazaklady2.Webinar01.part3.ZobrazovacStyrochObdlznikov;
