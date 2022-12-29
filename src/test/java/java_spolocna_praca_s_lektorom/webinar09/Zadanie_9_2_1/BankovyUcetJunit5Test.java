@@ -2,6 +2,9 @@ package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_1;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import javazaklady.lecture9.activity2.Zadanie_9_2_1.BankovyUcet;
+import javazaklady.lecture9.activity2.Zadanie_9_2_1.BeznyUcet;
+import javazaklady.lecture9.activity2.Zadanie_9_2_1.SporiaciUcet;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 

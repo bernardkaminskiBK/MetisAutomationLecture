@@ -1,7 +1,7 @@
 package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_3.c_Test;
 
-import java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_3.c.DvojrozmernyGrafickyUtvar;
-import java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_3.c.Obdlznik;
+import javazaklady.lecture9.activity2.Zadanie_9_2_3.part3.DvojrozmernyGrafickyUtvar;
+import javazaklady.lecture9.activity2.Zadanie_9_2_3.part3.Obdlznik;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
