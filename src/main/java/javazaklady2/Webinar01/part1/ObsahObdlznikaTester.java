@@ -1,4 +1,4 @@
-package javazaklady2.Webinar01.a;//package Obdlznik;
+package javazaklady2.Webinar01.part1;//package Obdlznik;
 
 import java.awt.*;
 

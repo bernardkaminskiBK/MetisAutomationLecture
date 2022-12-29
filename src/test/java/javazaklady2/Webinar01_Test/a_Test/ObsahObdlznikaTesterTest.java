@@ -1,6 +1,6 @@
 package javazaklady2.Webinar01_Test.a_Test;
 
-import javazaklady2.Webinar01.a.ObsahObdlznikaTester;
+import javazaklady2.Webinar01.part1.ObsahObdlznikaTester;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
