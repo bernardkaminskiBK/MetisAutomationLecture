@@ -1,6 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar04.Zadanie_4_2_4_Test;
 
-import java_spolocna_praca_s_lektorom.webinar04.Zadanie_4_2_4.Zemetrasenie;
+import javazaklady.lecture4.activity2.Zadanie_4_2_4.Zemetrasenie;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

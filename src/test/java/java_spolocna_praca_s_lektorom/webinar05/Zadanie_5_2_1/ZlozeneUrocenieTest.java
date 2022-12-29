@@ -1,6 +1,7 @@
 package java_spolocna_praca_s_lektorom.webinar05.Zadanie_5_2_1;
 
 
+import javazaklady.lecture5.activity2.Zadanie_5_2_1.ZlozeneUrocenie;
 import org.junit.jupiter.api.Test;
 import utils.StorePrintStream;
 

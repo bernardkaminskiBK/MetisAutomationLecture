@@ -2,6 +2,7 @@ package java_spolocna_praca_s_lektorom.webinar03.Zadanie_3_2_3;
 
 
 
+import javazaklady.lecture3.activity2.Zadanie_3_2_3.PokladnaSimulator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

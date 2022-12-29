@@ -1,8 +1,8 @@
 package java_spolocna_praca_s_lektorom.webinar05.Zadanie_5_2_2;
 
+import javazaklady.lecture5.activity2.Zadanie_5_2_2.Kinosala;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.testng.asserts.Assertion;
 
 public class KinosalaTest {
 

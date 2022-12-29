@@ -1,6 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar05.Zadanie_5_2_4.b_Test;
 
-import java_spolocna_praca_s_lektorom.webinar05.Zadanie_5_2_4.b.Banka;
+import javazaklady.lecture5.activity2.Zadanie_5_2_4.part2.Banka;
 import org.junit.jupiter.api.Test;
 import utils.StorePrintStream;
 
