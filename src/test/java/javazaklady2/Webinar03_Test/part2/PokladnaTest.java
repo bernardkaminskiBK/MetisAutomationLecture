@@ -1,7 +1,7 @@
 package javazaklady2.Webinar03_Test.part2;
 
 import javazaklady2.Webinar03_Test.part2.CustomAnnotations.ArraySource;
-import javazaklady2.Webinar03.part2.Pokladna;
+import javazaklady.lecture3.activity3.part2.Pokladna;
 import javazaklady2.Webinar03_Test.part2.CustomAnnotations.ArraySources;
 import org.junit.jupiter.params.ParameterizedTest;
 

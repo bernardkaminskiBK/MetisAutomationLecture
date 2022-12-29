@@ -1,7 +1,7 @@
 package javazaklady2.Webinar05_Test.part4;
 
 
-import javazaklady2.Webinar05.part4.FaktorGenerator;
+import javazaklady.lecture5.activity3.part4.FaktorGenerator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

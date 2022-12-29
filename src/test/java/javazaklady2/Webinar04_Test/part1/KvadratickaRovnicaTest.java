@@ -2,7 +2,7 @@ package javazaklady2.Webinar04_Test.part1;
 
 
 
-import javazaklady2.Webinar04.part1.KvadratickaRovnica;
+import javazaklady.lecture4.activity3.part1.KvadratickaRovnica;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

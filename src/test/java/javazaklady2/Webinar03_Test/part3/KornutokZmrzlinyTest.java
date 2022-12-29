@@ -1,6 +1,6 @@
 package javazaklady2.Webinar03_Test.part3;
 
-import javazaklady2.Webinar03.part3.KornutokZmrzliny;
+import javazaklady.lecture3.activity3.part3.KornutokZmrzliny;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

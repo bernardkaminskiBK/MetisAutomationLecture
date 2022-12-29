@@ -1,6 +1,6 @@
 package javazaklady2.Webinar06_Test.part2;
 
-import javazaklady2.Webinar06.part2.Penazenka;
+import javazaklady.lecture6.activity3.part2.Penazenka;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

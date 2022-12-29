@@ -1,7 +1,7 @@
 package javazaklady2.Webinar04_Test.part4;
 
 
-import javazaklady2.Webinar04.part4.RozpoznavacVstupu;
+import javazaklady.lecture4.activity3.part4.RozpoznavacVstupu;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

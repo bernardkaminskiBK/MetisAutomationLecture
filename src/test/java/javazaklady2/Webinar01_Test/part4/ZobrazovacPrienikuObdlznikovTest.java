@@ -1,7 +1,7 @@
 package javazaklady2.Webinar01_Test.part4;
 
 
-import javazaklady2.Webinar01.part4.ZobrazovacPrienikuObdlznikov;
+import javazaklady.lecture1.activity3.part4.ZobrazovacPrienikuObdlznikov;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

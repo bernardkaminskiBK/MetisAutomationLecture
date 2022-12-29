@@ -1,6 +1,6 @@
 package javazaklady2.Webinar04_Test.part3;
 
-import javazaklady2.Webinar04.part3.MnozinaDat;
+import javazaklady.lecture4.activity3.part3.MnozinaDat;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

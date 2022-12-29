@@ -1,7 +1,7 @@
 package javazaklady2.Webinar06_Test.part1;
 
 
-import javazaklady2.Webinar06.part1.Banka;
+import javazaklady.lecture6.activity3.part1.Banka;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
