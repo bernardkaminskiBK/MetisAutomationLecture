@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar03.Zadanie_3_2_3;
+package javazaklady.lecture3.activity2.Zadanie_3_2_3;
 
 
 

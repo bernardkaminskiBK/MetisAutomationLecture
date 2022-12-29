@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar04.Zadanie_4_2_1_Test;
+package javazaklady.lecture4.activity2.Zadanie_4_2_1_Test;
 
 import javazaklady.lecture4.activity2.Zadanie_4_2_1.DanZPrijmu;
 import javazaklady.lecture4.activity2.Zadanie_4_2_1.RodinnyStatus;

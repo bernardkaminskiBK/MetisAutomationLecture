@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar05.Zadanie_5_2_4.a_Test;
+package java_spolocna_praca_s_lektorom.webinar05.Zadanie_5_2_4.part1;
 
 import javazaklady.lecture5.activity2.Zadanie_5_2_4.part1.Banka;
 import utils.StorePrintStream;
