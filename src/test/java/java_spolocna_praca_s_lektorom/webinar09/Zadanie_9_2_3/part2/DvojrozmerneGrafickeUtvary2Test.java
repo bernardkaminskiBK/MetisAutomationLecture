@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_3.b_Test;
+package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_3.part2;
 
 import javazaklady.lecture9.activity2.Zadanie_9_2_3.part2.DvojrozmernyGrafickyUtvar;
 import javazaklady.lecture9.activity2.Zadanie_9_2_3.part2.Obdlznik;
