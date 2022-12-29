@@ -1,11 +1,11 @@
 package java_spolocna_praca_s_lektorom.webinar13.Zadanie_13_2_2;
 
-import java_spolocna_praca_s_lektorom.webinar13.Zadanie_13_2_1.Stopky;
+import javazaklady.lecture13.activity2.Zadanie_13_2_1.Stopky;
 import org.apache.commons.lang3.Range;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import java_spolocna_praca_s_lektorom.webinar13.Zadanie_13_2_2.a.PoleUtil;
-import java_spolocna_praca_s_lektorom.webinar13.Zadanie_13_2_2.a.TriedicVyberom;
+import javazaklady.lecture13.activity2.Zadanie_13_2_2.part1.PoleUtil;
+import javazaklady.lecture13.activity2.Zadanie_13_2_2.part1.TriedicVyberom;
 
 import java.util.Arrays;
 

@@ -1,9 +1,9 @@
 package java_spolocna_praca_s_lektorom.webinar19.Zadanie_19_2_1.a;
 
-import java_spolocna_praca_s_lektorom.webinar19.zadanie_19_2_1.a.Kategoria;
-import java_spolocna_praca_s_lektorom.webinar19.zadanie_19_2_1.a.KategorizovanyHelpDesk;
-import java_spolocna_praca_s_lektorom.webinar19.zadanie_19_2_1.a.Poziadavka;
-import java_spolocna_praca_s_lektorom.webinar19.zadanie_19_2_1.a.Zakaznik;
+import javazaklady.lecture19.activity2.Zadanie_19_2_1.part1.Kategoria;
+import javazaklady.lecture19.activity2.Zadanie_19_2_1.part1.KategorizovanyHelpDesk;
+import javazaklady.lecture19.activity2.Zadanie_19_2_1.part1.Poziadavka;
+import javazaklady.lecture19.activity2.Zadanie_19_2_1.part1.Zakaznik;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import utils.StorePrintStream;

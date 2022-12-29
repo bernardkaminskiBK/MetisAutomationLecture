@@ -1,8 +1,8 @@
 package java_spolocna_praca_s_lektorom.webinar17.Zadanie17_2_1;
 
-import java_spolocna_praca_s_lektorom.webinar17.zadanie_17_2_1.Sklad;
-import java_spolocna_praca_s_lektorom.webinar17.zadanie_17_2_1.Vyrobok;
-import java_spolocna_praca_s_lektorom.webinar17.zadanie_17_2_1.Zasielka;
+import javazaklady.lecture17.activity2.Zadanie_17_2_1.Sklad;
+import javazaklady.lecture17.activity2.Zadanie_17_2_1.Vyrobok;
+import javazaklady.lecture17.activity2.Zadanie_17_2_1.Zasielka;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

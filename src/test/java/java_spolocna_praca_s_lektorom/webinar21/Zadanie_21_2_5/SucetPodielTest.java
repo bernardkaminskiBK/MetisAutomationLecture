@@ -1,6 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar21.Zadanie_21_2_5;
 
-import java_spolocna_praca_s_lektorom.webinar21.zadanie_21_2_5.SucetPodielTester;
+import javazaklady.lecture21.activity2.Zadanie_21_2_5.SucetPodielTester;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

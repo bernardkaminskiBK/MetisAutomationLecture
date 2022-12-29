@@ -1,5 +1,7 @@
 package java_spolocna_praca_s_lektorom.webinar11.Zadanie_11_2_1;
 
+import javazaklady.lecture11.activity2.Zadanie_11_2_1.CitacMnozinyDat;
+import javazaklady.lecture11.activity2.Zadanie_11_2_1.VlastnaVynimka;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

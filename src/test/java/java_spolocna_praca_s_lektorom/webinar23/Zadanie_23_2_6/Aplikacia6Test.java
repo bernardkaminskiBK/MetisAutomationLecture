@@ -1,10 +1,8 @@
 package java_spolocna_praca_s_lektorom.webinar23.Zadanie_23_2_6;
 
-import java_spolocna_praca_s_lektorom.webinar23.zadanie_23_2_6.Aplikacia;
-import java_spolocna_praca_s_lektorom.webinar23.zadanie_23_2_6.HlavneOkno;
+import javazaklady.lecture23.activity2.Zadanie_23_2_6.Aplikacia;
+import javazaklady.lecture23.activity2.Zadanie_23_2_6.HlavneOkno;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
 
 import javax.swing.*;
 import static org.assertj.core.api.Assertions.*;

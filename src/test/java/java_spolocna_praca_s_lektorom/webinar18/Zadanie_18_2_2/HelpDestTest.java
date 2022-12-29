@@ -1,5 +1,9 @@
 package java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_2;
 
+import javazaklady.lecture18.activity2.Zadanie_18_2_2.HelpDesk;
+import javazaklady.lecture18.activity2.Zadanie_18_2_2.Kategoria;
+import javazaklady.lecture18.activity2.Zadanie_18_2_2.Poziadavka;
+import javazaklady.lecture18.activity2.Zadanie_18_2_2.Zakaznik;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import utils.StorePrintStream;
@@ -24,7 +28,7 @@ public class HelpDestTest {
     void zaevidujPoziadavkuTest()
     {
         final Queue<Poziadavka> poziadavky = new ArrayDeque<>();
-        poziadavky.add(new Poziadavka(Zakaznik.KATKA,Kategoria.TLACIAREN));
+        poziadavky.add(new Poziadavka(Zakaznik.KATKA, Kategoria.TLACIAREN));
         poziadavky.add(new Poziadavka(Zakaznik.KAROL,Kategoria.POCITAC));
         assertThat(poziadavky).isNotEmpty();
     }

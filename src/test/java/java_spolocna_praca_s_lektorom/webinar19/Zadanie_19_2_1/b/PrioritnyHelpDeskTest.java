@@ -1,8 +1,8 @@
 package java_spolocna_praca_s_lektorom.webinar19.Zadanie_19_2_1.b;
 
-import java_spolocna_praca_s_lektorom.webinar19.zadanie_19_2_1.b.Kategoria;
-import java_spolocna_praca_s_lektorom.webinar19.zadanie_19_2_1.b.Poziadavka;
-import java_spolocna_praca_s_lektorom.webinar19.zadanie_19_2_1.b.Zakaznik;
+import javazaklady.lecture19.activity2.Zadanie_19_2_1.part2.Kategoria;
+import javazaklady.lecture19.activity2.Zadanie_19_2_1.part2.Poziadavka;
+import javazaklady.lecture19.activity2.Zadanie_19_2_1.part2.Zakaznik;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
 

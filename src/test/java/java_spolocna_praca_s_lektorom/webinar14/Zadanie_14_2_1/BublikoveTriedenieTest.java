@@ -1,5 +1,7 @@
 package java_spolocna_praca_s_lektorom.webinar14.Zadanie_14_2_1;
 
+import javazaklady.lecture14.activity2.Zadanie_14_2_1.PoleUtil;
+import javazaklady.lecture14.activity2.Zadanie_14_2_1.TriedicBublinkovymTriedenim;
 import org.apache.commons.lang3.Range;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

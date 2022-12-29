@@ -1,14 +1,12 @@
 package java_spolocna_praca_s_lektorom.webinar23.Zadanie_23_2_5;
 
-import java_spolocna_praca_s_lektorom.webinar23.zadanie_23_2_5.Aplikacia;
-import java_spolocna_praca_s_lektorom.webinar23.zadanie_23_2_5.HlavneOkno;
-import java_spolocna_praca_s_lektorom.webinar23.zadanie_23_2_5.PanelNastrojov;
+import javazaklady.lecture23.activity2.Zadanie_23_2_5.Aplikacia;
+import javazaklady.lecture23.activity2.Zadanie_23_2_5.HlavneOkno;
+import javazaklady.lecture23.activity2.Zadanie_23_2_5.PanelNastrojov;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import javax.swing.*;
-
-import java.awt.*;
 
 import static org.assertj.core.api.Assertions.*;
 

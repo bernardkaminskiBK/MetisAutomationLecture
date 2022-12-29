@@ -1,5 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar16.Zadanie_16_2_1;
 
+import javazaklady.lecture16.activity2.Zadanie_16_2_1.Vyrobok;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 

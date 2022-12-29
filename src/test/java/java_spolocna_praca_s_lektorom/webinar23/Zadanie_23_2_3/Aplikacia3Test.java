@@ -1,7 +1,7 @@
 package java_spolocna_praca_s_lektorom.webinar23.Zadanie_23_2_3;
 
-import java_spolocna_praca_s_lektorom.webinar23.zadanie_23_2_3.Aplikacia;
-import java_spolocna_praca_s_lektorom.webinar23.zadanie_23_2_3.HlavneOkno;
+import javazaklady.lecture23.activity2.Zadanie_23_2_3.Aplikacia;
+import javazaklady.lecture23.activity2.Zadanie_23_2_3.HlavneOkno;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

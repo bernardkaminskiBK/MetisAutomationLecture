@@ -1,6 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar21.Zadanie_21_2_4;
 
-import java_spolocna_praca_s_lektorom.webinar21.zadanie_21_2_4.VypocetDvojnasobkuTester;
+import javazaklady.lecture21.activity2.Zadanie_21_2_4.VypocetDvojnasobkuTester;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

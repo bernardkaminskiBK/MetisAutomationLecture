@@ -1,10 +1,14 @@
 package java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_1;
 
+import javazaklady.lecture18.activity2.Zadanie_18_2_1.Dodavatel;
+import javazaklady.lecture18.activity2.Zadanie_18_2_1.ProduktovyKatalog;
+import javazaklady.lecture18.activity2.Zadanie_18_2_1.Vyrobok;
+import javazaklady.lecture18.activity2.Zadanie_18_2_1.ZotriedenyProduktovyKatalog;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import static java_spolocna_praca_s_lektorom.webinar18.Zadanie_18_2_1.Sklad.*;
+import static javazaklady.lecture18.activity2.Zadanie_18_2_1.Sklad.*;
 
 
 import static org.assertj.core.api.Assertions.*;

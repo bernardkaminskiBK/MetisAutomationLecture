@@ -1,6 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar22.Zadanie22_2_1;
 
-import java_spolocna_praca_s_lektorom.webinar22.Zadanie_22_2_1.Problem01Tester;
+import javazaklady.lecture22.activity2.Zadanie_22_2_1.Problem01Tester;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import utils.StorePrintStream;

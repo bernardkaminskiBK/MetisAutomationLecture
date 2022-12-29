@@ -1,6 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar22.Zadanie22_2_6;
 
-import java_spolocna_praca_s_lektorom.webinar22.Zadanie_22_2_6.b.KrajinyStream_v2;
+import javazaklady.lecture22.activity2.Zadanie_22_2_6.part2.KrajinyStream_v2;
 import org.junit.jupiter.api.Test;
 import utils.StorePrintStream;
 import java.io.File;

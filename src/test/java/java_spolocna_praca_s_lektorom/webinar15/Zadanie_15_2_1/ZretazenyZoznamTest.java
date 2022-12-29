@@ -1,5 +1,7 @@
 package java_spolocna_praca_s_lektorom.webinar15.Zadanie_15_2_1;
 
+import javazaklady.lecture15.activity2.Zadanie_15_2_1.ZoznamIterator;
+import javazaklady.lecture15.activity2.Zadanie_15_2_1.ZretazenyZoznam;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.assertj.core.api.Assertions.*;

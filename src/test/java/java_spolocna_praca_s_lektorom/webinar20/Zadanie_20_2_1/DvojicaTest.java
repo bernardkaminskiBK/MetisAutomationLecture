@@ -1,5 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar20.Zadanie_20_2_1;
 
+import javazaklady.lecture20.activity2.Zadanie_20_2_1.Dvojica;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

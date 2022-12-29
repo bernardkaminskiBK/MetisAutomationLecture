@@ -1,7 +1,7 @@
 package java_spolocna_praca_s_lektorom.webinar14.Zadanie_14_2_3;
 
+import javazaklady.lecture14.activity2.Zadanie_14_2_3.GeneratorFibonaccihoPostupnosti;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 

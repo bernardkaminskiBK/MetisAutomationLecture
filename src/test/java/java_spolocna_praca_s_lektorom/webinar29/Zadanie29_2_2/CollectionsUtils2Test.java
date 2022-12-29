@@ -1,6 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar29.Zadanie29_2_2;
 
-import java_spolocna_praca_s_lektorom.webinar29.Zadanie_29_2_1.CollectionsUtils;
+import javazaklady.lecture29.activity2.Zadanie_29_2_1.CollectionsUtils;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

@@ -1,8 +1,8 @@
 package java_spolocna_praca_s_lektorom.webinar28.Zadanie_28_2_1;
 
+import javazaklady.lecture28.activity2.Zadanie_28_2_1.StreamApi;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 import java.util.List;

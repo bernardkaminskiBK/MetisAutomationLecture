@@ -1,6 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar21.Zadanie_21_2_1;
 
-import java_spolocna_praca_s_lektorom.webinar21.zadanie_21_2_1.Oslovovac;
+import javazaklady.lecture21.activity2.Zadanie_21_2_1.Oslovovac;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import utils.StorePrintStream;

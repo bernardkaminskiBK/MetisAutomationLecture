@@ -1,6 +1,6 @@
 package java_spolocna_praca_s_lektorom.webinar23.Zadanie_23_2_1;
 
-import java_spolocna_praca_s_lektorom.webinar23.zadanie_23_2_1.Aplikacia;
+import javazaklady.lecture23.activity2.Zadanie_23_2_1.Aplikacia;
 import org.junit.jupiter.api.Assertions;
 import static org.assertj.core.api.Assertions.*;
 import org.junit.jupiter.api.Test;
