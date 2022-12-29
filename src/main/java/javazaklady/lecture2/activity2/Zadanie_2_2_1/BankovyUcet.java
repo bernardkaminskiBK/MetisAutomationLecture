@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar02.Zadanie_2_2_1;
+package javazaklady.lecture2.activity2.Zadanie_2_2_1;
 
 /**
  * Trieda BankovyUcet obsahuje aktuálny zostatok, ktorý môže byť

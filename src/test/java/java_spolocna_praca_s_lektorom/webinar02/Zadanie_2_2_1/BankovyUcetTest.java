@@ -1,6 +1,7 @@
 package java_spolocna_praca_s_lektorom.webinar02.Zadanie_2_2_1;
 
 
+import javazaklady.lecture2.activity2.Zadanie_2_2_1.BankovyUcet;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

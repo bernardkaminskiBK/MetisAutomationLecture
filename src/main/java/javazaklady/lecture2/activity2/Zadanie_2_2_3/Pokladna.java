@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar02.Zadanie_2_2_3;
+package javazaklady.lecture2.activity2.Zadanie_2_2_3;
 
 // TODO: dopln dokumentacny komentar
 public class Pokladna {
