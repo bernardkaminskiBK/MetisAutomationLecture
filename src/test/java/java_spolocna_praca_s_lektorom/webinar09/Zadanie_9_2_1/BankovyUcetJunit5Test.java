@@ -1,11 +1,7 @@
 package java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_1;
 
-import java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_1.bankove_ucty.BankovyUcet;
 import static org.junit.jupiter.api.Assertions.*;
 
-import java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_1.bankove_ucty.BeznyUcet;
-import java_spolocna_praca_s_lektorom.webinar09.Zadanie_9_2_1.bankove_ucty.SporiaciUcet;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
