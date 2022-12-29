@@ -1,4 +1,4 @@
-package java_spolocna_praca_s_lektorom.webinar07.Zadanie_7_2_2.immutable_student;
+package java_spolocna_praca_s_lektorom.webinar07.Zadanie_7_2_2;
 
 public class StudentTester
 {

@@ -1,7 +1,5 @@
 package java_spolocna_praca_s_lektorom.webinar07.Zadanie_7_2_2;
 
-import java_spolocna_praca_s_lektorom.webinar07.Zadanie_7_2_2.immutable_student.*;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
