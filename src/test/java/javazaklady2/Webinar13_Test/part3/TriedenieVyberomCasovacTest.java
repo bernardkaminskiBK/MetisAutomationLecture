@@ -1,6 +1,6 @@
 package javazaklady2.Webinar13_Test.part3;
 
-import javazaklady2.Webinar13.part3.TriedenieVyberomCasovac;
+import javazaklady.lecture13.activity3.part3.TriedenieVyberomCasovac;
 import org.apache.commons.lang3.Range;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;

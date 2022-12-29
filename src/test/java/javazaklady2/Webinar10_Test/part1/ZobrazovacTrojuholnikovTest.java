@@ -1,6 +1,6 @@
 package javazaklady2.Webinar10_Test.part1;
 
-import javazaklady2.Webinar10.part1.ZobrazovacTrojuholnikov;
+import javazaklady.lecture10.activity3.part1.ZobrazovacTrojuholnikov;
 import javazaklady2.Webinar10_Test.part1.utils.CustomArgumentProvider;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;

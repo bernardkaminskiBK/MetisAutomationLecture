@@ -1,8 +1,8 @@
 package javazaklady2.Webinar09_Test.part2;
 
-import javazaklady2.Webinar09.part2.BeznyUcet;
-import javazaklady2.Webinar09.part2.SporiaciUcet;
-import javazaklady2.Webinar09.part2.TerminovanyUcet;
+import javazaklady.lecture9.activity3.part2.BeznyUcet;
+import javazaklady.lecture9.activity3.part2.SporiaciUcet;
+import javazaklady.lecture9.activity3.part2.TerminovanyUcet;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.RepeatedTest;
 

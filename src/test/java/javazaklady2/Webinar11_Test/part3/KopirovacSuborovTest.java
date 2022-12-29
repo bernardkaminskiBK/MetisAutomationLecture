@@ -1,6 +1,6 @@
 package javazaklady2.Webinar11_Test.part3;
 
-import javazaklady2.Webinar11.part3.KopirovacSuborov;
+import javazaklady.lecture11.activity3.part3.KopirovacSuborov;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

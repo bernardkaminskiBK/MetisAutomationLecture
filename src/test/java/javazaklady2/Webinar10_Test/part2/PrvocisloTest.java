@@ -1,6 +1,6 @@
 package javazaklady2.Webinar10_Test.part2;
 
-import javazaklady2.Webinar10.part4.Prvocislo;
+import javazaklady.lecture10.activity3.part4.Prvocislo;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

@@ -1,6 +1,6 @@
 package javazaklady2.Webinar14_Test.part3;
 
-import javazaklady2.Webinar14.part3.TriedenieVkladanimCasovac;
+import javazaklady.lecture14.activity3.part3.TriedenieVkladanimCasovac;
 import org.apache.commons.lang3.Range;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;

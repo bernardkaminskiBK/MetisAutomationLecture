@@ -1,7 +1,7 @@
 package javazaklady2.Webinar14_Test.part4;
 
-import javazaklady2.Webinar14.part4.Osoba;
-import javazaklady2.Webinar14.part4.OsobyDemo;
+import javazaklady.lecture14.activity3.part4.Osoba;
+import javazaklady.lecture14.activity3.part4.OsobyDemo;
 import javazaklady2.Webinar14_Test.part4.utils.NameArgumentProvider;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;

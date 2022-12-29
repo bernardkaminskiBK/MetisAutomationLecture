@@ -1,9 +1,9 @@
 package javazaklady2.Webinar07_Test.part3;
 
 
-import javazaklady2.Webinar07.part3.Bankovka;
-import javazaklady2.Webinar07.part3.Minca;
-import javazaklady2.Webinar07.part3.Pokladna;
+import javazaklady.lecture7.activity3.part3.Bankovka;
+import javazaklady.lecture7.activity3.part3.Minca;
+import javazaklady.lecture7.activity3.part3.Pokladna;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

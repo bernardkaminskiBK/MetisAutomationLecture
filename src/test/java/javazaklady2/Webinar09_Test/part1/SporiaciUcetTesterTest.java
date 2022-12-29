@@ -1,6 +1,6 @@
 package javazaklady2.Webinar09_Test.part1;
 
-import javazaklady2.Webinar09.part1.SporiaciUcet;
+import javazaklady.lecture9.activity3.part1.SporiaciUcet;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
