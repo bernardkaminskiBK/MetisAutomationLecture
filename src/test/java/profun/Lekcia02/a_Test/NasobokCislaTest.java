@@ -4,7 +4,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import profun.Lekcia02.a.NasobokCisla;
+import profun.Lekcia02.part1.NasobokCisla;
 
 import java.io.*;
 

@@ -1,4 +1,4 @@
-package profun.Lekcia02.a;
+package profun.Lekcia02.part1;
 
 import java.util.Scanner;
 
