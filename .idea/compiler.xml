@@ -7,10 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="profun" />
+        <module name="javazaklady" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="javazaklady" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
