@@ -8,8 +8,6 @@ import org.junit.jupiter.api.Test;
 
 import javax.swing.*;
 
-import static org.assertj.core.api.Assertions.*;
-
 public class Aplikacia5Test {
     HlavneOkno hlavneOkno = new HlavneOkno();
 

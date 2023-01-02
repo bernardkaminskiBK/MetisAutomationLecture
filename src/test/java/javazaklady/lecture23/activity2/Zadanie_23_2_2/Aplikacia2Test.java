@@ -3,7 +3,6 @@ package javazaklady.lecture23.activity2.Zadanie_23_2_2;
 import javazaklady.lecture23.activity2.Zadanie_23_2_2.Aplikacia;
 import javazaklady.lecture23.activity2.Zadanie_23_2_2.HlavneOkno;
 import org.junit.jupiter.api.Assertions;
-import static org.assertj.core.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import javax.swing.*;
 

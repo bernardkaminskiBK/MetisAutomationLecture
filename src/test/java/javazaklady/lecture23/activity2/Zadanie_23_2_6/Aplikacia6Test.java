@@ -5,8 +5,6 @@ import javazaklady.lecture23.activity2.Zadanie_23_2_6.HlavneOkno;
 import org.junit.jupiter.api.Test;
 
 import javax.swing.*;
-import static org.assertj.core.api.Assertions.*;
-
 
 
 public class Aplikacia6Test {

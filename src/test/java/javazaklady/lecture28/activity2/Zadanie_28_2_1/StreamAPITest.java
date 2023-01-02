@@ -2,7 +2,6 @@ package javazaklady.lecture28.activity2.Zadanie_28_2_1;
 
 import javazaklady.lecture28.activity2.Zadanie_28_2_1.StreamApi;
 import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.Assertions.*;
 
 import java.util.ArrayList;
 import java.util.List;
