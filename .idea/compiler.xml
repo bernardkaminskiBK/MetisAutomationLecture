@@ -10,5 +10,8 @@
         <module name="javazaklady" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="java_spolocna_praca_s_lektorom" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
