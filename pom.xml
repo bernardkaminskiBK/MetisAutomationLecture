@@ -29,6 +29,7 @@
         <module>javazaklady</module>
         <module>javazaklady</module>
         <module>java_spolocna_praca_s_lektorom</module>
+        <module>profun_spolocna_praca_s_lektorom</module>
     </modules>
 
     <properties>
