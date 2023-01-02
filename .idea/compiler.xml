@@ -9,5 +9,8 @@
         <module name="profun" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="javazaklady" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

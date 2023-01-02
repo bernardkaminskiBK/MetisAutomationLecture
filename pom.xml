@@ -24,6 +24,9 @@
     </build>
     <modules>
         <module>profun</module>
+        <module>javazaklady</module>
+        <module>javazaklady</module>
+        <module>javazaklady</module>
     </modules>
 
     <properties>
