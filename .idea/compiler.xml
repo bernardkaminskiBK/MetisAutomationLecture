@@ -8,8 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="profun" />
         <module name="javazaklady" />
-        <module name="profun_spolocna_praca_s_lektorom" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="profun_spolocna_praca_s_lektorom" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
